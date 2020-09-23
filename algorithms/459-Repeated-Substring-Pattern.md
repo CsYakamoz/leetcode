@@ -33,13 +33,9 @@ Output: True
 Explanation: It's the substring "abc" four times. (And the substring "abcabc" twice.)
 ```
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `String`
-
-
 
 ### Solution One
 
@@ -88,8 +84,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 [Java Simple Solution with Explanation](https://discuss.leetcode.com/topic/67992/java-simple-solution-with-explanation)
@@ -116,6 +110,3 @@ public boolean repeatedSubstringPattern(String str) {
     return false;
 }
 ```
-
-
-

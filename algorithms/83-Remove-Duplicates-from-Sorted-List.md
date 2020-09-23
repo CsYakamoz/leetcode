@@ -2,19 +2,15 @@
 
 ### Description
 
-Given a sorted linked list, delete all duplicates such that each element appear only *once*.
+Given a sorted linked list, delete all duplicates such that each element appear only _once_.
 
 For example,
 Given `1->1->2`, return `1->2`.
 Given `1->1->2->3->3`, return `1->2->3`.
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Linked List`
-
-
 
 ### Solution One
 
@@ -36,8 +32,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 ```c++
@@ -47,16 +41,16 @@ public:
         if (head == NULL) {
             return NULL;
         }
-        // 
+        //
         // dummy--tail -- NULL
         //        head -- xx  xx  xx
         ListNode *dummy = new ListNode(0);
         ListNode *tail = head;
         dummy->next = tail;
-        
+
         ListNode *cur = head->next;
         tail->next = NULL;
-        
+
         while (cur != NULL) {
             ListNode *cur_next = cur->next;
             if (cur->val != tail->val) {
@@ -70,6 +64,3 @@ public:
     }
 };
 ```
-
-
-

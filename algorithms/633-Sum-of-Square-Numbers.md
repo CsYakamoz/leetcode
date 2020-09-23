@@ -20,13 +20,9 @@ Input: 3
 Output: False
 ```
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Math`
-
-
 
 ### Solution One
 
@@ -59,11 +55,6 @@ public:
 };
 ```
 
-
-
 ### Other Solutions
 
 [633. Sum of Square Numbers - S](https://leetcode.com/problems/sum-of-square-numbers/#/solution)
-
-
-

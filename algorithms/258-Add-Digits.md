@@ -18,17 +18,13 @@ Could you do it without any loop/recursion in O(1) runtime?
 3. How do they occur, periodically or randomly?
 4. You may find this [Wikipedia article](https://en.wikipedia.org/wiki/Digital_root) useful.
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Math`
 
-
-
 ### Solution One
 
-使用Wikipedia中给的公式
+使用 Wikipedia 中给的公式
 
 ```c++
 class Solution {
@@ -39,11 +35,9 @@ public:
 };
 ```
 
-
-
 ### Solution Two
 
-同样使用Wikipedia中给的公式
+同样使用 Wikipedia 中给的公式
 
 ```c++
 class Solution {
@@ -53,5 +47,3 @@ public:
     }
 };
 ```
-
-

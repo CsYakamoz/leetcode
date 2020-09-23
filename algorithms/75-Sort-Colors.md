@@ -2,7 +2,7 @@
 
 ### Description
 
-Given an array with *n* objects colored red, white or blue, sort them so that objects of the same color are adjacent, with the colors in the order red, white and blue.
+Given an array with _n_ objects colored red, white or blue, sort them so that objects of the same color are adjacent, with the colors in the order red, white and blue.
 
 Here, we will use the integers 0, 1, and 2 to represent the color red, white, and blue respectively.
 
@@ -15,13 +15,9 @@ First, iterate the array counting number of 0's, 1's, and 2's, then overwrite ar
 
 Could you come up with an one-pass algorithm using only constant space?
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Array` `Two Pointers` `Sort`
-
-
 
 ### Solution One
 
@@ -53,6 +49,3 @@ public:
     }
 };
 ```
-
-
-

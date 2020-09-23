@@ -20,13 +20,9 @@ The root-to-leaf path `1->3` represents the number `13`.
 
 Return the sum = 12 + 13 = `25`.
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Tree` `Depth-first Search`
-
-
 
 ### Solution One
 
@@ -57,14 +53,12 @@ private:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 ```c++
 class Solution {
     int sum = 0;
-    
+
     void dfs(int val, TreeNode* p) {
         val = val * 10 + p -> val;
         if (!p -> left && !p -> right) {
@@ -74,7 +68,7 @@ class Solution {
         if (p -> left) dfs(val, p -> left);
         if (p -> right) dfs(val, p -> right);
     }
-    
+
 public:
     int sumNumbers(TreeNode* root) {
         if (!root) return 0;
@@ -83,6 +77,3 @@ public:
     }
 };
 ```
-
-
-

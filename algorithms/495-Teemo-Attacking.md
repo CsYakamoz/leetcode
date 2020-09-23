@@ -11,9 +11,9 @@ You may assume that Teemo attacks at the very beginning of a specific time point
 ```
 Input: [1,4], 2
 Output: 4
-Explanation: At time point 1, Teemo starts attacking Ashe and makes Ashe be poisoned immediately. 
-This poisoned status will last 2 seconds until the end of time point 2. 
-And at time point 4, Teemo attacks Ashe again, and causes Ashe to be in poisoned status for another 2 seconds. 
+Explanation: At time point 1, Teemo starts attacking Ashe and makes Ashe be poisoned immediately.
+This poisoned status will last 2 seconds until the end of time point 2.
+And at time point 4, Teemo attacks Ashe again, and causes Ashe to be in poisoned status for another 2 seconds.
 So you finally need to output 4.
 
 ```
@@ -23,10 +23,10 @@ So you finally need to output 4.
 ```
 Input: [1,2], 2
 Output: 3
-Explanation: At time point 1, Teemo starts attacking Ashe and makes Ashe be poisoned. 
-This poisoned status will last 2 seconds until the end of time point 2. 
-However, at the beginning of time point 2, Teemo attacks Ashe again who is already in poisoned status. 
-Since the poisoned status won't add up together, though the second poisoning attack will still work at time point 2, it will stop at the end of time point 3. 
+Explanation: At time point 1, Teemo starts attacking Ashe and makes Ashe be poisoned.
+This poisoned status will last 2 seconds until the end of time point 2.
+However, at the beginning of time point 2, Teemo attacks Ashe again who is already in poisoned status.
+Since the poisoned status won't add up together, though the second poisoning attack will still work at time point 2, it will stop at the end of time point 3.
 So you finally need to output 3.
 
 ```
@@ -36,13 +36,9 @@ So you finally need to output 3.
 1. You may assume the length of given time series array won't exceed 10000.
 2. You may assume the numbers in the Teemo's attacking time series and his poisoning time duration per attacking are non-negative integers, which won't exceed 10,000,000.
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Array`
-
-
 
 ### Solution One
 
@@ -82,8 +78,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 [Python Solution for Teemo](https://discuss.leetcode.com/topic/77360/python-solution-for-teemo)
@@ -102,6 +96,3 @@ class Solution(object):
             ans -= max(0, duration - (timeSeries[i] - timeSeries[i-1]))
         return ans
 ```
-
-
-

@@ -44,13 +44,9 @@ After calling your function, the tree should look like:
     4->5->6->7 -> NULL
 ```
 
-
-
 **Difficult:** `Medium`
 
-**Tags:** `Tree` `Depth-first  Search`
-
-
+**Tags:** `Tree` `Depth-first Search`
 
 ### Solution One - In Top Solutions
 
@@ -78,8 +74,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 [My recursive solution(Java)](https://discuss.leetcode.com/topic/12241/my-recursive-solution-java)
@@ -100,8 +94,6 @@ public:
     }
 };
 ```
-
-
 
 ### Solution Three
 
@@ -141,6 +133,3 @@ private:
     }
 };
 ```
-
-
-

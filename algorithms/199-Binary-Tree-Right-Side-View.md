@@ -2,7 +2,7 @@
 
 ### Description
 
-Given a binary tree, imagine yourself standing on the *right* side of it, return the values of the nodes you can see ordered from top to bottom.
+Given a binary tree, imagine yourself standing on the _right_ side of it, return the values of the nodes you can see ordered from top to bottom.
 
 For example:
 Given the following binary tree,
@@ -17,13 +17,9 @@ Given the following binary tree,
 
 You should return `[1, 3, 4]`.
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Tree` `Depth-first Search` `Breadth-first Search`
-
-
 
 ### Solution One
 
@@ -62,8 +58,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two
 
 ```c++
@@ -89,6 +83,3 @@ public:
     }
 };
 ```
-
-
-

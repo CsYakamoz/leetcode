@@ -21,13 +21,9 @@ Input: "LL"
 Output: false
 ```
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `String`
-
-
 
 ### Solution One
 
@@ -55,6 +51,3 @@ public:
     }
 };
 ```
-
-
-

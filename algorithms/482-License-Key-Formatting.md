@@ -36,13 +36,9 @@ Explanation: The string S has been split into three parts, each part has 3 chara
 2. String S consists only of alphanumerical characters (a-z and/or A-Z and/or 0-9) and dashes(-).
 3. String S is non-empty.
 
-
-
 **Difficult:** `Medium`
 
-**Tags:** 
-
-
+**Tags:**
 
 ### Solution One
 
@@ -73,7 +69,7 @@ public:
             if (counter != K)
                 res.push_back('-');
         }
-        
+
         if (!res.empty())
             res.pop_back();
         reverse(res.begin(), res.end());
@@ -82,9 +78,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 [4-line C++ concise solution to scan string backward](https://discuss.leetcode.com/topic/74993/4-line-c-concise-solution-to-scan-string-backward)
-

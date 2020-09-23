@@ -11,13 +11,9 @@ For example, given `nums = [0, 1, 0, 3, 12]`, after calling your function, `nums
 1. You must do this **in-place** without making a copy of the array.
 2. Minimize the total number of operations.
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Array` `Two Pointers`
-
-
 
 ### Solution One
 
@@ -58,8 +54,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 总体思路与**One**相似，但这里使用`swap`函数来交换值，少了**One**中“将数组后面的位置赋值为`0`”
@@ -75,6 +69,3 @@ public:
     }
 };
 ```
-
-
-

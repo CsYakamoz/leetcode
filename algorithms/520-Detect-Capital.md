@@ -28,13 +28,9 @@ Output: False
 
 **Note:** The input will be a non-empty word consisting of uppercase and lowercase latin letters.
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `String`
-
-
 
 ### Solution One
 
@@ -67,4 +63,3 @@ public:
     }
 };
 ```
-

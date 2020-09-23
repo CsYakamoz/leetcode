@@ -16,13 +16,9 @@ Input: (7 -> 2 -> 4 -> 3) + (5 -> 6 -> 4)
 Output: 7 -> 8 -> 0 -> 7
 ```
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Linked List`
-
-
 
 ### Solution One
 
@@ -89,8 +85,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 [9-liner C++ O(N1+N2) solution with stacks to store digits, no list modification](https://discuss.leetcode.com/topic/76885/9-liner-c-o-n1-n2-solution-with-stacks-to-store-digits-no-list-modification)
@@ -137,5 +131,3 @@ public:
     }
 };
 ```
-
-

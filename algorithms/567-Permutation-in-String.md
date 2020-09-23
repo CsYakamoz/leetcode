@@ -26,13 +26,9 @@ Output: False
 1. The input strings only contain lower case letters.
 2. The length of both given strings is in range [1, 10,000].
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Two Pointers`
-
-
 
 ### Solution One
 
@@ -67,8 +63,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two
 
 [Here is a 10-line template that can solve most 'substring' problems](https://discuss.leetcode.com/topic/30941/here-is-a-10-line-template-that-can-solve-most-substring-problems/2)
@@ -78,35 +72,32 @@ class Solution {
 public:
     bool checkInclusion(string s1, string s2) {
         vector<int> hash(128, 0);
-        
+
         for (auto c : s1) {
             hash[c]++;
         }
-        
+
         int left = 0;
         int right = 0;
         int counter = s1.size();
-        
+
         while (right < s2.size()) {
             if (hash[s2[right++]]-- > 0) {
                 --counter;
             }
-            
+
             while(counter == 0) {
                 if (right - left == s1.size()) {
                     return true;
                 }
-                
+
                 if (hash[s2[left++]]++ == 0) {
                     counter++;
                 }
             }
         }
-        
+
         return false;
     }
 };
 ```
-
-
-

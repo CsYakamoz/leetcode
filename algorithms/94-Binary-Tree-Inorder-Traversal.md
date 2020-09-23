@@ -2,7 +2,7 @@
 
 ### Description
 
-Given a binary tree, return the *inorder* traversal of its nodes' values.
+Given a binary tree, return the _inorder_ traversal of its nodes' values.
 
 For example:
 Given binary tree `[1,null,2,3]`,
@@ -19,13 +19,9 @@ return `[1,3,2]`.
 
 **Note:** Recursive solution is trivial, could you do it iteratively?
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Tree` `Hash Table` `Stack`
-
-
 
 ### Solution One
 
@@ -50,8 +46,6 @@ private:
     }
 };
 ```
-
-
 
 ### Solution Two
 
@@ -80,5 +74,3 @@ public:
     }
 };
 ```
-
-

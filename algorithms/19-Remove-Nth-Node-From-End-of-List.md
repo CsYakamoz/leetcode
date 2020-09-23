@@ -16,19 +16,15 @@ After removing the second node from the end, the linked list becomes 1->2->3->5.
 Given *n* will always be valid.
 Try to do this in one pass.
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Linked List` `Two Pointers`
 
-
-
 ### Solution One
 
-首先遍历一遍List，得到List的长度length
+首先遍历一遍 List，得到 List 的长度 length
 
-接着再次遍历List，length递减到等于n时，此时current指向要被删除的结点，frontNode指向current的前一个结点
+接着再次遍历 List，length 递减到等于 n 时，此时 current 指向要被删除的结点，frontNode 指向 current 的前一个结点
 
 ```c++
 struct ListNode {
@@ -70,13 +66,13 @@ public:
 
 创建两个指针：fast、slow
 
-fast先移动，移动到与slow的距离为n（ n 为有效值）
+fast 先移动，移动到与 slow 的距离为 n（ n 为有效值）
 
-接着同时移动fast、slow，当fast指向链尾时，slow指向要被删除结点的前一结点
+接着同时移动 fast、slow，当 fast 指向链尾时，slow 指向要被删除结点的前一结点
 
-此时删除要被删除的结点，并返回head即可
+此时删除要被删除的结点，并返回 head 即可
 
-for循环 + while循环总共遍历了List一次
+for 循环 + while 循环总共遍历了 List 一次
 
 ```c++
 struct ListNode {
@@ -107,5 +103,3 @@ public:
     }
 };
 ```
-
-

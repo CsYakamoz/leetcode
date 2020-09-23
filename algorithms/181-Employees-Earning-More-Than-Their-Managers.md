@@ -26,13 +26,9 @@ Given the `Employee` table, write a SQL query that finds out employees who earn 
 +----------+
 ```
 
-
-
 **Difficult:** `Easy`
 
-**Tags:** 
-
-
+**Tags:**
 
 ### Solution One - In Top Solutions
 
@@ -41,13 +37,10 @@ Given the `Employee` table, write a SQL query that finds out employees who earn 
 ```mysql
 # Write your MySQL query statement below
 select E1.Name AS Employee
-from Employee as E1, Employee as E2 
+from Employee as E1, Employee as E2
 where E1.ManagerId = E2.Id and E1.Salary > E2.Salary
 ```
-
-
 
 ### Solution Two - In Top Solutions
 
 [Two Straightforward way, using 'where' and 'join'](https://discuss.leetcode.com/topic/38081/two-straightforward-way-using-where-and-join)
-

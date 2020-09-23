@@ -9,24 +9,24 @@ Given a **N\*N** matrix **M** representing the friend relationship between stude
 **Example 1:**
 
 ```
-Input: 
+Input:
 [[1,1,0],
  [1,1,0],
  [0,0,1]]
 Output: 2
-Explanation:The 0th and 1st students are direct friends, so they are in a friend circle. 
+Explanation:The 0th and 1st students are direct friends, so they are in a friend circle.
 The 2nd student himself is in a friend circle. So return 2.
 ```
 
 **Example 2:**
 
 ```
-Input: 
+Input:
 [[1,1,0],
  [1,1,1],
  [0,1,1]]
 Output: 1
-Explanation:The 0th and 1st students are direct friends, the 1st and 2nd students are direct friends, 
+Explanation:The 0th and 1st students are direct friends, the 1st and 2nd students are direct friends,
 so the 0th and 2nd students are indirect friends. All of them are in the same friend circle, so return 1.
 ```
 
@@ -36,13 +36,9 @@ so the 0th and 2nd students are indirect friends. All of them are in the same fr
 2. M\[i][i] = 1 for all students.
 3. If M\[i][j] = 1, then M\[j][i] = 1.
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Depth-First Search` `Union-Find`
-
-
 
 ### Solution One
 
@@ -78,6 +74,3 @@ class Solution
     }
 };
 ```
-
-
-

@@ -2,21 +2,17 @@
 
 ### Description
 
-Given an array containing *n* distinct numbers taken from `0, 1, 2, ..., n`, find the one that is missing from the array.
+Given an array containing _n_ distinct numbers taken from `0, 1, 2, ..., n`, find the one that is missing from the array.
 
 For example,
-Given *nums* = `[0, 1, 3]` return `2`.
+Given _nums_ = `[0, 1, 3]` return `2`.
 
 **Note**:
 Your algorithm should run in linear runtime complexity. Could you implement it using only constant extra space complexity?
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Array` `Math` `Bit Manipulation`
-
-
 
 ### Solution One
 
@@ -41,29 +37,27 @@ public:
 };
 ```
 
-
-
 ### Solution Two
 
-|  n   | 0 ^ ,,,,,, ^ n  | result |
-| :--: | :-------------: | :----: |
-|  0   | 0 ^ ....... ^ 0 |   0    |
-|  1   | 0 ^ ...... ^ 1  |   1    |
-|  2   | 0 ^ ...... ^ 2  |   3    |
-|  3   | 0 ^ ...... ^ 3  |   0    |
-|  4   | 0 ^ ...... ^ 4  |   4    |
-|  5   | 0 ^ ...... ^ 5  |   1    |
-|  6   | 0 ^ ...... ^ 6  |   7    |
-|  7   | 0 ^ ...... ^ 7  |   0    |
+|  n  | 0 ^ ,,,,,, ^ n  | result |
+| :-: | :-------------: | :----: |
+|  0  | 0 ^ ....... ^ 0 |   0    |
+|  1  | 0 ^ ...... ^ 1  |   1    |
+|  2  | 0 ^ ...... ^ 2  |   3    |
+|  3  | 0 ^ ...... ^ 3  |   0    |
+|  4  | 0 ^ ...... ^ 4  |   4    |
+|  5  | 0 ^ ...... ^ 5  |   1    |
+|  6  | 0 ^ ...... ^ 6  |   7    |
+|  7  | 0 ^ ...... ^ 7  |   0    |
 
 这里只列出 0 ~ 7 ，若想看得更多，可以写个循环看
 
 通过上面可以发现规律，四个四个为一组，`4k + j( 0 <= j <= 3)`
 
-* j = 0，则 result = n
-* j = 1，则 result = 1
-* j = 2，则 result = n + 1
-* j = 3，则 result = 0
+- j = 0，则 result = n
+- j = 1，则 result = 1
+- j = 2，则 result = n + 1
+- j = 3，则 result = 0
 
 ```c++
 class Solution {
@@ -92,8 +86,6 @@ public:
 };
 ```
 
-
-
 ### Solution Three - In Top Solutions
 
 ```c++
@@ -103,12 +95,9 @@ public:
       int result = nums.size();
       for (int i=0;i<nums.size();i++){
           result ^= i;
-          result ^= nums[i];    
+          result ^= nums[i];
       }
         return result;
     }
 };
 ```
-
-
-

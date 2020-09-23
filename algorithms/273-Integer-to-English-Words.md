@@ -12,13 +12,9 @@ For example,
 1234567 -> "One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven"
 ```
 
+**Difficult:** `Hard`
 
-
-**Difficult:**  `Hard`
-
-**Tags:**  `Math`  `String`
-
-
+**Tags:** `Math` `String`
 
 ### Solution One
 
@@ -74,7 +70,7 @@ private:
             str.push_back(num % 10 + '0');
             num /= 10;
         }
-        reverse(str.begin(), str.end()); 
+        reverse(str.begin(), str.end());
         return stoi(str);
     }
 
@@ -85,8 +81,6 @@ private:
     vector<string> d{ "", "", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety" };
 };
 ```
-
-
 
 ### Solution Two - In Top Solutions
 
@@ -128,6 +122,3 @@ class Solution(object):
         else:
             return Solution.less_than_20[num // 100] + " Hundred " + self.helper(num % 100)
 ```
-
-
-

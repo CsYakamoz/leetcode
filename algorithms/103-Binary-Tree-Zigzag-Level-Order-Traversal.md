@@ -2,7 +2,7 @@
 
 ### Description
 
-Given a binary tree, return the *zigzag level order* traversal of its nodes' values. (ie, from left to right, then right to left for the next level and alternate between).
+Given a binary tree, return the _zigzag level order_ traversal of its nodes' values. (ie, from left to right, then right to left for the next level and alternate between).
 
 For example:
 Given binary tree `[3,9,20,null,null,15,7]`,
@@ -26,13 +26,9 @@ return its zigzag level order traversal as:
 ]
 ```
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Tree` `Breadth-first Search` `Stack`
-
-
 
 ### Solution One
 
@@ -92,8 +88,6 @@ public:
 };
 ```
 
-
-
 ### Solution Tow - In Top Solutions
 
 `BFS` `queue`
@@ -104,11 +98,11 @@ public:
     vector<vector<int>> zigzagLevelOrder(TreeNode* root) {
         vector<vector<int>> ans;
         if (root == NULL) return ans;
-        
+
         queue<TreeNode*> que;
         que.push(root);
         bool revert = false;
-        
+
         while (que.size()) {
             int size = que.size();
             vector<int> row;
@@ -127,6 +121,3 @@ public:
     }
 };
 ```
-
-
-

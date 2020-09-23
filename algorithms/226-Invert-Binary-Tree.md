@@ -22,13 +22,9 @@ to
 9   6 3   1
 ```
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Tree`
-
-
 
 ### Solution One
 
@@ -58,8 +54,6 @@ private:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 从树的最低层开始交换左右结点
@@ -75,10 +69,7 @@ public:
         invertTreeHelper(node->left);
         invertTreeHelper(node->right);
         swap(node->left, node->right);
-        return node;        
+        return node;
     }
 };
 ```
-
-
-

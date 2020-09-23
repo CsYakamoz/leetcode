@@ -4,13 +4,9 @@
 
 Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Linked List`
-
-
 
 ### Solution One
 
@@ -69,8 +65,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 与**Solution One**类似，但这里通过判断是否同时为非空来判断是否结束循环
@@ -81,7 +75,7 @@ public:
     ListNode *mergeTwoLists(ListNode *l1, ListNode *l2) {
         ListNode dummy(INT_MIN);
         ListNode *tail = &dummy;
-        
+
         while (l1 && l2) {
             if (l1->val < l2->val) {
                 tail->next = l1;
@@ -98,6 +92,3 @@ public:
     }
 };
 ```
-
-
-

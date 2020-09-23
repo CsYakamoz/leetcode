@@ -38,13 +38,9 @@ Output:
 
 **Note:** You may assume the tree (i.e., the given root node) is not **NULL**.
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Tree` `Breadth-first Search` `Depth-first Search`
-
-
 
 ### Solution One
 
@@ -79,8 +75,6 @@ private:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 `BFS` `Queue`
@@ -89,7 +83,7 @@ private:
 
 从右向左进行 BFS，
 
-当进行到最后一步时，root指向最底层，最左边的结点，故此时直接返回`root.val`
+当进行到最后一步时，root 指向最底层，最左边的结点，故此时直接返回`root.val`
 
 ```java
 public int findLeftMostNode(TreeNode root) {

@@ -4,7 +4,7 @@
 
 Given a (singly) linked list with head node `root`, write a function to split the linked list into `k` consecutive linked list "parts".
 
-The length of each part should be as equal as possible: no two parts should have a size differing by more than 1.  This may lead to some parts being null.
+The length of each part should be as equal as possible: no two parts should have a size differing by more than 1. This may lead to some parts being null.
 
 The parts should be in order of occurrence in the input list, and parts occurring earlier should always have a size greater than or equal parts occurring later.
 
@@ -13,7 +13,7 @@ Return a List of ListNode's representing the linked list parts that are formed.
 **Example 1:**
 
 ```
-Input: 
+Input:
 root = [1, 2, 3], k = 5
 Output: [[1],[2],[3],[],[]]
 Explanation:
@@ -26,7 +26,7 @@ The last element output[4] is null, but it's string representation as a ListNode
 **Example 2:**
 
 ```
-Input: 
+Input:
 root = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], k = 3
 Output: [[1, 2, 3, 4], [5, 6, 7], [8, 9, 10]]
 Explanation:
@@ -35,17 +35,13 @@ The input has been split into consecutive parts with size difference at most 1, 
 
 **Note:**
 
-* The length of `root` will be in the range `[0, 1000]`.
-* Each value of a node in the input will be an integer in the range `[0, 999]`.
-* `k` will be an integer in the range `[1, 50]`.
-
-
+- The length of `root` will be in the range `[0, 1000]`.
+- Each value of a node in the input will be an integer in the range `[0, 999]`.
+- `k` will be an integer in the range `[1, 50]`.
 
 **Difficult:** `Medium`
 
 **Tags:** `Linked List`
-
-
 
 ### Solution One
 
@@ -96,6 +92,3 @@ class Solution
     }
 };
 ```
-
-
-

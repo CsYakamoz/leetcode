@@ -13,13 +13,9 @@ Given `nums = [1, 2, 1, 3, 2, 5]`, return `[3, 5]`.
 1. The order of the result is not important. So in the above example, `[5, 3]` is also correct.
 2. Your algorithm should run in linear runtime complexity. Could you implement it using only constant space complexity?
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Bit Manipulation`
-
-
 
 ### Solution One
 
@@ -43,6 +39,3 @@ public:
     }
 };
 ```
-
-
-

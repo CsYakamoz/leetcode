@@ -9,9 +9,9 @@ Find out how many ways to assign symbols to make sum of integers equal to target
 **Example 1:**
 
 ```
-Input: nums is [1, 1, 1, 1, 1], S is 3. 
+Input: nums is [1, 1, 1, 1, 1], S is 3.
 Output: 5
-Explanation: 
+Explanation:
 
 -1+1+1+1+1 = 3
 +1-1+1+1+1 = 3
@@ -28,13 +28,9 @@ There are 5 ways to assign symbols to make the sum of nums be target 3.
 2. The sum of elements in the given array will not exceed 1000.
 3. Your output answer is guaranteed to be fitted in a 32-bit integer.
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Depth-first Search` `Dynamic Programming`
-
-
 
 ### Solution One
 
@@ -79,8 +75,6 @@ private:
 };
 ```
 
-
-
 ### Solution Two
 
 `DFS with Memorization`
@@ -95,7 +89,7 @@ public:
         }
         target = S;
         return dfs_with_memorization(0, 0, nums);
-        
+
     }
 private:
     int target;
@@ -127,9 +121,6 @@ private:
 };
 ```
 
-
-
 ### Other Solution - In Top Solutions
 
 [494. Target Sum - Solution](https://leetcode.com/problems/target-sum/#/solution)
-

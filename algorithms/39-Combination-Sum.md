@@ -11,8 +11,8 @@ The **same** repeated number may be chosen from **C** unlimited number of times.
 - All numbers (including target) will be positive integers.
 - The solution set must not contain duplicate combinations.
 
-For example, given candidate set `[2, 3, 6, 7]` and target `7`, 
-A solution set is: 
+For example, given candidate set `[2, 3, 6, 7]` and target `7`,
+A solution set is:
 
 ```
 [
@@ -21,13 +21,9 @@ A solution set is:
 ]
 ```
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Array` `Backtracking`
-
-
 
 ### Solution One
 
@@ -43,7 +39,7 @@ public:
         helper(0, 0, target, vec, candidates);
         return res;
     }
-    
+
 private:
     vector<vector<int>> res;
 
@@ -65,6 +61,3 @@ private:
     }
 };
 ```
-
-
-

@@ -2,7 +2,7 @@
 
 ### Description
 
-Given a matrix of *m* x *n* elements (*m* rows, *n* columns), return all elements of the matrix in spiral order.
+Given a matrix of _m_ x _n_ elements (_m_ rows, _n_ columns), return all elements of the matrix in spiral order.
 
 For example,
 Given the following matrix:
@@ -18,13 +18,9 @@ Given the following matrix:
 
 You should return `[1,2,3,6,9,8,7,4,5]`.
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Array`
-
-
 
 ### Solution One
 
@@ -100,8 +96,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 [Super Simple and Easy to Understand Solution](https://discuss.leetcode.com/topic/3713/super-simple-and-easy-to-understand-solution)
@@ -115,31 +109,31 @@ public:
 ```java
 public class Solution {
     public List<Integer> spiralOrder(int[][] matrix) {
-        
+
         List<Integer> res = new ArrayList<Integer>();
-        
+
         if (matrix.length == 0) {
             return res;
         }
-        
+
         int rowBegin = 0;
         int rowEnd = matrix.length-1;
         int colBegin = 0;
         int colEnd = matrix[0].length - 1;
-        
+
         while (rowBegin <= rowEnd && colBegin <= colEnd) {
             // Traverse Right
             for (int j = colBegin; j <= colEnd; j ++) {
                 res.add(matrix[rowBegin][j]);
             }
             rowBegin++;
-            
+
             // Traverse Down
             for (int j = rowBegin; j <= rowEnd; j ++) {
                 res.add(matrix[j][colEnd]);
             }
             colEnd--;
-            
+
             if (rowBegin <= rowEnd) {
                 // Traverse Left
                 for (int j = colEnd; j >= colBegin; j --) {
@@ -147,7 +141,7 @@ public class Solution {
                 }
             }
             rowEnd--;
-            
+
             if (colBegin <= colEnd) {
                 // Traver Up
                 for (int j = rowEnd; j >= rowBegin; j --) {
@@ -156,13 +150,11 @@ public class Solution {
             }
             colBegin ++;
         }
-        
+
         return res;
     }
 }
 ```
-
-
 
 ### Solution Three - In Top Solutions
 
@@ -195,9 +187,9 @@ vector<int> spiralOrder(vector<vector<int>>& matrix) {
     vector<int> res;
     int nr = matrix.size();     if (nr == 0) return res;
     int nc = matrix[0].size();  if (nc == 0) return res;
-    
+
     vector<int> nSteps{nc, nr-1};
-    
+
     int iDir = 0;   // index of direction.
     int ir = 0, ic = -1;    // initial position
     while (nSteps[iDir%2]) {
@@ -211,6 +203,3 @@ vector<int> spiralOrder(vector<vector<int>>& matrix) {
     return res;
 }
 ```
-
-
-

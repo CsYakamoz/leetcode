@@ -20,13 +20,9 @@ Note:
 2. A valid square has four equal sides with positive length and four equal angles (90-degree angles).
 3. Input points have no order.
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Math`
-
-
 
 ### Solution One
 
@@ -89,8 +85,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 [C++ 3 lines (unordered_set)](https://discuss.leetcode.com/topic/89985/c-3-lines-unordered_set)
@@ -108,8 +102,6 @@ bool validSquare(vector<int>& p1, vector<int>& p2, vector<int>& p3, vector<int>&
     return !s.count(0) && s.size() == 2;
 }
 ```
-
-
 
 ### Solution Three - In Top Solutions
 
@@ -136,4 +128,3 @@ public:
     }
 };
 ```
-

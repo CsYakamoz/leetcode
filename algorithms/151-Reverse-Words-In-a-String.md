@@ -11,7 +11,7 @@ Given s = "`the sky is blue`",
 return "`blue is sky the`".
 
 **Update (2015-02-12):**
-For C programmers: Try to solve it *in-place* in *O*(1) space.
+For C programmers: Try to solve it _in-place_ in _O_(1) space.
 
 Clarification:
 
@@ -22,13 +22,9 @@ Clarification:
 - How about multiple spaces between two words?
   Reduce them to a single space in the reversed string.
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `String`
-
-
 
 ### Solution One
 
@@ -53,8 +49,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 ```c++
@@ -77,7 +71,7 @@ public:
         {
             // skips spaces in front of the word
             while (i < s.size() && s[i] == ' ')
-            {	
+            {
                 i++;
             }
             if (i == s.size())
@@ -93,12 +87,9 @@ public:
                 s[storeIndex++] = s[i++];
             }
             reverse(&s[wordStart], &s[wordStart + wordLength]);	// reverse word
-            s[storeIndex++] = ' ';	// single space between two words 
+            s[storeIndex++] = ' ';	// single space between two words
         }
         s = s.substr(0, storeIndex - 1);	// delete the trailing space
     }
 };
 ```
-
-
-

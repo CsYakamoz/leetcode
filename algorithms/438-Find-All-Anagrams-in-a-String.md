@@ -38,13 +38,9 @@ The substring with start index = 1 is "ba", which is an anagram of "ab".
 The substring with start index = 2 is "ab", which is an anagram of "ab".
 ```
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Hash Table`
-
-
 
 ### Solution One
 
@@ -80,8 +76,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 [Shortest/Concise JAVA O(n) Sliding Window Solution](https://discuss.leetcode.com/topic/64434/shortest-concise-java-o-n-sliding-window-solution)
@@ -105,12 +99,12 @@ public List<Integer> findAnagrams(String s, String p) {
     while (right < s.length()) {
         //move right everytime, if the character exists in p's hash, decrease the count
         //current hash value >= 1 means the character is existing in p
-        if (hash[s.charAt(right++)]-- >= 1) count--; 
-        
+        if (hash[s.charAt(right++)]-- >= 1) count--;
+
         //when the count is down to 0, means we found the right anagram
         //then add window's left to result list
         if (count == 0) list.add(left);
-    
+
         //if we find the window's size equals to p, then we have to move left (narrow the window) to find the new match window
         //++ to reset the hash because we kicked out the left
         //only increase the count if the character is in p
@@ -120,4 +114,3 @@ public List<Integer> findAnagrams(String s, String p) {
     return list;
 }
 ```
-

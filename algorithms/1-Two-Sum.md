@@ -14,17 +14,13 @@ Because nums[0] + nums[1] = 2 + 7 = 9,
 
 return [0, 1].
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Array` `Hash Table`
 
-
-
 ### Solution One
 
-最原始的办法，两层循环遍历数组，当找到nums[i] + nums[j] == target时，将i，j添加到要返回的vector容器，然后返回vector容器。
+最原始的办法，两层循环遍历数组，当找到 nums[i] + nums[j] == target 时，将 i，j 添加到要返回的 vector 容器，然后返回 vector 容器。
 
 ```c++
 class Solution
@@ -48,19 +44,17 @@ public:
 };
 ```
 
-
-
 ### Solution Two
 
 `Hash Table`
 
 使用 Map，以值为 key，下标为 value
 
-对于 nums[i]，我们在 Map 中查找 target - nums[i] 的值，如果找到，则相应的下标添加到vector容器并返回该容器
+对于 nums[i]，我们在 Map 中查找 target - nums[i] 的值，如果找到，则相应的下标添加到 vector 容器并返回该容器
 
-否则将值nums[i]，i分别当作key，value添加到Map中
+否则将值 nums[i]，i 分别当作 key，value 添加到 Map 中
 
-**注意**：在第一次循环时（即i = 0），Map中没有数据，故肯定找不到，即一定会添加到Map中
+**注意**：在第一次循环时（即 i = 0），Map 中没有数据，故肯定找不到，即一定会添加到 Map 中
 
 ```c++
 class Solution {
@@ -82,13 +76,11 @@ public:
 };
 ```
 
-
-
 ### Solution Three - In Top Solutions
 
 `Sort` `Two Pointers`
 
-将 值-索引 组成 pair 添加到 vector，对该 vector 进行排序（关键字为：值）
+将 值 - 索引 组成 pair 添加到 vector，对该 vector 进行排序（关键字为：值）
 
 使用前后指针（i，j）分别指向 vector 的第一个和最后一个
 
@@ -112,7 +104,7 @@ class Solution {
             }
 
             sort(num_idx.begin(), num_idx.end());
-        
+
             size_t i = 0, j = len - 1;
             while (i < j) {
                 int s = num_idx[i].first + num_idx[j].first;
@@ -131,6 +123,3 @@ class Solution {
         }
 };
 ```
-
-
-

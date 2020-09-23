@@ -7,13 +7,9 @@ Reverse digits of an integer.
 **Example1:** x = 123, return 321
 **Example2:** x = -123, return -321
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Math`
-
-
 
 ### Solution One
 
@@ -45,11 +41,9 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
-在自己的思路中，不知道负数除以10后所得余数也为负数，所以会考虑符号问题
+在自己的思路中，不知道负数除以 10 后所得余数也为负数，所以会考虑符号问题
 
 这里则忽略了符号和在循环过程中是否溢出，只在返回时判断是否是否溢出
 
@@ -67,11 +61,9 @@ public:
 };
 ```
 
-
-
 ### Solution Three - In Top Solutions
 
-temp溢出后，再除以10 不可能会和之前未溢出一样，故这里可以用来是否相等来判断是否溢出
+temp 溢出后，再除以 10 不可能会和之前未溢出一样，故这里可以用来是否相等来判断是否溢出
 
 ```c++
 class Solution {
@@ -89,5 +81,3 @@ public:
     }
 };
 ```
-
-

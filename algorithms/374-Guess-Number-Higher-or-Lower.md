@@ -25,13 +25,9 @@ n = 10, I pick 6.
 Return 6.
 ```
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Binary Search`
-
-
 
 ### Solution One
 
@@ -69,8 +65,6 @@ public:
     }
 };
 ```
-
-
 
 ### Other Solutions
 

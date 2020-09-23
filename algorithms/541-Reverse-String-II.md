@@ -17,14 +17,9 @@ Restrictions:
 1. The string consists of lower English letters only.
 2. Length of the given string and k will in the range [1, 10000]
 
-
-
-
 **Difficult:** `Easy`
 
 **Tags:** `String`
-
-
 
 ### Solution One
 
@@ -41,7 +36,7 @@ public:
         {
             reverse(&s[first], &s[last]);
             first = last + k;
-            last += 2 * k;	
+            last += 2 * k;
         }
         if (first < s.size())
         {
@@ -52,9 +47,7 @@ public:
 };
 ```
 
-
-
-###  Solution Two - In Top Solutions
+### Solution Two - In Top Solutions
 
 ```c++
 class Solution {
@@ -68,6 +61,3 @@ public:
     }
 };
 ```
-
-
-

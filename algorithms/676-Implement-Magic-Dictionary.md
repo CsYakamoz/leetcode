@@ -24,13 +24,9 @@ Input: search("leetcoded"), Output: False
 2. For contest purpose, the test data is rather small by now. You could think about highly efficient algorithm after the contest.
 3. Please remember to **RESET** your class variables declared in class MagicDictionary, as static/class variables are **persisted across multiple test cases**. Please see [here](https://leetcode.com/faq/#different-output) for more details.
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Hash Table` `Trie`
-
-
 
 ### Solution One
 
@@ -82,8 +78,6 @@ class MagicDictionary
  */
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 ```c++
@@ -94,18 +88,18 @@ public:
     /** Initialize your data structure here. */
     vector<string> vect;
     MagicDictionary() {
-        
+
     }
-    
+
     ~MagicDictionary() {
         vector<string>().swap(vect);
     }
-    
+
     /** Build a dictionary through a list of words */
     void buildDict(vector<string> dict) {
         vect = dict;
     }
-    
+
     /** Returns if there is any word in the trie that equals to the given word after modifying exactly one character */
     bool search(string word) {
         int len = word.size();
@@ -114,7 +108,7 @@ public:
                 for(int i=0; i<len; i++){
                     if(e[i] != word[i]){
                         if(e.substr(i+1) == word.substr(i+1)){
-                            
+
                             return true;
                         }
                         break;
@@ -133,6 +127,3 @@ public:
  * bool param_2 = obj.search(word);
  */
 ```
-
-
-

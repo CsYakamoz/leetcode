@@ -2,7 +2,7 @@
 
 ### Description
 
-Given a non-empty list of words, return the *k* most frequent elements.
+Given a non-empty list of words, return the _k_ most frequent elements.
 
 Your answer should be sorted by frequency from highest to lowest. If two words have the same frequency, then the word with the lower alphabetical order comes first.
 
@@ -28,23 +28,17 @@ Explanation: "the", "is", "sunny" and "day" are the four most frequent words,
 
 **Note:**
 
-1. You may assume *k* is always valid, 1 ≤ *k* ≤ number of unique elements.
+1. You may assume _k_ is always valid, 1 ≤ _k_ ≤ number of unique elements.
 2. Input words contain only lowercase letters.
 
 **Follow up:**
 
-1. Try to solve it in *O*(*n* log *k*) time and *O*(*n*) extra space.
-2. Can you solve it in *O*(*n*) time with only *O*(*k*) extra space?
-
-
-
-
+1. Try to solve it in _O_(_n_ log _k_) time and _O_(_n_) extra space.
+2. Can you solve it in _O_(_n_) time with only _O_(_k_) extra space?
 
 **Difficult:** `Medium`
 
 **Tags:** `Hash Table` `Heap` `Trie`
-
-
 
 ### Solution One
 
@@ -79,13 +73,11 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 ```c++
 class Compare{
-public:    
+public:
     bool operator()(pair<int, string> a, pair<int, string> b){
         if(a.first==b.first)
             return a.second>b.second;
@@ -132,6 +124,3 @@ public:
     }
 };
 ```
-
-
-

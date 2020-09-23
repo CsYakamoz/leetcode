@@ -9,10 +9,10 @@ Now given a string represented by several bits. Return whether the last characte
 **Example 1:**
 
 ```
-Input: 
+Input:
 bits = [1, 0, 0]
 Output: True
-Explanation: 
+Explanation:
 The only way to decode it is two-bit character and one-bit character. So the last character is one-bit character.
 
 ```
@@ -20,26 +20,22 @@ The only way to decode it is two-bit character and one-bit character. So the las
 **Example 2:**
 
 ```
-Input: 
+Input:
 bits = [1, 1, 1, 0]
 Output: False
-Explanation: 
+Explanation:
 The only way to decode it is two-bit character and two-bit character. So the last character is NOT one-bit character.
 
 ```
 
 **Note:**
 
-* `1 <= len(bits) <= 1000`.
-* `bits[i]` is always `0` or `1`.
-
-
+- `1 <= len(bits) <= 1000`.
+- `bits[i]` is always `0` or `1`.
 
 **Difficult:** `Easy`
 
 **Tags:** `Array`
-
-
 
 ### Solution One
 
@@ -56,15 +52,12 @@ public:
                 i++;
             }
         }
-        
+
         return isOnebit;
     }
 };
 ```
 
-
-
 ### Solutions
 
 [717. 1-bit and 2-bit Characters - Solution](https://leetcode.com/problems/1-bit-and-2-bit-characters/solution/)
-

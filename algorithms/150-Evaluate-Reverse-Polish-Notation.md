@@ -13,13 +13,9 @@ Some examples:
   ["4", "13", "5", "/", "+"] -> (4 + (13 / 5)) -> 6
 ```
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Stack`
-
-
 
 ### Solution One
 
@@ -62,6 +58,3 @@ public:
     }
 };
 ```
-
-
-

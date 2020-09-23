@@ -24,13 +24,9 @@ Explanation:
 The above arrows point to positions where the corresponding bits are different.
 ```
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Bit Manipulation`
-
-
 
 ### Solution One - In Top Solutions
 
@@ -50,8 +46,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 ```c++
@@ -60,9 +54,9 @@ public:
     int hammingDistance(int x, int y) {
         int a1,a2,b1,b2;
         int c = 0;
-        
+
         if( x > y)
-        { 
+        {
             a1=x;
             b1=y;
         }
@@ -70,7 +64,7 @@ public:
         {
             a1=y;
             b1=x;
-        }   
+        }
         while(a1)
         {
             a2=a1%2;
@@ -80,18 +74,15 @@ public:
                 c++;
             }
             a1/=2;
-            b1/=2;            
+            b1/=2;
         }
         if(a1!=b1)
         {
             c++;
         }
-        
+
         return c;
-        
+
     }
 };
 ```
-
-
-

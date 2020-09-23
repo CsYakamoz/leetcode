@@ -9,13 +9,9 @@ Given `"25525511135"`,
 
 return `["255.255.11.135", "255.255.111.35"]`. (Order does not matter)
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `String` `Backtracking`
-
-
 
 ### Solution One
 
@@ -75,8 +71,6 @@ private:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 ```c++
@@ -84,7 +78,7 @@ class Solution {
 private:
     void restoreIPAdresses(string addr, int cnt, string remaining, vector<string> &res) {
         int len;
-        
+
         if (cnt == 3) {
             len = remaining.length();
             if (len > 0 && len <= 3 && remaining[0] != '0' && stoi(remaining) <= 255) {
@@ -95,31 +89,29 @@ private:
                 return;
             }
         }
-        
+
         len = remaining.length();
-        
+
         for (int i = 1; i <= min(3, len); i++) {
             string s = remaining.substr(0, i);
-            
+
             if (stoi(s) > 255) break;
-            
+
             restoreIPAdresses(addr == "" ? s : addr + "." + s, cnt + 1, remaining.substr(i), res);
-            
+
             if (i == 1 && s[0] == '0') break;
         }
     }
-    
+
 public:
     vector<string> restoreIpAddresses(string s) {
         vector<string> res;
         restoreIPAdresses("", 0, s, res);
-        
+
         return res;
     }
 };
 ```
-
-
 
 ### Solution Three - In Top Solutions
 
@@ -132,14 +124,14 @@ public:
         func(0, 4, "", res, s);
         return res;
     }
-    
+
     void func(int start, int part, string out, vector<string>& res, string s) {
         if (start == s.size() && part == 0) {
-            out.pop_back(); 
+            out.pop_back();
             res.push_back(out);
         }
         if (part <= 0) return;
-        
+
         for (int i = start, j = 1; i < s.size() && j <= 3; i++, j++) {
             //if (j > 3) return;
             string tmp = s.substr(start, j);
@@ -149,7 +141,7 @@ public:
             //if (isMore(tmp)) return;
         }
     }
-    
+
 /*    bool isMore(string str) {
         if (str.size() > 3) return true;
         else return false;
@@ -163,10 +155,7 @@ public:
             }
             return (res <= 255 && res >=0);
         }
-        
+
     }
 };
 ```
-
-
-

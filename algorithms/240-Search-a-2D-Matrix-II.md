@@ -2,7 +2,7 @@
 
 ### Description
 
-Write an efficient algorithm that searches for a value in an *m* x *n* matrix. This matrix has the following properties:
+Write an efficient algorithm that searches for a value in an _m_ x _n_ matrix. This matrix has the following properties:
 
 - Integers in each row are sorted in ascending from left to right.
 - Integers in each column are sorted in ascending from top to bottom.
@@ -26,13 +26,9 @@ Given **target** = `5`, return `true`.
 
 Given **target** = `20`, return `false`.
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Binary Search` `Divide and Conquer`
-
-
 
 ### Solution One - In Top Solutions
 
@@ -58,7 +54,7 @@ public:
             {
                 return true;
             }
-            else if (matrix[i][j] > target) 
+            else if (matrix[i][j] > target)
             {
                 j--;
             }
@@ -71,8 +67,6 @@ public:
     }
 };
 ```
-
-
 
 ### Solution Two - In Top Solutions
 
@@ -114,9 +108,6 @@ return false;
  }
 ```
 
-
-
 ### Solution Three - In Top Solutions
 
 [九章算法 | Google 面试题：Search a 2D Matrix II](https://zhuanlan.zhihu.com/p/29555088)
-

@@ -10,13 +10,9 @@ You may assume k is always valid, 1 ? k ? BST's total elements.
 **Follow up:**
 What if the BST is modified (insert/delete operations) often and you need to find the kth smallest frequently? How would you optimize the kth Smallest routine?
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Binary Search` `Tree`
-
-
 
 ### Solution One
 
@@ -54,9 +50,7 @@ public:
 };
 ```
 
-
-
-###  Solution Two
+### Solution Two
 
 思路同样是中序遍历，但按照个人所知，一般是循环比递归快，但是对于这道题而言，递归比循环快，不知道为什么。
 
@@ -87,4 +81,3 @@ private:
     }
 };
 ```
-

@@ -8,17 +8,13 @@ Reverse a singly linked list.
 
 A linked list can be reversed either iteratively or recursively. Could you implement both?
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Linked List`
 
-
-
 ### Solution One
 
-首先检查链表长度是否小于2，若是，则什么都不用做
+首先检查链表长度是否小于 2，若是，则什么都不用做
 
 否则，以下面例子说明思路
 
@@ -46,12 +42,12 @@ node1 -> node2
 node4 -> node3
 ```
 
-最后返回到结点 node1，执行操作`node2 -> next = node1,  node1 -> next = nullptr`
+最后返回到结点 node1，执行操作`node2 -> next = node1, node1 -> next = nullptr`
 
 此时链表为
 
 ```
-node4 -> node3 -> node2 -> node1 
+node4 -> node3 -> node2 -> node1
 ```
 
 ```c++
@@ -87,8 +83,6 @@ private:
 };
 ```
 
-
-
 ### Solution Two
 
 思路同**One**，不过这里改为使用 Stack
@@ -122,8 +116,6 @@ public:
 };
 ```
 
-
-
 ### Solution Three - In Top Solutions
 
 ```c++
@@ -136,15 +128,12 @@ public:
             head -> next = pre;
             pre = head;
             head = next;
-        } 
+        }
         return pre;
     }
 };
 ```
 
-
-
 ### Other Solutions
 
 [206. Reverse Linked List - Solution](https://leetcode.com/problems/reverse-linked-list/#/solution)
-

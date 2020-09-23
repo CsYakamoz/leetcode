@@ -6,18 +6,14 @@ Given an array of integers that is already **sorted in ascending order**, find t
 
 The function twoSum should return indices of the two numbers such that they add up to the target, where index1 must be less than index2. Please note that your returned answers (both index1 and index2) are not zero-based.
 
-You may assume that each input would have *exactly* one solution and you may not use the *same* element twice.
+You may assume that each input would have _exactly_ one solution and you may not use the _same_ element twice.
 
 **Input:** numbers={2, 7, 11, 15}, target=9
 **Output:** index1=1, index2=2
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Array` `Two Pointers` `Binary Search`
-
-
 
 ### Solution One
 
@@ -36,8 +32,6 @@ public:
     }
 };
 ```
-
-
 
 ### Solution Two
 
@@ -66,6 +60,3 @@ public:
     }
 };
 ```
-
-
-

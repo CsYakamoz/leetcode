@@ -10,13 +10,9 @@ Find the minimum element.
 
 You may assume no duplicate exists in the array.
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Array` `Binary Search`
-
-
 
 ### Solution One
 
@@ -48,4 +44,3 @@ public:
     }
 };
 ```
-

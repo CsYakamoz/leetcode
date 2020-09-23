@@ -9,17 +9,13 @@ The count-and-say sequence is the sequence of integers beginning as follows:
 `11` is read off as `"two 1s"` or `21`.
 `21` is read off as `"one 2`, then `one 1"` or `1211`.
 
-Given an integer *n*, generate the $n^{th}$ sequence.
+Given an integer _n_, generate the $n^{th}$ sequence.
 
 Note: The sequence of integers will be represented as a string.
-
-
 
 **Difficult:** `Easy`
 
 **Tags:** `String`
-
-
 
 ### Solution One
 
@@ -62,8 +58,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 ```c++
@@ -80,7 +74,7 @@ public:
         }
         return output;
     }
-    
+
     string nextSequence(string& input) {
         int count;
         char currentChar = 0;
@@ -107,6 +101,3 @@ public:
     }
 };
 ```
-
-
-

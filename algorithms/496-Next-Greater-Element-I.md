@@ -32,13 +32,9 @@ Explanation:
 1. All elements in `nums1` and `nums2` are unique.
 2. The length of both `nums1` and `nums2` would not exceed 1000.
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Stack`
-
-
 
 ### Solution One
 
@@ -72,8 +68,6 @@ public:
     }
 };
 ```
-
-
 
 ### Solution Two
 
@@ -112,8 +106,6 @@ public:
 };
 ```
 
-
-
 ### Solution Three:
 
 思路与**Two**相似，不过这里是将`findNums`以 值-索引对添加到 Map 中
@@ -150,8 +142,6 @@ public:
     }
 };
 ```
-
-
 
 ### Solution Four: In Top Solutions
 
@@ -194,5 +184,3 @@ public:
     }
 };
 ```
-
-

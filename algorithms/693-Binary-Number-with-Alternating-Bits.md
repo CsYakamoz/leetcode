@@ -43,13 +43,9 @@ Explanation:
 The binary representation of 10 is: 1010.
 ```
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Bit Manipulation`
-
-
 
 ### Solution One
 
@@ -66,15 +62,12 @@ public:
 
         for (size_t i = 1; i < str.size(); i++)
             if (str[i - 1] == str[i]) return false;
-        
+
         return true;
     }
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 [Binary Number with Alternating Bits - Discuss](https://discuss.leetcode.com/category/1550/binary-number-with-alternating-bits)
-

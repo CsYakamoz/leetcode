@@ -19,8 +19,8 @@ Output: return the tree root node representing the following tree:
       6
     /   \
    3     5
-    \    / 
-     2  0   
+    \    /
+     2  0
        \
         1
 
@@ -30,13 +30,9 @@ Output: return the tree root node representing the following tree:
 
 1. The size of the given array will be in the range [1,1000].
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Tree`
-
-
 
 ### Solution One
 
@@ -80,8 +76,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 这个思路贼强！！！
@@ -97,7 +91,7 @@ public:
         {
             if(x < root->val)
                 root->right = insert(root->right,x);
-            else 
+            else
             {
                 TreeNode* newRoot = new TreeNode(x);
                 newRoot->left=root;
@@ -115,8 +109,6 @@ public:
     }
 };
 ```
-
-
 
 ### Solution Three - In Top Solutions
 

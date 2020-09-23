@@ -25,13 +25,9 @@ The minimum absolute difference is 1, which is the difference between 2 and 1 (o
 
 **Note:** There are at least two nodes in this BST.
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Binary Search Tree`
-
-
 
 ### Solution One
 
@@ -79,8 +75,6 @@ private:
 };
 ```
 
-
-
 ### Solution Two
 
 ```c++
@@ -120,9 +114,6 @@ private:
 };
 ```
 
-
-
 ### Solution Three - In Top Solutions
 
 [Two Solutions, in-order traversal and a more general way using TreeSet](https://discuss.leetcode.com/topic/80823/two-solutions-in-order-traversal-and-a-more-general-way-using-treeset)
-

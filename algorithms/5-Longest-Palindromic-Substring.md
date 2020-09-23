@@ -19,13 +19,9 @@ Input: "cbbd"
 Output: "bb"
 ```
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `String`
-
-
 
 ### Solution One - In Top Solutions
 
@@ -64,5 +60,3 @@ public:
     }
 };
 ```
-
-

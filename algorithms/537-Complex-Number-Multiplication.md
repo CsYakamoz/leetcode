@@ -28,13 +28,9 @@ Explanation: (1 - i) * (1 - i) = 1 + i2 - 2 * i = -2i, and you need convert it t
 1. The input strings will not have extra blank.
 2. The input strings will be given in the form of **a+bi**, where the integer **a** and **b** will both belong to the range of [-100, 100]. And **the output should be also in this form**.
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Math` `String`
-
-
 
 ### Solution One
 
@@ -49,7 +45,7 @@ public:
         return to_string(x) + '+' + to_string(y) + 'i';
     }
 
-private: 
+private:
     struct complex
     {
         int a;
@@ -66,8 +62,6 @@ private:
     }
 };
 ```
-
-
 
 ### Solution Two - In Top Solutions
 
@@ -89,4 +83,3 @@ public:
     }
 };
 ```
-

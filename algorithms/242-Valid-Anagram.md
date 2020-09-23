@@ -2,11 +2,11 @@
 
 ### Description
 
-Given two strings *s* and *t*, write a function to determine if *t* is an anagram of *s*.
+Given two strings _s_ and _t_, write a function to determine if _t_ is an anagram of _s_.
 
 For example,
-*s* = "anagram", *t* = "nagaram", return true.
-*s* = "rat", *t* = "car", return false.
+_s_ = "anagram", _t_ = "nagaram", return true.
+_s_ = "rat", _t_ = "car", return false.
 
 **Note:**
 You may assume the string contains only lowercase alphabets.
@@ -14,13 +14,9 @@ You may assume the string contains only lowercase alphabets.
 **Follow up:**
 What if the inputs contain unicode characters? How would you adapt your solution to such case?
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Hash Table` `Sort`
-
-
 
 ### Solution One
 
@@ -50,8 +46,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two
 
 `Sort`
@@ -78,8 +72,6 @@ public:
 };
 ```
 
-
-
 ### Solution Three - In Top Solutions
 
 ```c++
@@ -97,6 +89,3 @@ public:
     }
 };
 ```
-
-
-

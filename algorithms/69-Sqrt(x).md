@@ -4,15 +4,11 @@
 
 Implement `int sqrt(int x)`.
 
-Compute and return the square root of *x*.
-
-
+Compute and return the square root of _x_.
 
 **Difficult:** `Easy`
 
 **Tags:** `Binary Search` `Math`
-
-
 
 ### Solution One
 
@@ -45,8 +41,6 @@ public:
     }
 };
 ```
-
-
 
 ### Solution Two - In Top Solutions
 

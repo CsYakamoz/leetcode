@@ -10,7 +10,7 @@ Each LED represents a zero or one, with the least significant bit on the right.
 
 For example, the above binary watch reads "3:25".
 
-Given a non-negative integer *n* which represents the number of LEDs that are currently on, return all possible times the watch could represent.
+Given a non-negative integer _n_ which represents the number of LEDs that are currently on, return all possible times the watch could represent.
 
 **Example:**
 
@@ -25,13 +25,9 @@ Return: ["1:00", "2:00", "4:00", "8:00", "0:01", "0:02", "0:04", "0:08", "0:16",
 - The hour must not contain a leading zero, for example "01:00" is not valid, it should be "1:00".
 - The minute must be consist of two digits and may contain a leading zero, for example "10:2" is not valid, it should be "10:02".
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Backtracking` `Bit Manipulation`
-
-
 
 ### Solution One
 
@@ -86,8 +82,6 @@ private:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 ```c++
@@ -97,10 +91,10 @@ int countBit(int num)
     int count = 0;
     for (int i=0; i<7; i++)
         if (num&(1<<i)) count++;
-    
+
     return count;
 }
-    
+
 public:
     vector<string> readBinaryWatch(int num) {
         vector<string> rs;
@@ -112,16 +106,13 @@ public:
                 if (hbit+countBit(m) == num)
                 {
                     ostringstream ss;
-                    ss << h << ":" << (m<10?"0":"") << m;                     
+                    ss << h << ":" << (m<10?"0":"") << m;
                     rs.push_back(ss.str());
                 }
             }
         }
-        
+
         return rs;
     }
 };
 ```
-
-
-

@@ -30,13 +30,9 @@ return [2], since 2 happens twice, however -5 only occur once.
 
 **Note:** You may assume the sum of values in any subtree is in the range of 32-bit signed integer.
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Hash Table` `Tree`
-
-
 
 ### Solution One
 
@@ -84,8 +80,6 @@ private:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 [Short Clean C++ O(n) Solution](https://discuss.leetcode.com/topic/77763/short-clean-c-o-n-solution)
@@ -97,18 +91,18 @@ public:
         unordered_map<int,int> counts;
         int maxCount = 0;
         countSubtreeSums(root, counts, maxCount);
-        
-        
+
+
         vector<int> maxSums;
         for(const auto& x :  counts){
             if(x.second == maxCount) maxSums.push_back(x.first);
         }
         return maxSums;
     }
-    
+
     int countSubtreeSums(TreeNode *r, unordered_map<int,int> &counts, int& maxCount){
         if(r == nullptr) return 0;
-        
+
         int sum = r->val;
         sum += countSubtreeSums(r->left, counts, maxCount);
         sum += countSubtreeSums(r->right, counts, maxCount);
@@ -118,6 +112,3 @@ public:
     }
 };
 ```
-
-
-

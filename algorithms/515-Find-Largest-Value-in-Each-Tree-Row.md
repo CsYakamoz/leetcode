@@ -7,24 +7,20 @@ You need to find the largest value in each row of a binary tree.
 **Example:**
 
 ```
-Input: 
+Input:
 
           1
          / \
         3   2
-       / \   \  
-      5   3   9 
+       / \   \
+      5   3   9
 
 Output: [1, 3, 9]
 ```
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Tree` `Depth-first Search` `Breadth-first Search`
-
-
 
 ### Solution One
 
@@ -74,8 +70,6 @@ class Solution
 };
 ```
 
-
-
 ### Solution Two
 
 `BFS` `Queue`
@@ -114,7 +108,7 @@ class Solution
             current = unvisited.front();
             if (current.row != result.size())
             {
-                result[current.row] = current.node->val > result[current.row] ? 
+                result[current.row] = current.node->val > result[current.row] ?
                     current.node->val : result[current.row];
             }
             else
@@ -137,6 +131,3 @@ class Solution
     }
 };
 ```
-
-
-

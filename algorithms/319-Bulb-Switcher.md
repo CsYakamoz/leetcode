@@ -2,28 +2,24 @@
 
 ### Description
 
-There are *n* bulbs that are initially off. You first turn on all the bulbs. Then, you turn off every second bulb. On the third round, you toggle every third bulb (turning on if it's off or turning off if it's on). For the *i*th round, you toggle every *i* bulb. For the *n*th round, you only toggle the last bulb. Find how many bulbs are on after *n* rounds.
+There are _n_ bulbs that are initially off. You first turn on all the bulbs. Then, you turn off every second bulb. On the third round, you toggle every third bulb (turning on if it's off or turning off if it's on). For the *i*th round, you toggle every _i_ bulb. For the *n*th round, you only toggle the last bulb. Find how many bulbs are on after _n_ rounds.
 
 **Example:**
 
 ```
-Given n = 3. 
+Given n = 3.
 
 At first, the three bulbs are [off, off, off].
 After first round, the three bulbs are [on, on, on].
 After second round, the three bulbs are [on, off, on].
-After third round, the three bulbs are [on, off, off]. 
+After third round, the three bulbs are [on, off, off].
 
 So you should return 1, because there is only one bulb is on.
 ```
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Math` `Brainteaser`
-
-
 
 ### Solution One
 
@@ -42,13 +38,11 @@ public:
             i += length + 2;
             length += 2;
         }
-        
+
         return length / 2;
     }
 };
 ```
-
-
 
 ### Solution Two - In Top Solutions
 
@@ -70,7 +64,7 @@ public:
 
 非素数情况下：1 和 本身，还有成对的 i / p 和 p (p >= 2)
 
-若不存在  i / p == p，则因子数为偶数个
+若不存在 i / p == p，则因子数为偶数个
 
 若存在，则因子数为奇数个，此时 i 为平方数
 
@@ -93,7 +87,7 @@ public:
 > 4. For the ith round, you toggle every i bulb.(i, 2i, 3i, ...)
 > 5. For the nth round, you only toggle the last bulb.(n)
 >
-> ------
+> ---
 >
 > If n > 6, you can find that bulb 6 is toggled in round 2 and 3.
 >
@@ -101,7 +95,7 @@ public:
 >
 > Here, **2,3 and 6 are all factors of 6 (except 1).**
 >
-> ------
+> ---
 >
 > ## **Prove:**
 >
@@ -111,7 +105,7 @@ public:
 >
 > **k + 1** will be **the total number of i's factors**
 >
-> ------
+> ---
 >
 > For example:
 >
@@ -121,7 +115,7 @@ public:
 >
 > Now, the key problem here is to judge **whether k is even or odd.**
 >
-> ------
+> ---
 >
 > Since **all bulbs are on at the beginning**, we can get:
 >
@@ -136,22 +130,22 @@ public:
 >
 > **If i has a factor p that makes p = i/p (i = p^2, i is a perfect square of p), k+ 1 is odd.**
 >
-> ------
+> ---
 >
 > So we get that **in the end**:
 >
-> - If **i** is a **perfect square** , *k*+ 1 is odd, **k is even (bulb i is on)**.
-> - If **i** is **NOT** a **perfect square** , *k*+ 1 is even, **k is odd (bulb i is off)**.
+> - If **i** is a **perfect square** , _k_+ 1 is odd, **k is even (bulb i is on)**.
+> - If **i** is **NOT** a **perfect square** , _k_+ 1 is even, **k is odd (bulb i is off)**.
 >
-> ------
+> ---
 >
-> We want to find **how many bulbs are on** after *n* rounds (**In the end**).
+> We want to find **how many bulbs are on** after _n_ rounds (**In the end**).
 >
 > That means we need to find out **how many perfect square numbers are NO MORE than n**.
 >
 > The **number of perfect square numbers which are no more than n**, is the **square root of the maximum perfect square number which is NO MORE than n**
 >
-> ------
+> ---
 >
 > ## **Result:**
 >

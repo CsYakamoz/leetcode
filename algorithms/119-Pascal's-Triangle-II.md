@@ -2,21 +2,17 @@
 
 ### Description
 
-Given an index *k*, return the *k*th row of the Pascal's triangle.
+Given an index _k_, return the *k*th row of the Pascal's triangle.
 
-For example, given *k* = 3,
+For example, given _k_ = 3,
 Return `[1,3,3,1]`.
 
 **Note:**
-Could you optimize your algorithm to use only *O*(*k*) extra space?
-
-
+Could you optimize your algorithm to use only _O_(_k_) extra space?
 
 **Difficult:** `Easy`
 
 **Tags:** `Array`
-
-
 
 ### Solution One - In Top Solutions
 
@@ -42,23 +38,21 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 ```c++
 class Solution {
 public:
     vector<int> getRow(int rowIndex) {
-        
+
         int reflect = (rowIndex + 1) - (rowIndex + 1) / 2;
-        
+
         int index = (rowIndex + 1) / 2 - 1;
-        
+
         long temp = 1;
-        
+
         vector<int> output;
-        
+
         for(int i = 0; i <= rowIndex; i++)
         {
             if(i < reflect)
@@ -73,12 +67,9 @@ public:
                 index--;
             }
         }
-        
+
         return output;
-        
+
     }
 };
 ```
-
-
-

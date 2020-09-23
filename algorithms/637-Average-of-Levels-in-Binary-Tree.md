@@ -23,13 +23,9 @@ The average value of nodes on level 0 is 3,  on level 1 is 14.5, and on level 2 
 
 1. The range of node's value is in the range of 32-bit signed integer.
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Tree`
-
-
 
 ### Solution One
 
@@ -66,6 +62,3 @@ public:
     }
 };
 ```
-
-
-

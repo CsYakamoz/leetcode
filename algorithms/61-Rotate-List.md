@@ -2,23 +2,19 @@
 
 ### Description
 
-Given a list, rotate the list to the right by *k* places, where *k* is non-negative.
+Given a list, rotate the list to the right by _k_ places, where _k_ is non-negative.
 
 For example:
-Given `1->2->3->4->5->NULL` and *k* = `2`,
+Given `1->2->3->4->5->NULL` and _k_ = `2`,
 return `4->5->1->2->3->NULL`.
-
-
 
 **Difficult:** `Medium`
 
 **Tags:** `Linked List` `Two Pointers`
 
-
-
 ### Solution One
 
-思路来源于题目 [189. Rotate Array](https://leetcode.com/problems/rotate-array/solution/#approach-4-using-reverse-accepted) 
+思路来源于题目 [189. Rotate Array](https://leetcode.com/problems/rotate-array/solution/#approach-4-using-reverse-accepted)
 
 ```c++
 class Solution {
@@ -78,8 +74,6 @@ private:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 [My clean C++ code, quite standard (find tail and reconnect the list)](https://discuss.leetcode.com/topic/14470/my-clean-c-code-quite-standard-find-tail-and-reconnect-the-list)
@@ -91,11 +85,11 @@ class Solution {
 public:
     ListNode* rotateRight(ListNode* head, int k) {
         if(!head) return head;
-        
+
         int len=1; // number of nodes
         ListNode *newH, *tail;
         newH=tail=head;
-        
+
         while(tail->next)  // get the number of nodes in the list
         {
             tail = tail->next;
@@ -103,14 +97,13 @@ public:
         }
         tail->next = head; // circle the link
 
-        if(k %= len) 
+        if(k %= len)
         {
             for(auto i=0; i<len-k; i++) tail = tail->next; // the tail node is the (len-k)-th node (1st node is head)
         }
-        newH = tail->next; 
+        newH = tail->next;
         tail->next = NULL;
         return newH;
     }
 };
 ```
-

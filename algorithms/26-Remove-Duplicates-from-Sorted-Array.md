@@ -11,13 +11,9 @@ Given input array *nums* = `[1,1,2]`,
 
 Your function should return length = `2`, with the first two elements of *nums* being `1` and `2` respectively. It doesn't matter what you leave beyond the new length.
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Array` `Two Pointers`
-
-
 
 ### Solution One
 
@@ -43,8 +39,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two
 
 使用 C++ 标准库函数 [std::unique](http://www.cplusplus.com/reference/algorithm/unique/?kw=unique) ，该函数会将相邻的重复项“消除”，并返回一个指向不重复值范围末尾的迭代器
@@ -61,8 +55,6 @@ public:
     }
 };
 ```
-
-
 
 ### Solution Three
 
@@ -93,5 +85,3 @@ public:
     }
 };
 ```
-
-

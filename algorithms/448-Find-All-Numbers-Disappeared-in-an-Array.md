@@ -2,11 +2,11 @@
 
 ### Description
 
-Given an array of integers where 1 ≤ a[i] ≤ *n* (*n* = size of array), some elements appear twice and others appear once.
+Given an array of integers where 1 ≤ a[i] ≤ _n_ (_n_ = size of array), some elements appear twice and others appear once.
 
 Find all the elements of [1, *n*] inclusive that do not appear in this array.
 
-Could you do it without extra space and in O(*n*) runtime? You may assume the returned list does not count as extra space.
+Could you do it without extra space and in O(_n_) runtime? You may assume the returned list does not count as extra space.
 
 **Example:**
 
@@ -18,13 +18,9 @@ Output:
 [5,6]
 ```
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Array`
-
-
 
 ### Solution One
 
@@ -53,8 +49,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 [5-line Java Easy-understanding](https://discuss.leetcode.com/topic/66063/5-line-java-easy-understanding)
@@ -68,6 +62,3 @@ public List<Integer> findDisappearedNumbers(int[] nums) {
         return res;
     }
 ```
-
-
-

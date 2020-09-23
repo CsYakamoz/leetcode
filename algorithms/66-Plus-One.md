@@ -8,13 +8,9 @@ You may assume the integer do not contain any leading zero, except the number 0 
 
 The digits are stored such that the most significant digit is at the head of the list.
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Array` `Math`
-
-
 
 ### Solution One
 
@@ -38,8 +34,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 ```c++
@@ -48,7 +42,7 @@ public:
     vector<int> plusOne(vector<int>& digits) {
         int lastIndex = digits.size()-1;
         while(lastIndex >= 0){
-            if(digits[lastIndex] + 1 >= 10){   
+            if(digits[lastIndex] + 1 >= 10){
                 digits[lastIndex] = 0;
                 lastIndex--;
             }
@@ -59,10 +53,7 @@ public:
         }
         if(lastIndex == -1) digits.insert(digits.begin(), 1);
         return digits;
-            
+
     }
 };
 ```
-
-
-

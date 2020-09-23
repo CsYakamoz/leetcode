@@ -16,13 +16,9 @@ Here **follow** means a full match, such that there is a bijection between a let
 **Notes:**
 You may assume `pattern` contains only lowercase letters, and `str` contains lowercase letters separated by a single space.
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Hash Table`
-
-
 
 ### Solution One
 
@@ -74,14 +70,12 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 [0ms C++ solution using istringstream and double maps](https://discuss.leetcode.com/topic/26313/0ms-c-solution-using-istringstream-and-double-maps)
 
-* `s2c[vs[i]] == 0` 用来检查第`i`个单词是否第一次出现
-* `c2s[pattern[i]] == ""`，如果单词第一次出现，检查`pattern[i]`是否第一次出现
+- `s2c[vs[i]] == 0` 用来检查第`i`个单词是否第一次出现
+- `c2s[pattern[i]] == ""`，如果单词第一次出现，检查`pattern[i]`是否第一次出现
 
 以上两个判断，保证 `vs[i]` 和 `pattern[i]` 一一对应
 
@@ -97,10 +91,10 @@ public:
         map<string, char> s2c;
         map<char, string> c2s;
         for (int i = 0; i < vs.size(); ++i) {
-            if (s2c[vs[i]] == 0 && c2s[pattern[i]] == "") { 
-                s2c[vs[i]] = pattern[i]; 
-                c2s[pattern[i]] = vs[i]; 
-                continue; 
+            if (s2c[vs[i]] == 0 && c2s[pattern[i]] == "") {
+                s2c[vs[i]] = pattern[i];
+                c2s[pattern[i]] = vs[i];
+                continue;
             }
             if (s2c[vs[i]] != pattern[i]) return false;
         }
@@ -108,6 +102,3 @@ public:
     }
 };
 ```
-
-
-

@@ -37,13 +37,9 @@ Explanation: There is one 0-diff pair in the array, (1, 1).
 2. The length of the array won't exceed 10,000.
 3. All the integers in the given input belong to the range: [-1e7, 1e7].
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Array` `Two Pointers`
-
-
 
 ### Solution One
 
@@ -78,13 +74,11 @@ public:
                 i++;
             }
         }
-        
+
         return res;
     }
 };
 ```
-
-
 
 ### Solution Two - In Top Solutions
 
@@ -122,6 +116,3 @@ public:
     }
 };
 ```
-
-
-

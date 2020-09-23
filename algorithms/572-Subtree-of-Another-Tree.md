@@ -19,7 +19,7 @@ Given tree s:
 Given tree t:
 
 ```
-   4 
+   4
   / \
  1   2
 
@@ -51,13 +51,9 @@ Given tree t:
 
 Return **false**.
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Tree`
-
-
 
 ### Solution One
 
@@ -93,6 +89,3 @@ private:
     }
 };
 ```
-
-
-

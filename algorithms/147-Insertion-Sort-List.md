@@ -4,13 +4,9 @@
 
 Sort a linked list using insertion sort.
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Linked List` `Sort`
-
-
 
 ### Solution One
 
@@ -86,8 +82,6 @@ private:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 ```c++
@@ -95,7 +89,7 @@ class Solution {
 public:
     ListNode* insertionSortList(ListNode* head) {
         ListNode *dummy = new ListNode(0), *p=dummy;
-        
+
         vector<int> vals;
         while(head){
             vals.push_back(head->val);
@@ -106,14 +100,12 @@ public:
             p->next = new ListNode(val);
             p = p->next;
         }
-        
-        
+
+
         return dummy->next;
     }
 };
 ```
-
-
 
 ### Solution Three - In Top Solutions
 
@@ -157,6 +149,3 @@ public:
 	}
 };
 ```
-
-
-

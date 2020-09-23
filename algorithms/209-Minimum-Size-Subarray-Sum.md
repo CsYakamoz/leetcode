@@ -9,15 +9,11 @@ the subarray `[4,3]` has the minimal length under the problem constraint.
 
 **More practice:**
 
-If you have figured out the *O*(*n*) solution, try coding another solution of which the time complexity is *O*(*n* log *n*).
-
-
+If you have figured out the _O_(_n_) solution, try coding another solution of which the time complexity is _O_(_n_ log _n_).
 
 **Difficult:** `Medium`
 
 **Tags:** `Array` `Two Pointers` `Binary Search`
-
-
 
 ### Solution One
 
@@ -47,9 +43,6 @@ public:
 };
 ```
 
-
-
 ### Solutions
 
 [209. Minimum Size Subarray Sum - Solutions](https://leetcode.com/problems/minimum-size-subarray-sum/solution/#approach-3-using-binary-search-accepted)
-

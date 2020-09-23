@@ -22,13 +22,9 @@ Explanation:
 One longest palindrome that can be built is "dccaccd", whose length is 7.
 ```
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Hash Table`
-
-
 
 ### Solution One
 
@@ -52,9 +48,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two
 
 [What are the odds? (Python & C++)](https://discuss.leetcode.com/topic/61338/what-are-the-odds-python-c)
-

@@ -8,13 +8,9 @@ For example,
 Given `[1,3],[2,6],[8,10],[15,18]`,
 return `[1,6],[8,10],[15,18]`.
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Array` `Sort`
-
-
 
 ### Solution One - In Top Solutions
 
@@ -42,6 +38,3 @@ public:
     }
 };
 ```
-
-
-

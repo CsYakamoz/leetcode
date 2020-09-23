@@ -35,13 +35,9 @@ Explanation: The restaurant they both like and have the least index sum is "Shog
 3. The index is starting from 0 to the list length minus 1.
 4. No duplicates in both lists.
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Hash Table`
-
-
 
 ### Solution One
 
@@ -87,8 +83,6 @@ public:
     }
 };
 ```
-
-
 
 ### Other Solutions
 

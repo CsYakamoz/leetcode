@@ -18,13 +18,9 @@ For example,
 ]
 ```
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Backtracking`
-
-
 
 ### Solution One
 
@@ -47,7 +43,7 @@ public:
 
 private:
     vector<vector<int>> result;
-  
+
     void getPermute(vector<int> per, size_t &index, vector<bool> isExist, vector<int> &nums)
     {
         per.push_back(nums[index]);
@@ -68,8 +64,6 @@ private:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 ```c++
@@ -80,14 +74,14 @@ public:
             ans.push_back(nums);
             return;
         }
-        
+
         for (int i = 0; i < end; ++i) {
             swap(nums[i], nums[end - 1]);
             helper(nums, end - 1, ans);
             swap(nums[i], nums[end - 1]);
         }
     }
-    
+
     vector<vector<int>> permute(vector<int>& nums) {
         vector<vector<int>> ans;
         helper(nums, nums.size(), ans);
@@ -95,8 +89,6 @@ public:
     }
 };
 ```
-
-
 
 ### Solution Three - In Top Solutions
 
@@ -107,11 +99,11 @@ class Solution {
 public:
     vector<vector<int> > permute(vector<int> &num) {
 	    vector<vector<int> > result;
-	    
+
 	    permuteRecursive(num, 0, result);
 	    return result;
     }
-    
+
     // permute num[begin..end]
     // invariant: num[0..begin-1] have been fixed/permuted
 	void permuteRecursive(vector<int> &num, int begin, vector<vector<int> > &result)	{
@@ -120,7 +112,7 @@ public:
 		    result.push_back(num);
 		    return;
 		}
-		
+
 		for (int i = begin; i < num.size(); i++) {
 		    swap(num[begin], num[i]);
 		    permuteRecursive(num, begin + 1, result);
@@ -130,6 +122,3 @@ public:
     }
 };
 ```
-
-
-

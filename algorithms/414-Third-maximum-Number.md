@@ -37,13 +37,9 @@ Explanation: Note that the third maximum here means the third maximum distinct n
 Both numbers with value 2 are both considered as second maximum.
 ```
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Array`
-
-
 
 ### Solution One
 
@@ -71,8 +67,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 [Short Clear C++ solution, no set or pq.](https://discuss.leetcode.com/topic/67186/short-clear-c-solution-no-set-or-pq)
@@ -90,6 +84,3 @@ int thirdMax(vector<int>& nums) {
     return c == LLONG_MIN ? a : c;
 }
 ```
-
-
-

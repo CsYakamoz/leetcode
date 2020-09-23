@@ -26,13 +26,9 @@ Output: False
 2. The input array size is in the range of [1, 20000].
 3. **n** is a non-negative integer which won't exceed the input array size.
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Array`
-
-
 
 ### Solution One
 
@@ -77,7 +73,7 @@ public:
         {
             size_t j = i + 2;
             while (j < lastFlower && flowerbed[j] == 0)
-            {	
+            {
                 j++;
             }
             // The length of empty flowerbed between two flowers
@@ -89,8 +85,6 @@ public:
     }
 };
 ```
-
-
 
 ### Solution Two - In Top Solutions
 
@@ -109,12 +103,9 @@ public:
                 --n;
                 ++i;
             }
-                
+
         }
         return n <=0;
     }
 };
 ```
-
-
-

@@ -4,13 +4,9 @@
 
 Given a singly linked list where elements are sorted in ascending order, convert it to a height balanced BST.
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Depth-first Search` `Linked List`
-
-
 
 ### Solution One
 
@@ -51,8 +47,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 ```c++
@@ -80,15 +74,13 @@ public:
 };
 ```
 
-
-
 ### Solution Three - In Top Solutions
 
 [Share my code with O(n) time and O(1) space](https://discuss.leetcode.com/topic/3286/share-my-code-with-o-n-time-and-o-1-space)
 
->count is a function to calculate the size of list.
+> count is a function to calculate the size of list.
 >
->Key words: inorder traversal.
+> Key words: inorder traversal.
 
 ```java
 class Solution {
@@ -102,7 +94,7 @@ public:
         }
         return size;
     }
-    
+
     TreeNode *generate(int n){
         if (n == 0)
             return NULL;
@@ -113,11 +105,10 @@ public:
         node->right = generate(n - n / 2 - 1);
         return node;
     }
-    
+
     TreeNode *sortedListToBST(ListNode *head) {
         this->list = head;
         return generate(count(head));
     }
 };
 ```
-

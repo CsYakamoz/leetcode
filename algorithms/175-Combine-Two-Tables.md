@@ -37,13 +37,9 @@ Write a SQL query for a report that provides the following information for each 
 FirstName, LastName, City, State
 ```
 
-
-
 **Difficult:** `Easy`
 
-**Tags:** 
-
-
+**Tags:**
 
 ### Solution One
 
@@ -54,6 +50,3 @@ FROM Person
 LEFT JOIN Address
 ON Person.PersonId = Address.PersonId;
 ```
-
-
-

@@ -15,16 +15,12 @@ For example:
     ...
     Z -> 26
     AA -> 27
-    AB -> 28 
+    AB -> 28
 ```
-
-
 
 **Difficult:** `Easy`
 
 **Tags:** `Math`
-
-
 
 ### Solution One
 
@@ -41,6 +37,3 @@ public:
     }
 };
 ```
-
-
-

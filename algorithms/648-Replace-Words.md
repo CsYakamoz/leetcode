@@ -25,15 +25,9 @@ Output: "the cat was rat by the bat"
 4. 1 <= root length <= 100
 5. 1 <= sentence words length <= 1000
 
-
-
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Hash Table` `Trie`
-
-
 
 ### Solution One
 
@@ -52,7 +46,7 @@ private:
 
     void insert(const string &str) {
         TrieNode *cur = &root;
-    
+
         for (auto c : str) {
             size_t idx = c - 'a';
             if (cur->next[idx] == nullptr) {
@@ -81,7 +75,7 @@ private:
                 break;
             }
         }
-        
+
         return find ? res : str;
     }
 
@@ -107,8 +101,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 ```c++
@@ -120,15 +112,15 @@ public:
         sort(dict.begin(), dict.end(), [](const string &a, const string &b) {
             return a.size() < b.size();
         });
-        
+
         for (auto word : dict) {
             if (word.empty())
                 continue;
             aux[word[0]-'a'].push_back(word);
         }
-        
+
         istringstream iss(sentence);
-        
+
         string word;
         while (iss>>word) {
             for (auto prefix : aux[word[0]-'a']) {
@@ -140,16 +132,13 @@ public:
             }
             result += word +' ';
         }
-              
+
         result.pop_back();
         return result;
     }
 };
 ```
 
-
-
 ### Solution Three - In Top Solutions
 
 [C++ trie with optimizations (50 ms)](https://discuss.leetcode.com/topic/96835/c-trie-with-optimizations-50-ms)
-

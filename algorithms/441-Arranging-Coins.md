@@ -2,11 +2,11 @@
 
 ### Description
 
-You have a total of *n* coins that you want to form in a staircase shape, where every *k*-th row must have exactly *k* coins.
+You have a total of _n_ coins that you want to form in a staircase shape, where every _k_-th row must have exactly _k_ coins.
 
-Given *n*, find the total number of **full** staircase rows that can be formed.
+Given _n_, find the total number of **full** staircase rows that can be formed.
 
-*n* is a non-negative integer and fits within the range of a 32-bit signed integer.
+_n_ is a non-negative integer and fits within the range of a 32-bit signed integer.
 
 **Example 1:**
 
@@ -36,13 +36,9 @@ The coins can form the following rows:
 Because the 4th row is incomplete, we return 3.
 ```
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Binary Search` `Math`
-
-
 
 ### Solution One
 
@@ -88,8 +84,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two
 
 尝试将 total 类型改为 `long long` 或者 `long double`，但依然会溢出，于是想办法从公式本身出发修改
@@ -111,8 +105,6 @@ public:
 };
 ```
 
-
-
 ### Solution Three - In Top Solutions
 
 ```c++
@@ -123,4 +115,3 @@ public:
     }
 };
 ```
-

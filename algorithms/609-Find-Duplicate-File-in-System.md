@@ -21,7 +21,7 @@ The **output** is a list of group of duplicate file paths. For each group, it co
 ```
 Input:
 ["root/a 1.txt(abcd) 2.txt(efgh)", "root/c 3.txt(abcd)", "root/c/d 4.txt(efgh)", "root 4.txt(efgh)"]
-Output:  
+Output:
 [["root/a/2.txt","root/c/d/4.txt","root/4.txt"],["root/a/1.txt","root/c/3.txt"]]
 
 ```
@@ -42,13 +42,9 @@ Follow-up beyond contest:
 4. What is the time complexity of your modified solution? What is the most time-consuming part and memory consuming part of it? How to optimize?
 5. How to make sure the duplicated files you find are not false positive?
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Hash Table` `String`
-
-
 
 ### Solution One
 
@@ -84,6 +80,3 @@ public:
     }
 };
 ```
-
-
-

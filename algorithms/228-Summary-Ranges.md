@@ -6,13 +6,9 @@ Given a sorted integer array without duplicates, return the summary of its range
 
 For example, given `[0,1,2,4,5,7]`, return `["0->2","4->5","7"].`
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Array`
-
-
 
 ### Solution One
 
@@ -50,8 +46,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 [10 line c++ easy understand](https://discuss.leetcode.com/topic/17117/10-line-c-easy-understand)
@@ -71,6 +65,3 @@ public:
     return res;
 }
 ```
-
-
-

@@ -2,10 +2,10 @@
 
 ### Description
 
-Given *n*, how many structurally unique **BST's** (binary search trees) that store values 1...*n*?
+Given _n_, how many structurally unique **BST's** (binary search trees) that store values 1..._n_?
 
 For example,
-Given *n* = 3, there are a total of 5 unique BST's.
+Given _n_ = 3, there are a total of 5 unique BST's.
 
 ```
    1         3     3      2      1
@@ -15,13 +15,9 @@ Given *n* = 3, there are a total of 5 unique BST's.
    2     1         2                 3
 ```
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Dynamic Programming` `Tree`
-
-
 
 ### Solution One
 
@@ -42,11 +38,8 @@ public:
             if (i % 2 == 1)
                 dp[i] -= dp[mid - 1] * dp[i - mid];
         }
-        
+
         return dp.back();
     }
 };
 ```
-
-
-

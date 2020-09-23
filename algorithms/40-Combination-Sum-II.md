@@ -11,8 +11,8 @@ Each number in **C** may only be used **once** in the combination.
 - All numbers (including target) will be positive integers.
 - The solution set must not contain duplicate combinations.
 
-For example, given candidate set `[10, 1, 2, 7, 6, 1, 5]` and target `8`, 
-A solution set is: 
+For example, given candidate set `[10, 1, 2, 7, 6, 1, 5]` and target `8`,
+A solution set is:
 
 ```
 [
@@ -23,13 +23,9 @@ A solution set is:
 ]
 ```
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Array` `Backtracking`
-
-
 
 ### Solution One
 
@@ -69,8 +65,6 @@ private:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 ```c++
@@ -108,6 +102,3 @@ public:
     }
 };
 ```
-
-
-

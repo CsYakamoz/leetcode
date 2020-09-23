@@ -41,13 +41,9 @@ Using the above tables as example, return the following:
 +-----------+
 ```
 
-
-
 **Difficult:** `Easy`
 
-**Tags:** 
-
-
+**Tags:**
 
 ### Solution One - In Top Solutions
 
@@ -64,6 +60,3 @@ WHERE b.CustomerId is NULL
 SELECT A.Name from Customers A
 WHERE A.Id NOT IN (SELECT B.CustomerId from Orders B)
 ```
-
-
-

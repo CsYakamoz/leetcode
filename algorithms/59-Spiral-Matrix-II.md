@@ -2,10 +2,10 @@
 
 ### Description
 
-Given an integer *n*, generate a square matrix filled with elements from 1 to *n*2 in spiral order.
+Given an integer _n_, generate a square matrix filled with elements from 1 to *n*2 in spiral order.
 
 For example,
-Given *n* = `3`,
+Given _n_ = `3`,
 
 You should return the following matrix:
 
@@ -17,13 +17,9 @@ You should return the following matrix:
 ]
 ```
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Array`
-
-
 
 ### Solution One
 
@@ -79,6 +75,3 @@ public:
     }
 };
 ```
-
-
-

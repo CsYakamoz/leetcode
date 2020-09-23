@@ -5,7 +5,7 @@
 Given two arrays, write a function to compute their intersection.
 
 **Example:**
-Given *nums1* = `[1, 2, 2, 1]`, *nums2* = `[2, 2]`, return `[2, 2]`.
+Given _nums1_ = `[1, 2, 2, 1]`, _nums2_ = `[2, 2]`, return `[2, 2]`.
 
 **Note:**
 
@@ -15,20 +15,16 @@ Given *nums1* = `[1, 2, 2, 1]`, *nums2* = `[2, 2]`, return `[2, 2]`.
 **Follow up:**
 
 - What if the given array is already sorted? How would you optimize your algorithm?
-- What if *nums1*'s size is small compared to *nums2*'s size? Which algorithm is better?
-- What if elements of *nums2* are stored on disk, and the memory is limited such that you cannot load all elements into the memory at once?
-
-
+- What if _nums1_'s size is small compared to _nums2_'s size? Which algorithm is better?
+- What if elements of _nums2_ are stored on disk, and the memory is limited such that you cannot load all elements into the memory at once?
 
 **Difficult:** `Easy`
 
 **Tags:** `Binary Search` `Hash Table` `Two Pointers` `Sort`
 
-
-
 ### Solution One
 
-`Two Pointer`  `Sort`
+`Two Pointer` `Sort`
 
 ```c++
 class Solution {
@@ -55,8 +51,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two
 
 `Hash Table`
@@ -80,6 +74,3 @@ public:
     }
 };
 ```
-
-
-

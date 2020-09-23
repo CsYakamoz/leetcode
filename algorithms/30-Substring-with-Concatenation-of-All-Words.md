@@ -11,13 +11,9 @@ For example, given:
 You should return the indices: `[0,9]`.
 (order does not matter).
 
-
-
 **Difficult:** `Hard`
 
 **Tags:** `Hash Table` `Two Pointers` `String`
-
-
 
 ### Solution One
 
@@ -80,6 +76,3 @@ class Solution
     }
 };
 ```
-
-
-

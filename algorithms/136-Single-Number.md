@@ -2,18 +2,14 @@
 
 ### Description
 
-Given an array of integers, every element appears *twice* except for one. Find that single one.
+Given an array of integers, every element appears _twice_ except for one. Find that single one.
 
 **Note:**
 Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Hash Table` `Bit Manipulation`
-
-
 
 ### Solution One
 
@@ -42,11 +38,9 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
-两个相同的数进行异或操作后，值为0
+两个相同的数进行异或操作后，值为 0
 
 即 `A XOR A = 0`
 
@@ -61,5 +55,3 @@ public:
     }
 };
 ```
-
-

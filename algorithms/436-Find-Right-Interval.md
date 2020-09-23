@@ -46,13 +46,9 @@ Explanation: There is no satisfied "right" interval for [1,4] and [3,4].
 For [2,3], the interval [3,4] has minimum-"right" start point.
 ```
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Binary Search`
-
-
 
 ### Solution One
 
@@ -97,14 +93,12 @@ private:
                 left = mid + 1;
             }
         }
-        // right points to the first elements 
+        // right points to the first elements
         // that is bigger than or equal to the val
         return right == nums.size() ? -1 : nums[right].second;
     }
 };
 ```
-
-
 
 ### Solution Two - In Top Solutions
 
@@ -139,4 +133,3 @@ public:
     }
 };
 ```
-

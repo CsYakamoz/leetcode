@@ -6,10 +6,10 @@ Given an unsorted array return whether an increasing subsequence of length 3 exi
 
 Formally the function should:
 
-> Return true if there exists *i, j, k *
-> such that *arr[i]* < *arr[j]* < *arr[k]* given 0 ≤ *i* < *j* < *k* ≤ *n*-1 else return false.
+> Return true if there exists _i, j, k _
+> such that _arr[i]_ < _arr[j]_ < _arr[k]_ given 0 ≤ _i_ < _j_ < _k_ ≤ _n_-1 else return false.
 
-Your algorithm should run in O(*n*) time complexity and O(*1*) space complexity.
+Your algorithm should run in O(_n_) time complexity and O(_1_) space complexity.
 
 **Examples:**
 Given `[1, 2, 3, 4, 5]`,
@@ -18,13 +18,9 @@ return `true`.
 Given `[5, 4, 3, 2, 1]`,
 return `false`.
 
-
-
 **Difficult:** `Medium`
 
-**Tags:** 
-
-
+**Tags:**
 
 ### Solution One - In Top Solutions
 
@@ -55,6 +51,3 @@ public:
     }
 };
 ```
-
-
-

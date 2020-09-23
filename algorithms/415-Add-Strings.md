@@ -11,13 +11,9 @@ Given two non-negative integers `num1` and `num2` represented as string, return 
 3. Both `num1` and `num2` does not contain any leading zero.
 4. You **must not user any built-in BigInteger library** or **convert the inputs to integer** directly.
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Math`
-
-
 
 ### Solution One
 
@@ -52,8 +48,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 [3ms 5 lines Concise C++ Solution without extra space. The loop should stop early!](https://discuss.leetcode.com/topic/62281/3ms-5-lines-concise-c-solution-without-extra-space-the-loop-should-stop-early)
@@ -86,8 +80,6 @@ public:
     }
 };
 ```
-
-
 
 ### Solution Three
 
@@ -123,5 +115,3 @@ public:
     }
 };
 ```
-
-

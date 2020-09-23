@@ -26,13 +26,9 @@ Explanation: No swap.
 
 1. The given number is in the range [0, 108]
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Array` `Math`
-
-
 
 ### Solution One
 
@@ -80,8 +76,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 ```c++
@@ -104,6 +98,3 @@ public:
     }
 };
 ```
-
-
-

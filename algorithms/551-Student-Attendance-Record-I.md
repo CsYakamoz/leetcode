@@ -27,13 +27,9 @@ Input: "PPALLL"
 Output: False
 ```
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `String`
-
-
 
 ### Solution One
 
@@ -64,6 +60,3 @@ public:
     }
 };
 ```
-
-
-

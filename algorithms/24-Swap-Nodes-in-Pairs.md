@@ -9,13 +9,9 @@ Given `1->2->3->4`, you should return the list as `2->1->4->3`.
 
 Your algorithm should use only constant space. You may **not** modify the values in the list, only nodes itself can be changed.
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Linked List`
-
-
 
 ### Solution One
 
@@ -65,9 +61,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two
 
 目前还看不懂 Top Solution
-

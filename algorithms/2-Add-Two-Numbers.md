@@ -7,20 +7,16 @@ You are given two linked lists representing two non-negative numbers. The digits
 **Input:** (2 -> 4 -> 3) + (5 -> 6 -> 4)
 **Output:** 7 -> 0 -> 8
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Linked List` `Math`
-
-
 
 ### Solution One
 
 考虑三种情况，即可
 
-1. 两个链表长度相等，并且最后一次相加时值没有大于9
-2. 两个链表长度相等，并且最后一次相加时值大于9
+1. 两个链表长度相等，并且最后一次相加时值没有大于 9
+2. 两个链表长度相等，并且最后一次相加时值大于 9
 3. 两个链表长度不相等
 
 ```c++
@@ -70,8 +66,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 思路同上，不过这里使用 `sum` 代替上面的 `carry`
@@ -103,5 +97,3 @@ public:
     }
 };
 ```
-
-

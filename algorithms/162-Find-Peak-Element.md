@@ -16,13 +16,9 @@ For example, in array `[1, 2, 3, 1]`, 3 is a peak element and your function shou
 
 Your solution should be in logarithmic complexity.
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Binary Search` `Array`
-
-
 
 ### Solution One
 
@@ -62,8 +58,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 ```c++
@@ -94,8 +88,6 @@ public:
 };
 ```
 
-
-
 ### Other Solutions
 
 [162. Find Peak Element](https://leetcode.com/problems/find-peak-element/solution/)
@@ -115,4 +107,3 @@ public class Solution {
     }
 }
 ```
-

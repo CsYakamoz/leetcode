@@ -7,7 +7,7 @@ Given a Binary Search Tree and a target number, return true if there exist two e
 **Example 1:**
 
 ```
-Input: 
+Input:
     5
    / \
   3   6
@@ -23,7 +23,7 @@ Output: True
 **Example 2:**
 
 ```
-Input: 
+Input:
     5
    / \
   3   6
@@ -35,13 +35,9 @@ Target = 28
 Output: False
 ```
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Tree`
-
-
 
 ### Solution One
 
@@ -85,8 +81,6 @@ public:
     }
 };
 ```
-
-
 
 ### Solution Two - In Top Solutions
 
@@ -225,4 +219,3 @@ public:
     }
 };
 ```
-

@@ -2,7 +2,7 @@
 
 ### Description
 
-Find the minimum length word from a given dictionary `words`, which has all the letters from the string `licensePlate`. Such a word is said to *complete* the given string `licensePlate`
+Find the minimum length word from a given dictionary `words`, which has all the letters from the string `licensePlate`. Such a word is said to _complete_ the given string `licensePlate`
 
 Here, for letters we ignore case. For example, `"P"` on the `licensePlate` still matches `"p"` on the word.
 
@@ -36,13 +36,9 @@ We return the one that occurred first.
 3. `words` will have a length in the range `[10, 1000]`.
 4. Every `words[i]` will consist of lowercase letters, and have length in range `[1, 15]`.
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Hash Table`
-
-
 
 ### Solution One
 
@@ -83,6 +79,3 @@ public:
     }
 };
 ```
-
-
-

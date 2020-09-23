@@ -2,18 +2,14 @@
 
 ### Description
 
-Given two sorted integer arrays *nums1* and *nums2*, merge *nums2* into *nums1* as one sorted array.
+Given two sorted integer arrays _nums1_ and _nums2_, merge _nums2_ into _nums1_ as one sorted array.
 
 **Note:**
-You may assume that *nums1* has enough space (size that is greater or equal to *m* + *n*) to hold additional elements from *nums2*. The number of elements initialized in *nums1* and *nums2* are *m* and *n* respectively.
-
-
+You may assume that _nums1_ has enough space (size that is greater or equal to _m_ + _n_) to hold additional elements from _nums2_. The number of elements initialized in _nums1_ and _nums2_ are _m_ and _n_ respectively.
 
 **Difficult:** `Easy`
 
 **Tags:** `Array` `Two Pointers`
-
-
 
 ### Solution One - In Top Solutions
 
@@ -44,6 +40,3 @@ public:
     }
 };
 ```
-
-
-

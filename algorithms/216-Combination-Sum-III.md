@@ -2,11 +2,11 @@
 
 ### Description
 
-Find all possible combinations of ***k*** numbers that add up to a number ***n***, given that only numbers from 1 to 9 can be used and each combination should be a unique set of numbers.
+Find all possible combinations of **_k_** numbers that add up to a number **_n_**, given that only numbers from 1 to 9 can be used and each combination should be a unique set of numbers.
 
-***Example 1:***
+**_Example 1:_**
 
-Input: **\*k*** = 3, **\*n*** = 7
+Input: **\*k\*** = 3, **\*n\*** = 7
 
 Output:
 
@@ -15,9 +15,9 @@ Output:
 
 ```
 
-***Example 2:***
+**_Example 2:_**
 
-Input: **\*k*** = 3, **\*n*** = 9
+Input: **\*k\*** = 3, **\*n\*** = 9
 
 Output:
 
@@ -25,13 +25,9 @@ Output:
 [[1,2,6], [1,3,5], [2,3,4]]
 ```
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Array` `Backtracking`
-
-
 
 ### Solution One
 
@@ -66,8 +62,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 ```c++
@@ -88,7 +82,7 @@ public:
             }
         }
     }
-    
+
     vector<vector<int>> combinationSum3(int k, int n) {
         vector<vector<int>> result;
         vector<int> sol;
@@ -97,6 +91,3 @@ public:
     }
 };
 ```
-
-
-

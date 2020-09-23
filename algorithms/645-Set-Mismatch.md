@@ -19,13 +19,9 @@ Output: [2,3]
 1. The given array size will in the range [2, 10000].
 2. The given array's numbers won't have any order.
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Hash Table` `Math`
-
-
 
 ### Solution One
 
@@ -55,9 +51,6 @@ public:
 };
 ```
 
-
-
 ### Other Solutions
 
 [645. Set Mismatch - Solutions](https://leetcode.com/problems/set-mismatch/solution/)
-

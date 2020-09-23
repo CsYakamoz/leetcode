@@ -30,13 +30,9 @@ You may assume that all words are consist of lowercase letters `a-z`.
 
 You should be familiar with how a Trie works. If not, please work on this problem: [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/) first.
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Backtracking` `Design` `Trie`
-
-
 
 ### Solution One
 
@@ -98,8 +94,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 ```c++
@@ -107,14 +101,14 @@ class WordDictionary {
 public:
     /** Initialize your data structure here. */
     WordDictionary() {
-    
+
     }
-    
+
     /** Adds a word into the data structure. */
     void addWord(string word) {
         map[(int)word.length()].insert(word);
     }
-    
+
     /** Returns if the word is in the data structure. A word could contain the dot character '.' to represent any one letter. */
     bool search(string word) {
         int len = word.length();
@@ -132,7 +126,7 @@ public:
             if (flag)
                 return true;
         }
-        
+
         return false;
     }
 
@@ -140,6 +134,3 @@ private:
     unordered_map<int, unordered_set<string>> map;
 };
 ```
-
-
-

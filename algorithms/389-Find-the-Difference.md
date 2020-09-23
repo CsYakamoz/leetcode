@@ -22,13 +22,9 @@ Explanation:
 'e' is the letter that was added.
 ```
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Hash Table` `Bit Manipulation`
-
-
 
 ### Solution One
 
@@ -54,8 +50,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two
 
 ```c++
@@ -72,5 +66,3 @@ public:
     }
 };
 ```
-
-

@@ -16,13 +16,9 @@ The minimum number of jumps to reach the last index is `2`. (Jump `1` step fr
 **Note:**
 You can assume that you can always reach the last index.
 
-
-
 **Difficult:** `Hard`
 
 **Tags:** `Array` `Greedy`
-
-
 
 ### Solution One
 
@@ -41,10 +37,10 @@ public:
         while (i < nums.size() - 1)
         {
             int jumpCount = nums[i];
-            // nextPos points to the next place where we jump 
+            // nextPos points to the next place where we jump
             int nextPos = i;
 
-            // maxIndex points to the maximum index where nextPos can jump  
+            // maxIndex points to the maximum index where nextPos can jump
             int maxIndex = i + nums[i];
 
             // if we can jump to the last index
@@ -69,5 +65,3 @@ public:
     }
 };
 ```
-
-

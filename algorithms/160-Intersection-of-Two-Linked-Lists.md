@@ -10,7 +10,7 @@ For example, the following two linked lists:
 A:          a1 → a2
                    ↘
                      c1 → c2 → c3
-                   ↗            
+                   ↗
 B:     b1 → b2 → b3
 
 ```
@@ -24,13 +24,9 @@ begin to intersect at node c1.
 - You may assume there are no cycles anywhere in the entire linked structure.
 - Your code should preferably run in O(n) time and use only O(1) memory.
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Linked List`
-
-
 
 ### Solution One
 
@@ -63,11 +59,8 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 [Concise JAVA solution, O(1) memory O(n) time](https://discuss.leetcode.com/topic/5492/concise-java-solution-o-1-memory-o-n-time)
 
 [Java solution without knowing the difference in len!](https://discuss.leetcode.com/topic/28067/java-solution-without-knowing-the-difference-in-len)
-

@@ -17,13 +17,9 @@ Input: insert("app", 2), Output: Null
 Input: sum("ap"), Output: 5
 ```
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Trie`
-
-
 
 ### Solution One
 
@@ -89,8 +85,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 ```c++
@@ -99,7 +93,7 @@ public:
     unordered_map<char, TrieNode*> children;
     bool is_word;
     int val;
-    
+
     TrieNode(int n){
         is_word = false;
         val = n;
@@ -111,13 +105,13 @@ class MapSum {
 public:
     TrieNode* root;
     unordered_map<string, int> table;
-    
+
     /** Initialize your data structure here. */
     MapSum() {
         root = new TrieNode(0);
     }
-    
-    
+
+
     void insert(string key, int val) {
         int diff;
         if(table.find(key) == table.end()){
@@ -127,7 +121,7 @@ public:
         else{
             diff = val - table[key];
         }
-        
+
         TrieNode* p = root;
         for(int i = 0; i < key.size(); i++){
             if(p->children.find(key[i]) == p->children.end()){
@@ -138,12 +132,12 @@ public:
             p = (p->children)[key[i]];
         }
         p->is_word = true;
-        
+
     }
-    
+
     int sum(string prefix) {
         TrieNode* p = root;
-        
+
         for(int i = 0; i < prefix.size(); i++){
             if(p->children.find(prefix[i]) == p->children.end()){
                 return 0;
@@ -161,6 +155,3 @@ public:
     }
 };
 ```
-
-
-

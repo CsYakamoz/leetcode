@@ -8,21 +8,17 @@ Implement atoi to convert a string to an integer.
 
 **Notes:** It is intended for this problem to be specified vaguely (ie, no given input specs). You are responsible to gather all the input requirements up front.
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Math` `String`
 
-
-
 ### Solution One
 
-第一个循环首先将查看数字（包括符号）前面是否有非数字（不包括空格)，有则直接返回0
+第一个循环首先将查看数字（包括符号）前面是否有非数字（不包括空格)，有则直接返回 0
 
 第二个循环跳过空格
 
-第三个循环判断有多少个符号，大于一个则直接返回0
+第三个循环判断有多少个符号，大于一个则直接返回 0
 
 第三个循环将数字添加到`result`，并且判断是否大于`INT_MAX`或者小于`INT_MIN`
 
@@ -94,11 +90,9 @@ public:
 };
 ```
 
+### Solution Two - In Top Solutions
 
-
-### Solution Two -  In Top Solutions
-
-与**One**类似，只是少了第一个循环和第三个循环中符号数是否大于1
+与**One**类似，只是少了第一个循环和第三个循环中符号数是否大于 1
 
 这里跳过空格后，直接查看是否为符号，接着直接数字添加到`result`
 
@@ -146,5 +140,3 @@ public:
     }
 };
 ```
-
-

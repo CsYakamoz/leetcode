@@ -12,7 +12,7 @@ Determine the maximum amount of money the thief can rob tonight without alerting
      3
     / \
    2   3
-    \   \ 
+    \   \
      3   1
 ```
 
@@ -24,19 +24,15 @@ Maximum amount of money the thief can rob = 3 + 3 + 1 = **7**.
      3
     / \
    4   5
-  / \   \ 
+  / \   \
  1   3   1
 ```
 
 Maximum amount of money the thief can rob = 4 + 5 = **9**.
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Tree` `Depth-first Search`
-
-
 
 ### Solution One
 
@@ -48,7 +44,7 @@ public:
         auto res = dfs(root);
         return max(res.first, res.second);
     }
-    
+
 private:
     /*
      * first means yes
@@ -68,9 +64,6 @@ private:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 [Step by step tackling of the problem](https://discuss.leetcode.com/topic/39834/step-by-step-tackling-of-the-problem)
-

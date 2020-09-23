@@ -27,13 +27,9 @@ After running your query, the above salary table should have the following rows:
 | 4  | D    | m   | 500    |
 ```
 
-
-
 **Difficult:** `Easy`
 
-**Tags:** 
-
-
+**Tags:**
 
 ### Solution One - In Top Solutions
 
@@ -44,6 +40,3 @@ After running your query, the above salary table should have the following rows:
 UPDATE salary
 SET sex = CHAR(ASCII('m') ^ ASCII('f') ^ ASCII(sex));
 ```
-
-
-

@@ -19,13 +19,9 @@ Output: ["Alaska", "Dad"]
 1. You may use one character in the keyboard more than once.
 2. You may assume the input string will only contain letters of alphabet.
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Hash Table`
-
-
 
 ### Solution One
 
@@ -60,8 +56,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two
 
 ```c++
@@ -69,10 +63,10 @@ class Solution {
 public:
     vector<string> findWords(vector<string>& words) {
         vector<string> res;
-        vector<unordered_set<char>> row{ 
+        vector<unordered_set<char>> row{
             {'q','w','e','r','t','y','u','i','o','p'} ,
             {'a','s','d','f','g','h','j','k','l'} ,
-            {'z','x','c','v','b','n','m'} 
+            {'z','x','c','v','b','n','m'}
         };
         for (auto &s : words)
         {
@@ -99,8 +93,6 @@ public:
 };
 ```
 
-
-
 ### Solution Three - In Top Solutions
 
 ```c++
@@ -122,11 +114,8 @@ public:
             }
             if (one + two + three == 1) res.push_back(word);
         }
-        return res;        
-        
+        return res;
+
     }
 };
 ```
-
-
-

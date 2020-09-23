@@ -18,13 +18,9 @@ Given `"paper"`, `"title"`, return true.
 **Note:**
 You may assume both **s** and **t** have the same length.
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Hash Table`
-
-
 
 ### Solution One
 
@@ -48,6 +44,3 @@ public:
     }
 };
 ```
-
-
-

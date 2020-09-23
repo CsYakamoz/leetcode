@@ -9,26 +9,26 @@ The adding rule is: given a positive integer depth `d`, for each NOT null tree n
 **Example 1:**
 
 ```
-Input: 
+Input:
 A binary tree as following:
        4
      /   \
     2     6
-   / \   / 
-  3   1 5   
+   / \   /
+  3   1 5
 
 v = 1
 
 d = 2
 
-Output: 
+Output:
        4
       / \
      1   1
     /     \
    2       6
-  / \     / 
- 3   1   5   
+  / \     /
+ 3   1   5
 
 
 ```
@@ -36,25 +36,25 @@ Output:
 **Example 2:**
 
 ```
-Input: 
+Input:
 A binary tree as following:
       4
-     /   
-    2    
-   / \   
-  3   1    
+     /
+    2
+   / \
+  3   1
 
 v = 1
 
 d = 3
 
-Output: 
+Output:
       4
-     /   
+     /
     2
-   / \    
+   / \
   1   1
- /     \  
+ /     \
 3       1
 
 ```
@@ -64,13 +64,9 @@ Output:
 1. The given d is in range [1, maximum depth of the given tree + 1].
 2. The given binary tree has at least one tree node.
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Tree`
-
-
 
 ### Solution One
 
@@ -104,7 +100,7 @@ public:
             }
             level++;
         }
-        
+
         size_t length = q.size();
         for (size_t i = 0; i < length; i++)
         {
@@ -122,8 +118,6 @@ public:
     }
 };
 ```
-
-
 
 ### Solution Two
 
@@ -164,6 +158,3 @@ private:
     }
 };
 ```
-
-
-

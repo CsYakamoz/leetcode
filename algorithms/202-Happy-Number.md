@@ -13,13 +13,9 @@ A happy number is a number defined by the following process: Starting with any p
 - 6^2^ + 8^2^ = 100
 - 1^2^ + 0^2^ + 0^2^ = 1
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Hash Table` `Math`
-
-
 
 ### Solution One
 
@@ -54,14 +50,12 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 ```c++
 class Solution {
 public:
-    /* 
+    /*
     Whether the number is or not, its square sum sequence is always a list with cycle
     类似于检测单向链表是否环路，使用双指针法（保证循环必然退出）
     */
@@ -72,12 +66,12 @@ public:
             fast = getDigitSum(fast);
             fast = getDigitSum(fast);
         } while (slow != fast);
-        
+
         if (slow == 1)
             return true;
         return false;
     }
-    
+
     inline int getDigitSum(int n)
     {
         int sum = 0;
@@ -90,6 +84,3 @@ public:
     }
 };
 ```
-
-
-

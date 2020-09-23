@@ -2,7 +2,7 @@
 
 ### Description
 
-Given a binary tree, return the *level order* traversal of its nodes' values. (ie, from left to right, level by level).
+Given a binary tree, return the _level order_ traversal of its nodes' values. (ie, from left to right, level by level).
 
 For example:
 Given binary tree `[3,9,20,null,null,15,7]`,
@@ -26,13 +26,9 @@ return its level order traversal as:
 ]
 ```
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Tree` `Breadth-first Search`
-
-
 
 ### Solution One
 
@@ -71,8 +67,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two:
 
 `DFS` `Recursion`
@@ -99,6 +93,3 @@ public:
     }
 };
 ```
-
-
-

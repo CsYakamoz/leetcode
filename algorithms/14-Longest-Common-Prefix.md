@@ -4,13 +4,9 @@
 
 Write a function to find the longest common prefix string amongst an array of strings.
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `String`
-
-
 
 ### Solution One
 
@@ -47,8 +43,6 @@ public:
     }
 };
 ```
-
-
 
 ### Solution Two - In Top Solutions
 
@@ -87,8 +81,6 @@ public:
 };
 ```
 
-
-
 ### Solution Three - In Top Solutions
 
 判断所有`strs[i]`的第`k`个字符是否相同，若相同，则添加到`result`
@@ -123,5 +115,3 @@ public:
     }
 };
 ```
-
-

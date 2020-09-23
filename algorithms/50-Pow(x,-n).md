@@ -1,30 +1,28 @@
-## [50.  Pow(x, n)](https://leetcode.com/problems/powx-n/#/description)
+## [50. Pow(x, n)](https://leetcode.com/problems/powx-n/#/description)
 
 ### Description
 
 Implement pow(x, n)
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Binary Search` `Math`
 
-
-
 ### Solution One - In Top Solutions
 
-对于一个正整数，如9，我们可以写成：1001，即$2^3+2^0$
+对于一个正整数，如 9，我们可以写成：1001，即$2^3+2^0$
 
 那么将有 $x^9 = x^{2^3} + x^{2^0}$
 
-那么对于任意x，n
+那么对于任意 x，n
 
 则有：
+
 $$
 x^n = x^{2^i} + x^{2^{i-1}} + \cdots + x^{2^0}
 $$
-为了防止n 为INT_MIN，故`absN`的类型为long long，因为用int类型存储 -INT_MIN 会溢出
+
+为了防止 n 为 INT_MIN，故`absN`的类型为 long long，因为用 int 类型存储 -INT_MIN 会溢出
 
 用此思路，时间复杂度为: $T(log_2 N)$
 
@@ -52,15 +50,13 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 $x^9 = x * (x^2)^4 = x * (x^4)^2 = x * (x^8)^1$
 
-$x^8 = (x^2)^4 = (x^4)^2 = (x^8)^1$ 
+$x^8 = (x^2)^4 = (x^4)^2 = (x^8)^1$
 
-此处使用(long long)n的理由同上
+此处使用(long long)n 的理由同上
 
 ```c++
 class Solution {
@@ -90,5 +86,3 @@ private:
     }
 };
 ```
-
-

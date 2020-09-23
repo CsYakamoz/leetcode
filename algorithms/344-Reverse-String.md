@@ -7,18 +7,14 @@ Write a function that takes a string as input and returns the string reversed.
 **Example:**
 Given s = "hello", return "olleh".
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Two Pointer` `String`
 
-
-
 ### Solution One
 
-1. 令 i = s.length() - 1，使其指向字符串s的最后一个字符
-2. 若i >= 0，则将s[i]添加到字符串result，否则返回字符串result
+1. 令 i = s.length() - 1，使其指向字符串 s 的最后一个字符
+2. 若 i >= 0，则将 s[i]添加到字符串 result，否则返回字符串 result
 3. i--
 
 ```c++
@@ -34,8 +30,6 @@ public:
     }
 };
 ```
-
-
 
 ### Solution Two - In Top Solutions
 
@@ -53,5 +47,3 @@ public:
     }
 };
 ```
-
-

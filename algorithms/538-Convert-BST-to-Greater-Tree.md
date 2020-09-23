@@ -1,6 +1,6 @@
 ## [538. Convert BST to Greater Tree](https://leetcode.com/problems/convert-bst-to-greater-tree/#/description)
 
-###  Description
+### Description
 
 Given a Binary Search Tree (BST), convert it to a Greater Tree such that every key of the original BST is changed to the original key plus sum of all keys greater than the original key in BST.
 
@@ -18,19 +18,15 @@ Output: The root of a Greater Tree like this:
           20     13
 ```
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Tree`
 
-
-
 ### Solution One
 
-`DFS`  `Recursion`
+`DFS` `Recursion`
 
-此思路太奇怪了，我也解释不了，也莫名奇妙就通过了 
+此思路太奇怪了，我也解释不了，也莫名奇妙就通过了
 
 `rVal`意思为：以`root->right`为根结点的子树的所有结点的和，若`root`没有右结点，则值为空。
 
@@ -65,8 +61,6 @@ private:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 [c++ solution beats 100%](https://discuss.leetcode.com/topic/83534/c-solution-beats-100)
@@ -79,7 +73,7 @@ public:
     void travel(TreeNode* root){
         if (!root) return;
         if (root->right) travel(root->right);
-        
+
         root->val = (cur_sum += root->val);
         if (root->left) travel(root->left);
     }
@@ -89,6 +83,3 @@ public:
     }
 };
 ```
-
-
-

@@ -28,13 +28,9 @@ For example, your query should return the following for the above table:
 
 **Note**: All emails are in lowercase.
 
-
-
 **Difficult:** `Easy`
 
-**Tags:** 
-
-
+**Tags:**
 
 ### Solution One
 
@@ -45,9 +41,6 @@ FROM Person AS a, Person AS b
 WHERE a.id != b.id AND a.Email = b.Email;
 ```
 
-
-
 ### Solutions
 
 [182. Duplicate Emails - Solution](https://leetcode.com/problems/duplicate-emails/solution/)
-

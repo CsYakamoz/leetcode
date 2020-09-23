@@ -32,13 +32,9 @@ For the example above, the output should be:
 +---------+-----------+--------------+-----------+
 ```
 
-
-
 **Difficult:** `Easy`
 
-**Tags:** 
-
-
+**Tags:**
 
 ### Solution One
 
@@ -50,8 +46,6 @@ WHERE (id % 2) != 0 AND description != "boring"
 ORDER BY rating DESC;
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 ```mysql
@@ -62,6 +56,3 @@ WHERE       MOD(id, 2) = 1
 ORDER BY    rating desc
 ;
 ```
-
-
-

@@ -13,13 +13,9 @@ Input: "Hello, my name is John"
 Output: 5
 ```
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `String`
-
-
 
 ### Solution One
 
@@ -50,8 +46,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two
 
 ```c++
@@ -66,6 +60,3 @@ public:
     }
 };
 ```
-
-
-

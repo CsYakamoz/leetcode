@@ -32,13 +32,9 @@ Output:
 "ffffffff"
 ```
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Bit Manipulation`
-
-
 
 ### Solution One
 
@@ -46,9 +42,9 @@ Output:
 
 后来看了题目类型，发现是位操作，于是想到每 4 位二进制等于 1 位十六进制，便取**每 4 位二进制来当作余数**
 
-然后发现在 VS 2017 下（LeetCode编译器未知），对负数进行右移，最高位保留符号位，此时只好使用`unsigned`类型
+然后发现在 VS 2017 下（LeetCode 编译器未知），对负数进行右移，最高位保留符号位，此时只好使用`unsigned`类型
 
-**注意：**此处不能使用`size_t`类型，`size_t`在LeetCode编译器中为 8 个字节，而不是 4 个字节
+**注意：**此处不能使用`size_t`类型，`size_t`在 LeetCode 编译器中为 8 个字节，而不是 4 个字节
 
 ```c++
 class Solution {
@@ -84,8 +80,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 ```c++
@@ -104,8 +98,6 @@ public:
     }
 };
 ```
-
-
 
 ### Solution Three - In Top Solutions
 
@@ -143,6 +135,3 @@ public:
     }
 };
 ```
-
-
-

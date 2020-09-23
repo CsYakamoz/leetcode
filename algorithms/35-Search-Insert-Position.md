@@ -12,13 +12,9 @@ Here are few examples.
 `[1,3,5,6]`, 7 → 4
 `[1,3,5,6]`, 0 → 0
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Array` `Binary Search`
-
-
 
 ### Solution One
 
@@ -41,8 +37,6 @@ public:
     }
 };
 ```
-
-
 
 ### Solution Two
 
@@ -76,6 +70,3 @@ public:
     }
 };
 ```
-
-
-

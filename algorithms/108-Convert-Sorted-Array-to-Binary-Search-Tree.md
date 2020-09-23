@@ -4,13 +4,9 @@
 
 Given an array where elements are sorted in ascending order, convert it to a height balanced BST.
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Tree` `Depth-first Search`
-
-
 
 ### Solution One
 
@@ -35,4 +31,3 @@ public:
     }
 };
 ```
-

@@ -48,13 +48,9 @@ Explanation:
 Note that 'A' and 'a' are treated as two different characters.
 ```
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Hash Table` `Heap`
-
-
 
 ### Solution One
 
@@ -68,7 +64,7 @@ public:
         vector<pair<char, int>> v(m.begin(), m.end());
         sort(v.rbegin(), v.rend(),
             [](pair<char, int> x, pair<char, int> y) {
-            return x.second < y.second; 
+            return x.second < y.second;
         });
         string res;
         for (auto i : v)
@@ -83,8 +79,6 @@ public:
     }
 };
 ```
-
-
 
 ### Solution Two
 
@@ -116,8 +110,6 @@ public:
 };
 ```
 
-
-
 ### Solution Three - In Top Solutions
 
 [C++ O(n) solution without sort()](https://discuss.leetcode.com/topic/66045/c-o-n-solution-without-sort)
@@ -129,7 +121,7 @@ public:
         unordered_map<char,int> freq;
         vector<string> bucket(s.size()+1, "");
         string res;
-        
+
         //count frequency of each character
         for(char c:s) freq[c]++;
         //put character into frequency bucket
@@ -147,6 +139,3 @@ public:
     }
 };
 ```
-
-
-

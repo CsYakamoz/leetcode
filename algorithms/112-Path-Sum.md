@@ -20,13 +20,9 @@ Given the below binary tree and `sum = 22`,
 
 return true, as there exist a root-to-leaf path `5->4->11->2` which sum is 22.
 
-
-
 **Difficult:** `Easy`
 
 **Tags:**`Tree` `Depth-first Search`
-
-
 
 ### Solution One
 
@@ -50,8 +46,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 ```c++
@@ -63,12 +57,9 @@ public:
         if (root->left == nullptr && root->right == nullptr) return (sum==value);
         return DFS(root->left, sum, value) || DFS(root->right, sum, value);
     }
-    
+
     bool hasPathSum(TreeNode* root, int sum) {
         return DFS(root, sum, 0);
     }
 };
 ```
-
-
-

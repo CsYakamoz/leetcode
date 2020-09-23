@@ -26,13 +26,9 @@ In step 3, we use Paste operation to get 'AAA'.
 
 1. The `n` will be in the range [1, 1000].
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Dynamic Programming`
-
-
 
 ### Solution One
 
@@ -87,8 +83,6 @@ private:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 这里直接将上面三种情况整合了在一起
@@ -100,18 +94,17 @@ private:
 ```c++
 class Solution {
 public:
-    int minSteps(int n) {    
+    int minSteps(int n) {
         if (n==1) return 0;
-        
+
         int half = sqrt(n)+1;
         for (int i=2; i < half; ++i) {
             if ((n%i) == 0) {
                 return (i+minSteps(n/i));
             }
         }
-        
+
         return n;
     }
 };
 ```
-

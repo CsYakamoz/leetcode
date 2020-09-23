@@ -18,13 +18,9 @@ Output: [[4, 6], [4, 7], [4, 6, 7], [4, 6, 7, 7], [6, 7], [6, 7, 7], [7,7], [4,7
 2. The range of integer in the given array is [-100,100].
 3. The given array may contain duplicates, and two equal integers should also be considered as a special case of increasing sequence.
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Depth-first Search`
-
-
 
 ### Solution One
 
@@ -44,7 +40,7 @@ public:
         }
         return result;
     }
-    
+
 private:
     vector<vector<int>> result;
     set <vector<int>> dict;
@@ -68,8 +64,6 @@ private:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 ```c++
@@ -81,7 +75,7 @@ public:
         dfs(res, seq, nums, 0);
         return res;
     }
-    
+
     void dfs(vector<vector<int>>& res, vector<int>& seq, vector<int>& nums, int pos) {
         if(seq.size() > 1) res.push_back(seq);
         unordered_set<int> hash;
@@ -97,6 +91,3 @@ public:
 };
 
 ```
-
-
-

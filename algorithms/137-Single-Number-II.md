@@ -2,18 +2,14 @@
 
 ### Description
 
-Given an array of integers, every element appears *three* times except for one, which appears exactly once. Find that single one.
+Given an array of integers, every element appears _three_ times except for one, which appears exactly once. Find that single one.
 
 **Note:**
 Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Bit Manipulation`
-
-
 
 ### Solution One
 
@@ -40,8 +36,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 [Challenge me , thx](https://discuss.leetcode.com/topic/2031/challenge-me-thx)
@@ -57,7 +51,7 @@ public:
 > - Similarly, for 'twos', we can get 'twos = twos ^ A[i]; if (ones* == 1) then twos = 0' and 'twos = (twos ^ A[i]) & ~ones'. Notice that 'ones*' is the value of 'ones' after calculation, that is why twos is
 >   calculated later.
 >
-> ------
+> ---
 >
 > Here is another example. If a number appears 5 times at most, we can write a program using the same method. Now we need 3 bits and the loop is 000->100->010->110->001. The code looks like this:
 >
@@ -99,6 +93,3 @@ public int singleNumber(int[] A) {
     return ones;
 }
 ```
-
-
-

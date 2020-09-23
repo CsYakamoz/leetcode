@@ -2,7 +2,7 @@
 
 ### Description
 
-Print a binary tree in an m*n 2D string array following these rules:
+Print a binary tree in an m\*n 2D string array following these rules:
 
 1. The row number `m` should be equal to the height of the given binary tree.
 2. The column number `n` should always be an odd number.
@@ -45,10 +45,10 @@ Input:
       1
      / \
     2   5
-   / 
-  3 
- / 
-4 
+   /
+  3
+ /
+4
 Output:
 
 [["",  "",  "", "",  "", "", "", "1", "",  "",  "",  "",  "", "", ""]
@@ -59,13 +59,9 @@ Output:
 
 **Note:** The height of binary tree is in the range of [1, 10].
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Tree`
-
-
 
 ### Solution One
 
@@ -118,8 +114,6 @@ private:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 ```c++
@@ -149,6 +143,3 @@ vector<vector<string>> printTree(TreeNode* root) {
     }
 };
 ```
-
-
-

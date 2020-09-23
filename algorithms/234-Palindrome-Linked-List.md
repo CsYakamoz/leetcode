@@ -7,13 +7,9 @@ Given a singly linked list, determine if it is a palindrome.
 **Follow up:**
 Could you do it in O(n) time and O(1) space?
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Linked List` `Two Pointers`
-
-
 
 ### Solution One
 
@@ -47,8 +43,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 [My easy understand C++ solution](https://discuss.leetcode.com/topic/27605/my-easy-understand-c-solution)
@@ -61,7 +55,7 @@ public:
         temp = head;
         return check(head);
     }
-    
+
     bool check(ListNode* p) {
         if (NULL == p) return true;
         bool isPal = check(p->next) & (temp->val == p->val);
@@ -71,9 +65,7 @@ public:
 };
 ```
 
-
-
-###  Solution Three - In Top Solutions
+### Solution Three - In Top Solutions
 
 ```c++
 class Solution {
@@ -89,7 +81,7 @@ public:
             if (p1 == p2)
                 return false;
         }
-        
+
         ListNode *last = nullptr, *next;
         while (p1 != nullptr)
         {
@@ -99,7 +91,7 @@ public:
             p1 = next;
         }
         p1 = last;
-        
+
         while (p1 != nullptr)
         {
             if (head->val != p1->val)
@@ -111,6 +103,3 @@ public:
     }
 };
 ```
-
-
-

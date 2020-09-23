@@ -2,7 +2,7 @@
 
 ### Description
 
-There are *N* children standing in a line. Each child is assigned a rating value.
+There are _N_ children standing in a line. Each child is assigned a rating value.
 
 You are giving candies to these children subjected to the following requirements:
 
@@ -11,13 +11,9 @@ You are giving candies to these children subjected to the following requirements
 
 What is the minimum candies you must give?
 
-
-
 **Difficult:** `Hard`
 
 **Tags:** `Greedy`
-
-
 
 ### Solution One
 
@@ -66,8 +62,6 @@ public:
     }
 };
 ```
-
-
 
 ### Other Solutions
 

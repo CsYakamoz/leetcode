@@ -4,15 +4,11 @@
 
 Given a binary tree, determine if it is height-balanced.
 
-For this problem, a height-balanced binary tree is defined as a binary tree in which the depth of the two subtrees of *every* node never differ by more than 1.
-
-
+For this problem, a height-balanced binary tree is defined as a binary tree in which the depth of the two subtrees of _every_ node never differ by more than 1.
 
 **Difficult:** `Easy`
 
 **Tags:** `Tree` `Depth-first Search`
-
-
 
 ### Solution One
 
@@ -43,8 +39,6 @@ private:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 ```c++
@@ -63,6 +57,3 @@ public:
     }
 };
 ```
-
-
-

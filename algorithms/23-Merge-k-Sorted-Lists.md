@@ -1,14 +1,10 @@
 ## [23. Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/#/description)
 
-Merge *k* sorted linked lists and return it as one sorted list. Analyze and describe its complexity.
-
-
+Merge _k_ sorted linked lists and return it as one sorted list. Analyze and describe its complexity.
 
 **Difficult:** `Hard`
 
 **Tags:** `Divide and Conquer` `Linked List` `Heap`
-
-
 
 ### Solution One
 
@@ -46,11 +42,9 @@ public:
 };
 ```
 
-
-
 ### Solution Two
 
-使用 *Merge Two Sorted Lists* 中的思路
+使用 _Merge Two Sorted Lists_ 中的思路
 
 将第一个与第二个合并，得到新的一个
 
@@ -112,8 +106,6 @@ private:
 };
 ```
 
-
-
 ### Solution Three - In Top Solutions
 
 ```c++
@@ -152,6 +144,3 @@ private:
     }
 };
 ```
-
-
-

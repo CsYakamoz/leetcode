@@ -15,13 +15,9 @@ canConstruct("aa", "ab") -> false
 canConstruct("aa", "aab") -> true
 ```
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `String`
-
-
 
 ### Solution One
 
@@ -45,8 +41,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 **One**的是 29ms，这个是 19ms，目前不知道差别是什么
@@ -59,16 +53,13 @@ public:
         for (char ch : magazine) {
             letters[ch-'a']++;
         }
-        
+
         for (char ch : ransomNote) {
             letters[ch-'a']--;
             if (letters[ch-'a']<0) return false;
         }
-        
+
         return true;
     }
 };
 ```
-
-
-

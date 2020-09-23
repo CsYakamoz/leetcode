@@ -18,17 +18,13 @@ Note that [10, 5, 2] is not included as the product of 100 is not strictly less 
 
 **Note:**
 
-* `0 < nums.length <= 50000`.
-* `0 < nums[i] < 1000`.
-* `0 <= k < 10^6`.
-
-
+- `0 < nums.length <= 50000`.
+- `0 < nums[i] < 1000`.
+- `0 <= k < 10^6`.
 
 **Difficult:** `Medium`
 
 **Tags:** `Array` `Two Pointers`
-
-
 
 ### Solution One
 
@@ -90,8 +86,6 @@ private:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 [C++, concise solution, O(n)](https://discuss.leetcode.com/topic/107978/c-concise-solution-o-n)
@@ -111,6 +105,3 @@ public:
     }
 };
 ```
-
-
-

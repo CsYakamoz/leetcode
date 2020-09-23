@@ -7,7 +7,7 @@ Given a 2D board and a word, find if the word exists in the grid.
 The word can be constructed from letters of sequentially adjacent cell, where "adjacent" cells are those horizontally or vertically neighboring. The same letter cell may not be used more than once.
 
 For example,
-Given **board** = 
+Given **board** =
 
 ```
 [
@@ -23,13 +23,9 @@ Given **board** =
 
 **word** = `"ABCB"`, -> returns `false`.
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Array` `Backtracking`
-
-
 
 ### Solution One
 
@@ -58,7 +54,7 @@ class Solution
   private:
     int m, n;
     bool find(int i, int j, size_t len, vector<vector<char> > &board, const string &word)
-    {        
+    {
         if (len == word.size())
             return true;
 
@@ -80,6 +76,3 @@ class Solution
     }
 };
 ```
-
-
-

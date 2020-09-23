@@ -22,13 +22,9 @@ Output: 10
 
 **Note:** Your solution should run in O(log n) time and O(1) space.
 
-
-
 **Difficult:** `Medium`
 
 **Tags:**
-
-
 
 ### Solution One
 
@@ -60,8 +56,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 ```c++
@@ -87,8 +81,6 @@ public:
 };
 ```
 
-
-
 ### Solution Three - In Top Solutions
 
 ```c++
@@ -109,12 +101,9 @@ public:
                     i = mid+1; //eg.,1 1 2
                 else
                     j = mid-1;//eg., 1 2 2
-            }                        
+            }
         }
         return nums[i];
     }
 };
 ```
-
-
-

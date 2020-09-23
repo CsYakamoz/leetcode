@@ -22,15 +22,11 @@ There is one obstacle in the middle of a 3x3 grid as illustrated below.
 
 The total number of unique paths is `2`.
 
-**Note:** *m* and *n* will be at most 100.
-
-
+**Note:** _m_ and _n_ will be at most 100.
 
 **Difficult:** `Medium`
 
 **Tags:** `Array` `Dynamic Programming`
-
-
 
 ### Solution One
 
@@ -82,8 +78,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 [Java Solution using Dynamic Programming, O(1) space](https://discuss.leetcode.com/topic/4987/java-solution-using-dynamic-programming-o-1-space)
@@ -91,13 +85,13 @@ public:
 ```c++
 public class Solution {
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {
-        
+
         //Empty case
         if(obstacleGrid.length == 0) return 0;
-        
+
         int rows = obstacleGrid.length;
         int cols = obstacleGrid[0].length;
-        
+
         for(int i = 0; i < rows; i++){
             for(int j = 0; j < cols; j++){
                 if(obstacleGrid[i][j] == 1)
@@ -112,13 +106,9 @@ public class Solution {
                     obstacleGrid[i][j] = obstacleGrid[i - 1][j] + obstacleGrid[i][j - 1];
             }
         }
-        
+
         return obstacleGrid[rows - 1][cols - 1];
-        
+
     }
 }
 ```
-
-
-
- 

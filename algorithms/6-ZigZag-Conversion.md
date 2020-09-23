@@ -20,17 +20,13 @@ string convert(string text, int nRows);
 
 `convert("PAYPALISHIRING", 3)` should return `"PAHNAPLSIIGYIR"`.
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `String`
 
-
-
 ### Solution One
 
-将字符串s的字符按顺序($C_0,C_1,\cdots,C_n$)添加到相应行中
+将字符串 s 的字符按顺序($C_0,C_1,\cdots,C_n$)添加到相应行中
 
 使用变量`dir`判断往上走还是往下走
 
@@ -80,13 +76,11 @@ public:
 };
 ```
 
-
-
 ### Solution Two
 
 首先计算出每一行中两个字符下标的差的规律`left = (numRows - line - 1) * 2`和`right = line * 2`
 
-然后根据`left`和`right`的值，判断进行哪个循环（`left`和`right`相同或者`left`和`right`其中一个为0，则下标差固定为`max(left, right)`，否则需要使下标差为`left`或者`right`）
+然后根据`left`和`right`的值，判断进行哪个循环（`left`和`right`相同或者`left`和`right`其中一个为 0，则下标差固定为`max(left, right)`，否则需要使下标差为`left`或者`right`）
 
 两种循环都将该行应有的字符添加到`result`
 
@@ -133,5 +127,3 @@ public:
     }
 };
 ```
-
-

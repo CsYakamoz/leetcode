@@ -11,16 +11,12 @@ Given `1->2->3->4->5->NULL`,
 return `1->3->5->2->4->NULL`.
 
 **Note:**
-The relative order inside both the even and odd groups should remain as it was in the input. 
+The relative order inside both the even and odd groups should remain as it was in the input.
 The first node is considered odd, the second node even and so on ...
-
-
 
 **Difficult:** `Medium`
 
 **Tags:** `Linked List`
-
-
 
 ### Solution One
 
@@ -59,8 +55,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 在 **One** 中，每次修改顺序，都会将 odd 组的尾部连接到 even 组的头部
@@ -93,6 +87,3 @@ public:
     }
 };
 ```
-
-
-

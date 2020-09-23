@@ -12,13 +12,9 @@ Given `"bbbbb"`, the answer is `"b"`, with the length of 1.
 
 Given `"pwwkew"`, the answer is `"wke"`, with the length of 3. Note that the answer must be a **substring**, `"pwke"` is a *subsequence* and not a substring.
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Hash Table` `Two Pointers` `String`
-
-
 
 ### Solution One
 
@@ -70,17 +66,15 @@ public:
 };
 ```
 
-
-
 ### Solution Two
 
 `Hash Table` `Two Pointers`
 
-使用Map的方法，以字符为key，下标为value
+使用 Map 的方法，以字符为 key，下标为 value
 
 对于一个字符序列$C_i,\cdots,C_{j-1}C_j,C_{j+1},\cdots,C_{k-1},C_k,C_{k+1}$(i < j < k)
 
-假设$C_i$~$C_{k-1}$没有重复字符，而$C_k$与$C_i$~$C_{k-1}$中的$C_j$重复，则比较$C_i,\cdots,C_{k-1}$的长度与当前最长长度`length`，以此判断是否更新`length`，接着将Map中以$C_i,\cdots,C_{j-1}$为key的节点删去，同时更新以$C_j$字符为key对应的value（即更新value值为k）
+假设$C_i$~$C_{k-1}$没有重复字符，而$C_k$与$C_i$~$C_{k-1}$中的$C_j$重复，则比较$C_i,\cdots,C_{k-1}$的长度与当前最长长度`length`，以此判断是否更新`length`，接着将 Map 中以$C_i,\cdots,C_{j-1}$为 key 的节点删去，同时更新以$C_j$字符为 key 对应的 value（即更新 value 值为 k）
 
 然后下次检测的是$C_{k+1}$是否与$C_{j+1}$~$C_k$中的某个字符重复
 
@@ -118,13 +112,11 @@ public:
 };
 ```
 
-
-
 ### Solution Three - In Top Solutions
 
 `Hash Table` `Two Pointers`
 
-与**Solution Two**类似，只是没有在Map中删除以$C_i,\cdots,C_{j-1}$为key的结点
+与**Solution Two**类似，只是没有在 Map 中删除以$C_i,\cdots,C_{j-1}$为 key 的结点
 
 ```c++
 class Solution {
@@ -166,5 +158,3 @@ public:
     }
 };
 ```
-
-

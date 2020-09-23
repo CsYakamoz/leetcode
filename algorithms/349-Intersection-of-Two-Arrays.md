@@ -5,24 +5,20 @@
 Given two arrays, write a function to compute their intersection.
 
 **Example:**
-Given *nums1* = `[1, 2, 2, 1]`, *nums2* = `[2, 2]`, return `[2]`.
+Given _nums1_ = `[1, 2, 2, 1]`, _nums2_ = `[2, 2]`, return `[2]`.
 
 **Note:**
 
 - Each element in the result must be unique.
 - The result can be in any order.
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Binary Search` `Hash Table` `Two Pointers` `Sort`
 
-
-
 ### Solution One
 
-`Two Pointer`  `Sort`
+`Two Pointer` `Sort`
 
 Maybe it's better to change line 12 to `while (i < length && j < length)`
 
@@ -60,8 +56,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two
 
 `Set`
@@ -87,8 +81,6 @@ public:
 };
 ```
 
-
-
 ### Solution Three - In Top Solutions
 
 ```c++
@@ -110,6 +102,3 @@ public:
     }
 };
 ```
-
-
-

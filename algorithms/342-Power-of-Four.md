@@ -9,13 +9,9 @@ Given num = 16, return true. Given num = 5, return false.
 
 **Follow up**: Could you solve it without loops/recursion?
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Bit Manipulation`
-
-
 
 ### Solution One
 
@@ -41,8 +37,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 ```c++
@@ -59,15 +53,13 @@ public:
 };
 ```
 
-
-
 ### Solution Three - In Top Solutions
 
 [1 line C++ solution without confusing bit manipulations](https://discuss.leetcode.com/topic/42914/1-line-c-solution-without-confusing-bit-manipulations)
 
 > (4^n - 1) % 3 == 0
 > another proof:
-> (1) 4^n - 1 = (2^n + 1) * (2^n - 1)
+> (1) 4^n - 1 = (2^n + 1) \* (2^n - 1)
 > (2) among any 3 consecutive numbers, there must be one that is a multiple of 3
 > among (2^n-1), (2^n), (2^n+1), one of them must be a multiple of 3, and (2^n) cannot be the one, therefore either (2^n-1) or (2^n+1) must be a multiple of 3, and 4^n-1 must be a multiple of 3 as well.
 >
@@ -79,8 +71,6 @@ bool isPowerOfFour(int num) {
 }
 ```
 
-
-
 [Simple C++ O(1) solution without 0x55555555](https://discuss.leetcode.com/topic/44430/simple-c-o-1-solution-without-0x55555555)
 
 ```c++
@@ -91,6 +81,3 @@ public:
     }
 };
 ```
-
-
-

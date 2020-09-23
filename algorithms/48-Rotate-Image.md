@@ -2,20 +2,16 @@
 
 ### Description
 
-You are given an *n* x *n* 2D matrix representing an image.
+You are given an _n_ x _n_ 2D matrix representing an image.
 
 Rotate the image by 90 degrees (clockwise).
 
 Follow up:
 Could you do this in-place?
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Array`
-
-
 
 ### Solution One
 
@@ -29,7 +25,7 @@ Could you do this in-place?
 
 规律为(i, j) → (j, n - 1 - i)
 
-每个do ... while循环都执行类似以上操作
+每个 do ... while 循环都执行类似以上操作
 
 ```c++
 class Solution
@@ -63,8 +59,6 @@ class Solution
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 First we transpose the matrix and then reverse every row:
@@ -74,18 +68,16 @@ class Solution {
 public:
     void rotate(vector<vector<int>>& m) {
         int n = m.size();
-        
+
         for(int i=0; i<n; i++)
             for(int j=0; j<i; j++)
                 swap(m[i][j], m[j][i]);
-        
+
         for(int i=0; i<n; i++)
             reverse(m[i].begin(), m[i].end());
     }
 };
 ```
-
-
 
 ### Solution Three - In Top Solutions
 
@@ -108,6 +100,3 @@ public:
     }
 };
 ```
-
-
-

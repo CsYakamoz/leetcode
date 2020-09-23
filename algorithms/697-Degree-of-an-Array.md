@@ -11,7 +11,7 @@ Your task is to find the smallest possible length of a (contiguous) subarray of 
 ```
 Input: [1, 2, 2, 3, 1]
 Output: 2
-Explanation: 
+Explanation:
 The input array has a degree of 2 because both elements 1 and 2 appear twice.
 Of the subarrays that have the same degree:
 [1, 2, 2, 3, 1], [1, 2, 2, 3], [2, 2, 3, 1], [1, 2, 2], [2, 2, 3], [2, 2]
@@ -29,16 +29,12 @@ Output: 6
 
 **Note:**
 
-* `nums.length` will be between 1 and 50,000.
-* `nums[i]` will be an integer between 0 and 49,999.
-
-
+- `nums.length` will be between 1 and 50,000.
+- `nums[i]` will be an integer between 0 and 49,999.
 
 **Difficult:** `Easy`
 
 **Tags:** `Array`
-
-
 
 ### Solution One
 
@@ -70,6 +66,3 @@ public:
     }
 };
 ```
-
-
-

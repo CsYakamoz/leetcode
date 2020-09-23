@@ -16,13 +16,9 @@ Find the sum of all left leaves in a given binary tree.
 There are two left leaves in the binary tree, with values 9 and 15 respectively. Return 24.
 ```
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Tree`
-
-
 
 ### Solution One
 
@@ -42,7 +38,7 @@ public:
         }
         return sum;
     }
-    
+
 private:
     int sum = 0;
 
@@ -66,8 +62,6 @@ private:
     }
 };
 ```
-
-
 
 ### Solution Two
 
@@ -102,8 +96,6 @@ public:
     }
 };
 ```
-
-
 
 ### Solution Three - In Top Solutions
 

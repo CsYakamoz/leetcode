@@ -2,7 +2,7 @@
 
 ### Description
 
-A robot is located at the top-left corner of a *m* x *n* grid (marked 'Start' in the diagram below).
+A robot is located at the top-left corner of a _m_ x _n_ grid (marked 'Start' in the diagram below).
 
 The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked 'Finish' in the diagram below).
 
@@ -12,15 +12,11 @@ How many possible unique paths are there?
 
 Above is a 3 x 7 grid. How many possible unique paths are there?
 
-**Note:** *m* and *n* will be at most 100.
-
-
+**Note:** _m_ and _n_ will be at most 100.
 
 **Difficult:** `Medium`
 
 **Tags:** `Array` `Dynamic Programming`
-
-
 
 ### Solution One
 
@@ -45,8 +41,6 @@ public:
 };
 ```
 
-
-
 ## Solution Two - In Top Solutions
 
 [My AC solution using formula](https://discuss.leetcode.com/topic/2734/my-ac-solution-using-formula)
@@ -58,7 +52,7 @@ class Solution {
             int N = n + m - 2;// how much steps we need to do
             int k = m - 1; // number of steps that need to go down
             double res = 1;
-            // here we calculate the total possible path number 
+            // here we calculate the total possible path number
             // Combination(N, k) = n! / (k!(n - k)!)
             // reduce the numerator and denominator and get
             // C = ( (n - k + 1) * (n - k + 2) * ... * n ) / k!
@@ -69,9 +63,6 @@ class Solution {
     };
 ```
 
-
-
 ### Solution Three - In Top Solutions
 
 [0ms, 5-lines DP Solution in C++ with Explanations](https://discuss.leetcode.com/topic/15265/0ms-5-lines-dp-solution-in-c-with-explanations)
-

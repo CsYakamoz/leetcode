@@ -9,21 +9,17 @@ Given a circular array (the next element of the last element is the first elemen
 ```
 Input: [1,2,1]
 Output: [2,-1,2]
-Explanation: The first 1's next greater number is 2; 
-The number 2 can't find next greater number; 
+Explanation: The first 1's next greater number is 2;
+The number 2 can't find next greater number;
 The second 1's next greater number needs to search circularly, which is also 2.
 
 ```
 
 **Note:** The length of given array won't exceed 10000.
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Stack`
-
-
 
 ### Solution One
 
@@ -54,11 +50,9 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
-思路与 *Next Greater Element I* 类似
+思路与 _Next Greater Element I_ 类似
 
 ```c++
 class Solution {
@@ -83,5 +77,3 @@ public:
     }
 };
 ```
-
-

@@ -2,7 +2,7 @@
 
 ### Description
 
-Given an integer array *nums*, find the sum of the elements between indices *i* and *j* (*i* ≤ *j*), inclusive.
+Given an integer array _nums_, find the sum of the elements between indices _i_ and _j_ (_i_ ≤ _j_), inclusive.
 
 **Example:**
 
@@ -17,21 +17,17 @@ sumRange(0, 5) -> -3
 **Note:**
 
 1. You may assume that the array does not change.
-2. There are many calls to *sumRange* function.
-
-
+2. There are many calls to _sumRange_ function.
 
 **Difficult:** `Easy`
 
 **Tags:** `Dynamic Programming`
 
-
-
 ### Solution One
 
->  Status: **Memory Limit Exceeded**
+> Status: **Memory Limit Exceeded**
 >
->  **15 / 16** test cases passed
+> **15 / 16** test cases passed
 
 最后一个 test cases 中`nums`很长很长，长到申请 **n \* n** 矩阵会导致内存大小超过限制
 
@@ -62,8 +58,6 @@ private:
     vector<vector<int>> record;
 };
 ```
-
-
 
 ### Solution Two
 
@@ -107,8 +101,6 @@ private:
 };
 ```
 
-
-
 ### Solution Three - In Top Solutions
 
 [303. Range Sum Query - Solutions](https://leetcode.com/problems/range-sum-query-immutable/solution/)
@@ -129,11 +121,8 @@ public:
     int sumRange(int i, int j) {
         return sum[j + 1] - sum[i];
     }
-    
+
 private:
     vector<int> sum;
 };
 ```
-
-
-

@@ -17,7 +17,7 @@ Write a function that given an array A consisting of N integers, return the size
 ```
 Input: A = [5,4,0,3,1,6,2]
 Output: 4
-Explanation: 
+Explanation:
 A[0] = 5, A[1] = 4, A[2] = 0, A[3] = 3, A[4] = 1, A[5] = 6, A[6] = 2.
 
 One of the longest S[K]:
@@ -30,13 +30,9 @@ S[0] = {A[0], A[5], A[6], A[2]} = {5, 6, 2, 0}
 2. The elements of A are all distinct.
 3. Each element of array A is an integer within the range [0, N-1].
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Array`
-
-
 
 ### Solution One
 
@@ -64,8 +60,6 @@ public:
     }
 };
 ```
-
-
 
 ### Solution Two
 
@@ -106,8 +100,6 @@ private:
     }
 };
 ```
-
-
 
 ### Other Solutions
 

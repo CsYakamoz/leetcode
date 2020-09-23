@@ -9,32 +9,28 @@ You need to merge them into a new binary tree. The merge rule is that if two nod
 **Example 1:**
 
 ```
-Input: 
-    Tree 1                     Tree 2                  
-          1                         2                             
-         / \                       / \                            
-        3   2                     1   3                        
-       /                           \   \                      
-      5                             4   7                  
-Output: 
+Input:
+    Tree 1                     Tree 2
+          1                         2
+         / \                       / \
+        3   2                     1   3
+       /                           \   \
+      5                             4   7
+Output:
 Merged tree:
          3
         / \
        4   5
-      / \   \ 
+      / \   \
      5   4   7
 
 ```
 
 **Note:** The merging process must start from the root nodes of both trees.
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Tree`
-
-
 
 ### Solution One
 
@@ -56,8 +52,6 @@ public:
     }
 };
 ```
-
-
 
 ### Solution Two - In Top Solutions
 
@@ -82,6 +76,3 @@ public:
     }
 };
 ```
-
-
-

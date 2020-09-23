@@ -46,13 +46,9 @@ Output: "c"
 2. `letters` consists of lowercase letters, and contains at least 2 unique letters.
 3. `target` is a lowercase letter.
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Binary Search`
-
-
 
 ### Solution One
 
@@ -76,6 +72,3 @@ public:
     }
 };
 ```
-
-
-

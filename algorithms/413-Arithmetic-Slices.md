@@ -33,13 +33,9 @@ A = [1, 2, 3, 4]
 return: 3, for 3 arithmetic slices in A: [1, 2, 3], [2, 3, 4] and [1, 2, 3, 4] itself.
 ```
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Dynamic Programming`
-
-
 
 ### Solution One
 
@@ -49,13 +45,11 @@ ArithmeticSlices （以下简称 AS）
 
 假设 `A[i] ... A[j]` 是 AS，且差为 `diff`，同时能组成 `prev` 个 AS
 
-若 `A[j+1] - A[j] == diff`，则 `A[i] ... A[j+1]` 是 AS，并且能组成  `prev + 1` 个 AS 
+若 `A[j+1] - A[j] == diff`，则 `A[i] ... A[j+1]` 是 AS，并且能组成 `prev + 1` 个 AS
 
+原因：对于 `A[i] ... A[j]` ，我们从右边取 3 个元素能组成 AS，取 4、5、6 个也能组成 AS，最多能组成 `j - i - 1` 个 AS
 
-
-原因：对于 `A[i] ... A[j]` ，我们从右边取 3 个元素能组成 AS，取 4、5、6 个也能组成 AS，最多能组成  `j - i - 1` 个 AS
-
-那么对于 `A[i] ... A[j], A[j+1]`，我们在  `A[i] ... A[j]` 右边取 2 个元素加上 `A[j+1]` 能组成 AS，取3、4、5 个加上 `A[j+1]` 也能组成AS， 最多能组成 `j - i` 个 AS
+那么对于 `A[i] ... A[j], A[j+1]`，我们在 `A[i] ... A[j]` 右边取 2 个元素加上 `A[j+1]` 能组成 AS，取 3、4、5 个加上 `A[j+1]` 也能组成 AS， 最多能组成 `j - i` 个 AS
 
 ```c++
 class Solution {
@@ -83,7 +77,7 @@ public:
             {
                 i = findArithmeticSlices(A, i - 1);
                 if (i == A.size()) break;
-                
+
                 res++;
                 diff = A[i + 1] - A[i];
                 i += 3;
@@ -107,8 +101,6 @@ private:
     }
 };
 ```
-
-
 
 ### Other Solutions
 

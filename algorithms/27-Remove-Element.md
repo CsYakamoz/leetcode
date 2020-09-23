@@ -9,17 +9,13 @@ Do not allocate extra space for another array, you must do this in place with co
 The order of elements can be changed. It doesn't matter what you leave beyond the new length.
 
 **Example:**
-Given input array *nums* = `[3,2,2,3]`, *val* = `3`
+Given input array _nums_ = `[3,2,2,3]`, _val_ = `3`
 
-Your function should return length = 2, with the first two elements of *nums* being 2.
-
-
+Your function should return length = 2, with the first two elements of _nums_ being 2.
 
 **Difficult:** `Easy`
 
 **Tags:** `Array` `Two Pointers`
-
-
 
 ### Solution One
 
@@ -41,8 +37,6 @@ public:
     }
 };
 ```
-
-
 
 ### Solution Two
 
@@ -92,8 +86,6 @@ public:
 };
 ```
 
-
-
 ### Solution Three - In Top Solutions
 
 `Two Pointer`
@@ -110,6 +102,3 @@ public:
     }
 };
 ```
-
-
-

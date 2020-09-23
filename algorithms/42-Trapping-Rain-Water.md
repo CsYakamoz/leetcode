@@ -2,22 +2,18 @@
 
 ### Description
 
-Given *n* non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining.
+Given _n_ non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining.
 
-For example, 
+For example,
 Given `[0,1,0,2,1,0,1,3,2,1,2,1]`, return `6`.
 
 ![img](http://www.leetcode.com/static/images/problemset/rainwatertrap.png)
 
 The above elevation map is represented by array [0,1,0,2,1,0,1,3,2,1,2,1]. In this case, 6 units of rain water (blue section) are being trapped. **Thanks Marcos** for contributing this image!
 
-
-
 **Difficult:** `Hard`
 
 **Tags:** `Array` `Stack` `String`
-
-
 
 ### Solution One
 
@@ -77,8 +73,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 [Sharing my Java code: O(n) time, O(1) space](https://discuss.leetcode.com/topic/5819/sharing-my-java-code-o-n-time-o-1-space)
@@ -86,14 +80,14 @@ public:
 ```java
 public int trap(int[] A) {
     if (A.length < 3) return 0;
-    
+
     int ans = 0;
     int l = 0, r = A.length - 1;
-    
+
     // find the left and right edge which can hold water
     while (l < r && A[l] <= A[l + 1]) l++;
     while (l < r && A[r] <= A[r - 1]) r--;
-    
+
     while (l < r) {
         int left = A[l];
         int right = A[r];
@@ -112,8 +106,6 @@ public int trap(int[] A) {
     return ans;
 }
 ```
-
-
 
 ### Solution Three - In Top Solutions
 
@@ -166,6 +158,3 @@ public:
     }
 };
 ```
-
-
-

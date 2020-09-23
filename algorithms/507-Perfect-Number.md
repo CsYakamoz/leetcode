@@ -4,11 +4,11 @@
 
 We define the Perfect Number is a **positive** integer that is equal to the sum of all its **positive** divisors except itself.
 
-Now, given an 
+Now, given an
 
 integer
 
- n, write a function that returns true when it is a perfect number and false when it is not.
+n, write a function that returns true when it is a perfect number and false when it is not.
 
 **Example:**
 
@@ -21,17 +21,13 @@ Explanation: 28 = 1 + 2 + 4 + 7 + 14
 
 **Note:** The input number **n** will not exceed 100,000,000. (1e8)
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Math`
 
-
-
 ### Solution One
 
-根据题目要求且 1 不是完全数，所以一开始判断`num`是否小于等于 1 
+根据题目要求且 1 不是完全数，所以一开始判断`num`是否小于等于 1
 
 由于 1 肯定是因子，所以`sum`被初始化为 1
 
@@ -73,8 +69,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 [Simple Java Solution](https://discuss.leetcode.com/topic/84259/simple-java-solution)
@@ -85,7 +79,7 @@ public:
 public class Solution {
     public boolean checkPerfectNumber(int num) {
         if (num == 1) return false;
-        
+
         int sum = 0;
         for (int i = 2; i <= Math.sqrt(num); i++) {
             if (num % i == 0) {
@@ -93,13 +87,11 @@ public class Solution {
             }
         }
         sum++;
-        
+
         return sum == num;
     }
 }
 ```
-
-
 
 ### Solution Three - In Top Solutions
 
@@ -114,8 +106,6 @@ public:
     }
 };
 ```
-
-
 
 ### Other Solutions
 

@@ -28,13 +28,9 @@ Explanation: Six palindromic strings: "a", "a", "a", "aa", "aa", "aaa".
 
 1. The input string length won't exceed 1000.
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Dynamic Programming` `String`
-
-
 
 ### Solution One
 
@@ -71,8 +67,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 [Java solution, 8 lines, extendPalindrome](https://discuss.leetcode.com/topic/96819/java-solution-8-lines-extendpalindrome)
@@ -82,18 +76,18 @@ public:
 ```java
 public class Solution {
     int count = 0;
-    
+
     public int countSubstrings(String s) {
         if (s == null || s.length() == 0) return 0;
-        
+
         for (int i = 0; i < s.length(); i++) { // i is the mid point
             extendPalindrome(s, i, i); // odd length;
             extendPalindrome(s, i, i + 1); // even length
         }
-        
+
         return count;
     }
-    
+
     private void extendPalindrome(String s, int left, int right) {
         while (left >=0 && right < s.length() && s.charAt(left) == s.charAt(right)) {
             count++; left--; right++;
@@ -101,4 +95,3 @@ public class Solution {
     }
 }
 ```
-

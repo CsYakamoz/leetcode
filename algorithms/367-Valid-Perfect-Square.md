@@ -2,7 +2,7 @@
 
 ### Description
 
-Given a positive integer *num*, write a function which returns True if *num* is a perfect square else False.
+Given a positive integer _num_, write a function which returns True if _num_ is a perfect square else False.
 
 **Note:** **Do not** use any built-in library function such as `sqrt`.
 
@@ -21,13 +21,9 @@ Input: 14
 Returns: False
 ```
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Binary Search` `Math`
-
-
 
 ### Solution One
 
@@ -37,7 +33,7 @@ Returns: False
 
 故后面改为使用`long long`类型
 
-**Update:** 如果不想使用`int`类型，第10行可以改为`if (mid = num / mid)`
+**Update:** 如果不想使用`int`类型，第 10 行可以改为`if (mid = num / mid)`
 
 ```c++
 class Solution {
@@ -66,6 +62,3 @@ public:
     }
 };
 ```
-
-
-

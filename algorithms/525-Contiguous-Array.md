@@ -24,13 +24,9 @@ Explanation: [0, 1] (or [1, 0]) is a longest contiguous subarray with equal numb
 
 **Note:** The length of the given binary array will not exceed 50,000.
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Hash Table`
-
-
 
 ### Solution One - In Top Solutions
 
@@ -54,9 +50,6 @@ public:
 };
 ```
 
-
-
 ### Other Solutions
 
 [525. Contiguous Array - Solution](https://leetcode.com/problems/contiguous-array/solution/)
-

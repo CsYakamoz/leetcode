@@ -4,13 +4,9 @@
 
 Determine whether an integer is a palindrome. Do this without extra space.
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Math`
-
-
 
 ### Solution One
 
@@ -36,8 +32,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 ```c++
@@ -56,8 +50,6 @@ public:
     }
 };
 ```
-
-
 
 ### Solution Three
 
@@ -89,5 +81,3 @@ public:
     }
 };
 ```
-
-

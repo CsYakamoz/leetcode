@@ -42,13 +42,9 @@ Another valid answer is [5,2,6,null,4,null,7].
     4   7
 ```
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Tree`
-
-
 
 ### Solution One
 
@@ -101,8 +97,6 @@ private:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 ```c++
@@ -120,7 +114,7 @@ public:
         }
         else
         {
-            if(!root->left || !root->right) 
+            if(!root->left || !root->right)
                 return root->left?root->left:root->right;
             TreeNode *pre = root->right;
             while(pre->left)
@@ -134,6 +128,3 @@ public:
     }
 };
 ```
-
-
-

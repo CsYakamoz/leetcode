@@ -2,10 +2,10 @@
 
 ### Description
 
-Given two integers *n* and *k*, return all possible combinations of *k* numbers out of 1 ... *n*.
+Given two integers _n_ and _k_, return all possible combinations of _k_ numbers out of 1 ... _n_.
 
 For example,
-If *n* = 4 and *k* = 2, a solution is:
+If _n_ = 4 and _k_ = 2, a solution is:
 
 ```
 [
@@ -18,13 +18,9 @@ If *n* = 4 and *k* = 2, a solution is:
 ]
 ```
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Backtracking`
-
-
 
 ### Solution One
 
@@ -63,6 +59,3 @@ class Solution
     }
 };
 ```
-
-
-

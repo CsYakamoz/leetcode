@@ -10,13 +10,9 @@ You are given a target value to search. If found in the array return its index, 
 
 You may assume no duplicate exists in the array.
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Array`
-
-
 
 ### Solution One
 
@@ -24,7 +20,7 @@ You may assume no duplicate exists in the array.
 
 第二层就是普通的二分查找，既然 `nums` 向右旋转了 k 次，那么对应的 mid 也要旋转 k 次
 
-时间复杂度：O(N) 
+时间复杂度：O(N)
 
 ```c++
 class Solution {
@@ -59,8 +55,6 @@ public:
     }
 };
 ```
-
-
 
 ### Solution Two - In Top Solutions
 
@@ -102,4 +96,3 @@ public:
     }
 };
 ```
-

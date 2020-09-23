@@ -10,13 +10,9 @@ For example, given array S = {-1 2 1 -4}, and target = 1.
 The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
 ```
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Array` `Two Pointers`
-
-
 
 ### Solution One - In Top Solutions
 
@@ -31,14 +27,14 @@ public:
             return accumulate(nums.begin(), nums.end(), 0);
         }
         sort(nums.begin(), nums.end());
-          // result可取任意nums中任意三个数的值,
+          // result 可取任意 nums 中任意三个数的值，
         int result = nums[0] + nums[1] + nums[3];
-          /* 
+          /*
            * 下面思路与 3Sum 题目类似
-           * 对任意nums[i]，我们需要寻找一对nums[front]、nums[back]
-           * 让abs(nums[i] + nums[front] + nums[back] - target)的值最小
-           * 如果三个数的和大于target，则back = back - 1
-           * 否则front = front + 1
+           * 对任意 nums[i]，我们需要寻找一对 nums[front]、nums[back]
+           * 让 abs(nums[i] + nums[front] + nums[back] - target) 的值最小
+           * 如果三个数的和大于 target，则 back = back - 1
+           * 否则 front = front + 1
            */
         for (int i = 0; i < nums.size(); i++)
         {
@@ -48,7 +44,7 @@ public:
             {
                 int sum = nums[i] + nums[front] + nums[back];
                 if (abs(target - result) > abs(target - sum))
-                {	// 若找到更小的距离，则更新result
+                {	// 若找到更小的距离，则更新 result
                     result = sum;
                     if (result == target)
                     {
@@ -62,4 +58,3 @@ public:
     }
 };
 ```
-

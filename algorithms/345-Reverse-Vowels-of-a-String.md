@@ -14,13 +14,9 @@ Given s = "leetcode", return "leotcede".
 **Note:**
 The vowels does not include the letter "y".
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Two Pointers` `String`
-
-
 
 ### Solution One
 
@@ -50,8 +46,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two
 
 ```c++
@@ -79,5 +73,3 @@ class Solution
     }
 };
 ```
-
-

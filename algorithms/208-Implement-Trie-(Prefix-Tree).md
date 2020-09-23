@@ -7,13 +7,9 @@ Implement a trie with `insert`, `search`, and `startsWith` methods.
 **Note:**
 You may assume that all inputs are consist of lowercase letters `a-z`.
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Design` `Trie`
-
-
 
 ### Solution One
 
@@ -67,7 +63,7 @@ public:
 
 private:
     static constexpr size_t SIZE = 26;
-    
+
     struct TrieNode {
         TrieNode *childNode[SIZE];
         bool isEndofWord;
@@ -81,8 +77,6 @@ private:
     TrieNode *root;
 };
 ```
-
-
 
 ### Solution Two - In Top Solutions
 
@@ -103,7 +97,7 @@ public:
     Trie() {
         root=new TrieNode();
     }
-    
+
     /** Inserts a word into the trie. */
     void insert(string word) {
         TrieNode *p=root;
@@ -113,13 +107,13 @@ public:
         }
         p->is_word=true;
     }
-    
+
     /** Returns if the word is in the trie. */
     bool search(string word) {
         TrieNode *p=find(word);
         return p!=NULL && p->is_word;
     }
-    
+
     /** Returns if there is any word in the trie that starts with the given prefix. */
     bool startsWith(string prefix) {
         return find(prefix)!=NULL;
@@ -134,9 +128,6 @@ private:
 };
 ```
 
-
-
 ### Solutions
 
 [208. Implement Trie (Prefix Tree) - Solution](https://leetcode.com/problems/implement-trie-prefix-tree/solution/)
-

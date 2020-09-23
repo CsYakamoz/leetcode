@@ -10,7 +10,7 @@ Given an array consists of non-negative integers, your task is to count the numb
 Input: [2,2,3,4]
 Output: 3
 Explanation:
-Valid combinations are: 
+Valid combinations are:
 2,3,4 (using the first 2)
 2,3,4 (using the second 2)
 2,2,3
@@ -21,13 +21,9 @@ Valid combinations are:
 1. The length of the given array won't exceed 1000.
 2. The integers in the given array are in the range of [0, 1000].
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Array`
-
-
 
 ### Solution One
 
@@ -60,8 +56,6 @@ public:
     }
 };
 ```
-
-
 
 ### Solution Tow
 
@@ -110,19 +104,17 @@ private:
 };
 ```
 
-
-
 ### Solution Three - In Top Solutions
 
 `Two Pointers`
 
-在已排序好的数组中，选择`a, b, c`（其中a < b < c）
+在已排序好的数组中，选择`a, b, c`（其中 a < b < c）
 
-其中对于任意一个 c，a - b < c 这个是肯定满足的，所以我们需要找到  a + b > c
+其中对于任意一个 c，a - b < c 这个是肯定满足的，所以我们需要找到 a + b > c
 
 while 循环中，我们已经初始化`left, right`分别为`0, i - 1`，即 c 的左侧
 
->  **注意：**这里 a、b、c 相当于 nums[left]、nums[right]、nums[i]，a++ 和 b-- 相当于 left++ 和 right--
+> **注意：**这里 a、b、c 相当于 nums[left]、nums[right]、nums[i]，a++ 和 b-- 相当于 left++ 和 right--
 
 然后思路为：当确定 b、c 时，寻找 a， 使得 a + b > c
 
@@ -160,6 +152,3 @@ public:
     }
 };
 ```
-
-
-

@@ -2,9 +2,9 @@
 
 ### Description
 
-Given *numRows*, generate the first *numRows* of Pascal's triangle.
+Given _numRows_, generate the first _numRows_ of Pascal's triangle.
 
-For example, given *numRows* = 5,
+For example, given _numRows_ = 5,
 Return
 
 ```
@@ -13,17 +13,13 @@ Return
     [1,1],
    [1,2,1],
   [1,3,3,1],
- [1,4,6,4,1]
+[1,4,6,4,1]
 ]
 ```
-
-
 
 **Difficult:** `Easy`
 
 **Tags:** `Array`
-
-
 
 ### Solution One
 
@@ -56,8 +52,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 ```c++
@@ -67,19 +61,16 @@ public:
         vector<vector<int>> re;
         for(int i = 0; i < numRows; i++){
             vector<int> row;
-            
+
             row.push_back(1);
-            
+
             for(int j = 0; j < i; j++){
                 int elem = (j == re[i - 1].size() - 1 ?  0 : re[i - 1][j + 1]) + re[i - 1][j];
                 row.push_back(elem);
             }
             re.push_back(row);
         }
-       return re; 
+       return re;
     }
 };
 ```
-
-
-

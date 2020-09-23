@@ -26,13 +26,9 @@ Explanation: You can't get a non-decreasing array by modify at most one element.
 
 **Note:** The `n` belongs to [1, 10,000].
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Array`
-
-
 
 ### Solution One
 
@@ -77,8 +73,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 ```c++
@@ -100,11 +94,8 @@ public:
                     nums[i+1] = nums[i];
                 }
             }
-        } 
+        }
         return true;
     }
 };
 ```
-
-
-

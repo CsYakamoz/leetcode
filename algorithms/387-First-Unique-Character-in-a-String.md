@@ -16,13 +16,9 @@ return 2.
 
 **Note:** You may assume the string contain only lowercase letters.
 
-
-
 **Difficult:** `Easy`
 
 **Tags:**
-
-
 
 ### Solution One
 
@@ -62,8 +58,6 @@ public:
     }
 };
 ```
-
-
 
 ### Solution Two
 
@@ -107,8 +101,6 @@ public:
 };
 ```
 
-
-
 ### Solution Three - In Top Solution
 
 如果字符`c`是第一次出现，则`index[c] = i`，否则`index[c] = s.size()`
@@ -142,4 +134,3 @@ public:
     }
 };
 ```
-

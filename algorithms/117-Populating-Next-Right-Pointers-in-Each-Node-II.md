@@ -2,7 +2,7 @@
 
 ### Description
 
-Follow up for problem "*Populating Next Right Pointers in Each Node*".
+Follow up for problem "_Populating Next Right Pointers in Each Node_".
 
 What if the given tree could be any binary tree? Would your previous solution still work?
 
@@ -32,13 +32,9 @@ After calling your function, the tree should look like:
     4-> 5 -> 7 -> NULL
 ```
 
-
-
 **Difficult:** `Medium`
 
 **Tags:** `Tree` `Depth-first Search`
-
-
 
 ### Solution One
 
@@ -81,44 +77,40 @@ private:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 ```c++
 class Solution {
 public:
     void connect(TreeLinkNode *root) {
-        
+
         if(!root) return;
-        
+
         TreeLinkNode* p = root->next;
-        
+
         while(p){
             if(p->left){
                 p=p->left;
                 break;
             }
-            
+
             if(p->right){
                 p=p->right;
                 break;
             }
             p=p->next;
         }
-        
+
         if(root->left) root->left->next = root->right?root->right:p;
         if(root->right) root->right->next = p;
-        
+
         connect(root->right);
         connect(root->left);
-        
-        
+
+
     }
 };
 ```
-
-
 
 ### Solution Three
 
@@ -154,8 +146,6 @@ private:
 };
 ```
 
-
-
 ### Solution Four - In Top Solutions
 
 [Simple solution using constant space](https://discuss.leetcode.com/topic/8447/simple-solution-using-constant-space)
@@ -166,7 +156,7 @@ private:
 ```java
 public class Solution {
     public void connect(TreeLinkNode root) {
-        
+
         while(root != null){
             TreeLinkNode tempChild = new TreeLinkNode(0);
             TreeLinkNode currentChild = tempChild;
@@ -180,6 +170,3 @@ public class Solution {
     }
 }
 ```
-
-
-

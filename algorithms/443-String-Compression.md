@@ -61,13 +61,9 @@ Notice each digit has it's own entry in the array.
 1. All characters have an ASCII value in `[35, 126]`.
 2. `1 <= len(chars) <= 1000`.
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `String`
-
-
 
 ### Solution One
 
@@ -89,7 +85,7 @@ public:
                 i++;
                 counter++;
             }
-            
+
             chars[idx++] = chars[i++];
             if (counter != 1)
             {
@@ -103,6 +99,3 @@ public:
     }
 };
 ```
-
-
-

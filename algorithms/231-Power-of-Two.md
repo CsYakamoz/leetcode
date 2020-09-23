@@ -4,13 +4,9 @@
 
 Given an integer, write a function to determine if it is a power of two.
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Math` `Bit Manipulation`
-
-
 
 ### Solution One
 
@@ -28,8 +24,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 [Using n&(n-1) trick](https://discuss.leetcode.com/topic/17857/using-n-n-1-trick)
@@ -43,8 +37,6 @@ public:
     }
 };
 ```
-
-
 
 ### Solution Three - In Top Solutions
 

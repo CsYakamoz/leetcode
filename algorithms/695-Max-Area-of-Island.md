@@ -32,13 +32,9 @@ Given the above grid, return 0.
 
 **Note:** The length of each dimension in the given `grid` does not exceed 50.
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Array` `Depth-first Search`
-
-
 
 ### Solution One
 
@@ -54,7 +50,7 @@ public:
         n = grid[0].size();
         maxArea = 0;
 
-        
+
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
                 if (grid[i][j] == 1) {
@@ -75,7 +71,7 @@ private:
         if (i < 0 || j < 0 || i >= m || j >= n || grid[i][j] == 0) {
             return;
         }
-        
+
         area++;
         grid[i][j] = 0;
 
@@ -86,6 +82,3 @@ private:
     }
 };
 ```
-
-
-

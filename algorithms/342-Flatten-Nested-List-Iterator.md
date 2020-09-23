@@ -9,20 +9,16 @@ Each element is either an integer, or a list -- whose elements may also be integ
 **Example 1:**
 Given the list `[[1,1],2,[1,1]]`,
 
-By calling *next* repeatedly until *hasNext* returns false, the order of elements returned by *next* should be: `[1,1,2,1,1]`.
+By calling _next_ repeatedly until _hasNext_ returns false, the order of elements returned by _next_ should be: `[1,1,2,1,1]`.
 
 **Example 2:**
 Given the list `[1,[4,[6]]]`,
 
-By calling *next* repeatedly until *hasNext* returns false, the order of elements returned by *next* should be: `[1,4,6]`.
-
-
+By calling _next_ repeatedly until _hasNext_ returns false, the order of elements returned by _next_ should be: `[1,4,6]`.
 
 **Difficult:** `Medium`
 
 **Tags:** `Stack` `Design`
-
-
 
 ### Solution One
 
@@ -57,12 +53,12 @@ public:
     }
 
     bool hasNext() {
-       return !q.empty(); 
+       return !q.empty();
     }
-    
+
 private:
     queue<int> q;
-    
+
     void dfs(const vector<NestedInteger> &nestedList) {
         for (auto &i: nestedList) {
             if (i.isInteger()) {
@@ -71,11 +67,9 @@ private:
                 dfs(i.getList());
             }
         }
-    } 
+    }
 };
 ```
-
-
 
 ### Solution Two - In Top Solutions
 
@@ -115,6 +109,3 @@ public class NestedIterator implements Iterator<Integer> {
     }
 }
 ```
-
-
-

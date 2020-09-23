@@ -4,13 +4,9 @@
 
 Given an array of integers, find if the array contains any duplicates. Your function should return true if any value appears at least twice in the array, and it should return false if every element is distinct.
 
-
-
 **Difficult:** `Easy`
 
 **Tags:** `Array` `Hash Table`
-
-
 
 ### Solution One
 
@@ -35,8 +31,6 @@ public:
 };
 ```
 
-
-
 ### Solution Two - In Top Solutions
 
 第一层循环确定`nums`中元素的范围
@@ -49,19 +43,19 @@ public:
     bool containsDuplicate(vector<int>& nums) {
         int min = INT_MAX;
         int max = INT_MIN;
-        
+
         for (int i = 0; i < nums.size(); ++i) {
             if (nums[i] > max) {
                 max = nums[i];
             }
-            
+
             if (nums[i] < min) {
                 min = nums[i];
             }
         }
-        
+
         vector<bool> exists(max - min + 1, false);
-        
+
         for (int i = 0; i < nums.size(); ++i) {
             if (exists[nums[i] - min]) {
                 return true;
@@ -70,13 +64,11 @@ public:
                 exists[nums[i] - min] = true;
             }
         }
-        
+
         return false;
     }
 };
 ```
-
-
 
 ### Solution Three - In Top Solutions
 
@@ -90,11 +82,8 @@ public:
                 return true;
             }
         }
-        
+
         return false;
     }
 };
 ```
-
-
-
