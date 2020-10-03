@@ -241,6 +241,8 @@
 
 [200. Number of Islands](algorithms/200-Number-of-Islands/README.md)
 
+[201. Bitwise AND of Numbers Range](algorithms/201-Bitwise-AND-of-Numbers-Range/README.md)
+
 [202. Happy Number](algorithms/202-Happy-Number/README.md)
 
 [203. Remove Linked List Elements](algorithms/203-Remove-Linked-List-Elements/README.md)
@@ -381,6 +383,8 @@
 
 [436. Find Right Interval](algorithms/436-Find-Right-Interval/README.md)
 
+[437. Path Sum III](algorithms/437-Path-Sum-III/README.md)
+
 [438. Find All Anagrams in a String](algorithms/438-Find-All-Anagrams-in-a-String/README.md)
 
 [441. Arranging Coins](algorithms/441-Arranging-Coins/README.md)
@@ -432,6 +436,8 @@
 [507. Perfect Number](algorithms/507-Perfect-Number/README.md)
 
 [508. Most Frequent Subtree Sum](algorithms/508-Most-Frequent-Subtree-Sum/README.md)
+
+[509. Fibonacci Number](algorithms/509-Fibonacci-Number/README.md)
 
 [513. Find Bottom Left Tree Value](algorithms/513-Find-Bottom-Left-Tree-Value/README.md)
 
@@ -539,11 +545,15 @@
 
 [670. Maximum Swap](algorithms/670-Maximum-Swap/README.md)
 
+[673. Number of Longest Increasing Subsequence](algorithms/673-Number-of-Longest-Increasing-Subsequence/README.md)
+
 [674. Longest Continuous Increasing Subsequence](algorithms/674-Longest-Continuous-Increasing-Subsequence/README.md)
 
 [676. Implement Magic Dictionary](algorithms/676-Implement-Magic-Dictionary/README.md)
 
 [677. Map Sum Pairs](algorithms/677-Map-Sum-Pairs/README.md)
+
+[678. Valid Parenthesis String](algorithms/678-Valid-Parenthesis-String/README.md)
 
 [682. Baseball Game](algorithms/682-Baseball-Game/README.md)
 
@@ -588,5 +598,37 @@
 [754. Reach a Nnumber](algorithms/754-Reach-a-Nnumber/README.md)
 
 [760. Find Anagram Mappings](algorithms/760-Find-Anagram-Mappings/README.md)
+
+[783. Minimum Distance Between BST Nodes](algorithms/783-Minimum-Distance-Between-BST-Nodes/README.md)
+
+[994. Rotting Oranges](algorithms/994-Rotting-Oranges/README.md)
+
+[1005. Maximize Sum Of Array After K Negations](algorithms/1005-Maximize-Sum-Of-Array-After-K-Negations/README.md)
+
+[1008. Construct Binary Search Tree from Preorder Traversal](algorithms/1008-Construct-Binary-Search-Tree-from-Preorder-Traversal/README.md)
+
+[1013. Partition Array Into Three Parts With Equal Sum](algorithms/1013-Partition-Array-Into-Three-Parts-With-Equal-Sum/README.md)
+
+[1046. Last Stone Weight](algorithms/1046-Last-Stone-Weight/README.md)
+
+[1047. Remove All Adjacent Duplicates In String](algorithms/1047-Remove-All-Adjacent-Duplicates-In-String/README.md)
+
+[1137. N-th Tribonacci Number](algorithms/1137-N-th-Tribonacci-Number/README.md)
+
+[1170. Compare Strings by Frequency of the Smallest Character](algorithms/1170-Compare-Strings-by-Frequency-of-the-Smallest-Character/README.md)
+
+[1184. Distance Between Bus Stops](algorithms/1184-Distance-Between-Bus-Stops/README.md)
+
+[1189. Maximum Number of Balloons](algorithms/1189-Maximum-Number-of-Balloons/README.md)
+
+[1200. Minimum Absolute Difference](algorithms/1200-Minimum-Absolute-Difference/README.md)
+
+[1207. Unique Number of Occurrences](algorithms/1207-Unique-Number-of-Occurrences/README.md)
+
+[1451. Rearrange Words in a Sentence](algorithms/1451-Rearrange-Words-in-a-Sentence/README.md)
+
+[1544. Make The String Great](algorithms/1544-Make-The-String-Great/README.md)
+
+[1573. Number of Ways to Split a String](algorithms/1573-Number-of-Ways-to-Split-a-String/README.md)
 
 </details>

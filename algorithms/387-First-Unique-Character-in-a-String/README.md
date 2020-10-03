@@ -101,7 +101,7 @@ public:
 };
 ```
 
-### Solution Three - In Top Solution
+### Solution Three - In Top Solutions
 
 如果字符`c`是第一次出现，则`index[c] = i`，否则`index[c] = s.size()`
 

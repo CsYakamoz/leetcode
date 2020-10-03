@@ -45,4 +45,4 @@ public:
 
 ### Solutions
 
-[209. Minimum Size Subarray Sum - Solutions](https://leetcode.com/problems/minimum-size-subarray-sum/solution/#approach-3-using-binary-search-accepted)
+[209. Minimum Size Subarray Sum - Solution](https://leetcode.com/problems/minimum-size-subarray-sum/solution/#approach-3-using-binary-search-accepted)
