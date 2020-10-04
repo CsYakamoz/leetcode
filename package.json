@@ -1,0 +1,15 @@
+{
+  "name": "leetcode",
+  "version": "1.0.0",
+  "description": "Record what I have done on LeetCode.",
+  "repository": "git@github.com:CsYakamoz/leetcode.git",
+  "author": "CsYakamoz <532609418@qq.com>",
+  "devDependencies": {
+    "enquirer": "^2.3.6",
+    "eslint": "^7.10.0"
+  },
+  "scripts": {
+    "build:readme": "node ./script/build_readme.js",
+    "add:problem": "node ./script/add_problem.js"
+  }
+}
