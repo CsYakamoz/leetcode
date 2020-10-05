@@ -36,7 +36,7 @@ const javascript = (problemDir) => {
         },
     ]);
 
-    const dirName = problemName.replace(/\.?\s+/g, '-');
+    const dirName = problemName.replace(/[-\s]+/g, '-');
 
     mkdirSync(join(ALG_DIR, dirName));
     writeFileSync(

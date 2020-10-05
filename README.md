@@ -213,7 +213,7 @@
 
 [162. Find Peak Element](algorithms/162-Find-Peak-Element)
 
-[167. Tow Sum II - Input array is sorted](algorithms/167-Tow-Sum-II---Input-array-is-sorted)
+[167. Tow Sum II - Input array is sorted](algorithms/167-Tow-Sum-II-Input-array-is-sorted)
 
 [168. Excel Sheet Column Title](algorithms/168-Excel-Sheet-Column-Title)
 
@@ -257,7 +257,7 @@
 
 [209. Minimum Size Subarray Sum](algorithms/209-Minimum-Size-Subarray-Sum)
 
-[211. Add and Search Word - Data structure design](algorithms/211-Add-and-Search-Word---Data-structure-design)
+[211. Add and Search Word - Data structure design](algorithms/211-Add-and-Search-Word-Data-structure-design)
 
 [212. Word Search II](algorithms/212-Word-Search-II)
 
@@ -317,7 +317,7 @@
 
 [300. Longest Increasing Subsequence](algorithms/300-Longest-Increasing-Subsequence)
 
-[303. Range Sum Query - Immutable](algorithms/303-Range-Sum-Query---Immutable)
+[303. Range Sum Query - Immutable](algorithms/303-Range-Sum-Query-Immutable)
 
 [319. Bulb Switcher](algorithms/319-Bulb-Switcher)
 
@@ -525,7 +525,7 @@
 
 [650. 2 Keys Keyboard](algorithms/650-2-Keys-Keyboard)
 
-[653. Two Sum IV - Input is a BST](algorithms/653-Two-Sum-IV---Input-is-a-BST)
+[653. Two Sum IV - Input is a BST](algorithms/653-Two-Sum-IV-Input-is-a-BST)
 
 [654. Maximum Binary Tree](algorithms/654-Maximum-Binary-Tree)
 
