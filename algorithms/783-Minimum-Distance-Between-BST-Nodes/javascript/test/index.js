@@ -1,6 +1,6 @@
 const func = require('../index');
 const assert = require('power-assert');
-const { arrayToBinaryTree } = require('utils');
+const { arrayToBinaryTree } = require('@javascript/language-helper');
 
 describe('783. Minimum Distance Between BST Nodes', () => {
     it('[4,2,6,1,3,null,null] should be 2', () => {

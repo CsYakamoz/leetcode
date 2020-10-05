@@ -1,6 +1,6 @@
 const func = require('../index');
 const assert = require('power-assert');
-const { arrayToBinaryTree } = require('utils');
+const { arrayToBinaryTree } = require('@javascript/language-helper');
 
 describe('437. Path Sum III', () => {
     it('root = [10,5,-3,3,2,null,11,3,-2,null,1], sum = 8, should be 3', function() {

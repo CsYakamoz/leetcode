@@ -1,4 +1,4 @@
-const { TreeNode } = require('data-structure');
+const { TreeNode } = require('@javascript/language-helper');
 
 /**
  * Definition for a binary tree node.

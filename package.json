@@ -5,11 +5,15 @@
   "repository": "git@github.com:CsYakamoz/leetcode.git",
   "author": "CsYakamoz <532609418@qq.com>",
   "devDependencies": {
+    "@javascript/language-helper": "link:./language-helper/javascript",
     "enquirer": "^2.3.6",
-    "eslint": "^7.10.0"
+    "eslint": "^7.10.0",
+    "mocha": "^8.1.3",
+    "power-assert": "^1.6.1"
   },
   "scripts": {
     "build:readme": "node ./script/build_readme.js",
-    "add:problem": "node ./script/add_problem.js"
+    "add:problem": "node ./script/add_problem.js",
+    "test": "mocha --recursive algorithms"
   }
 }
