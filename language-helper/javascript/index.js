@@ -6,10 +6,12 @@ class ListNode {
 }
 
 class TreeNode {
-    constructor(val) {
+    constructor(val, left, right) {
         this.val = val;
-        this.left = null;
-        this.right = null;
+        /** @type {TreeNode} */
+        this.left = left === undefined ? null : left;
+        /** @type {TreeNode} */
+        this.right = right === undefined ? null : right;
     }
 }
 
@@ -110,6 +112,7 @@ const inOrderTraversal = (root) => {
 
     while (root !== null || stack.length !== 0) {
         if (root !== null) {
+            stack.push(root);
             root = root.left;
         } else {
             const curr = stack.pop();
