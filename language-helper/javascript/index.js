@@ -1,6 +1,7 @@
 class ListNode {
     constructor(val) {
         this.val = val;
+        /** @type {ListNode} */
         this.next = null;
     }
 }
