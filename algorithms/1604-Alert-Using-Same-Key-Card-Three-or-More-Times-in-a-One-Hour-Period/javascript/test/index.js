@@ -47,7 +47,7 @@ describe('1604. Alert Using Same Key-Card Three or More Times in a One Hour Peri
         );
     });
 
-    it('keyName = ["a","a","a","a","a","a","b","b","b","b","b"], keyTime = ["23:27","03:14","12:57","13:35","13:18","21:58","22:39","10:49","19:37","14:14","10:41"]', () => {
+    it('keyName = ["a","a","a","a","a","a","b","b","b","b","b"], keyTime = ["23:27","03:14","12:57","13:35","13:18","21:58","22:39","10:49","19:37","14:14","10:41"] should be ["a"]', () => {
         assert.deepEqual(
             func(
                 ['a', 'a', 'a', 'a', 'a', 'a', 'b', 'b', 'b', 'b', 'b'],

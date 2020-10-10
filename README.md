@@ -625,12 +625,16 @@
 
 [1207. Unique Number of Occurrences](algorithms/1207-Unique-Number-of-Occurrences)
 
+[1305. All Elements in Two Binary Search Trees](algorithms/1305-All-Elements-in-Two-Binary-Search-Trees)
+
 [1451. Rearrange Words in a Sentence](algorithms/1451-Rearrange-Words-in-a-Sentence)
 
 [1544. Make The String Great](algorithms/1544-Make-The-String-Great)
 
 [1573. Number of Ways to Split a String](algorithms/1573-Number-of-Ways-to-Split-a-String)
 
-[1609. Even Odd Tree](algorithms/1609.-Even-Odd-Tree)
+[1604. Alert Using Same Key-Card Three or More Times in a One Hour Period](algorithms/1604-Alert-Using-Same-Key-Card-Three-or-More-Times-in-a-One-Hour-Period)
+
+[1609. Even Odd Tree](algorithms/1609-Even-Odd-Tree)
 
 </details>
