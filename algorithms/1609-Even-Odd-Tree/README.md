@@ -138,4 +138,3 @@ const isEvenOddTree = function (root) {
   return true;
 };
 ```
-

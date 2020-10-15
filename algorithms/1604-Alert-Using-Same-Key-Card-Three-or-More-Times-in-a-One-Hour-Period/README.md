@@ -120,4 +120,3 @@ const alertNames = function (keyName, keyTime) {
   return result.sort();
 };
 ```
-

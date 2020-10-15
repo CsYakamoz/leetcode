@@ -30,6 +30,9 @@ describe('1046. Last Stone Weight', () => {
     });
 
     it('[2,7,4,11,1,3,4,1,7,8,6,4,3,1] should 0', function() {
-        assert.deepStrictEqual(func([2, 7, 4, 11, 1, 3, 4, 1, 7, 8, 6, 4, 3, 1]), 0);
+        assert.deepStrictEqual(
+            func([2, 7, 4, 11, 1, 3, 4, 1, 7, 8, 6, 4, 3, 1]),
+            0
+        );
     });
 });

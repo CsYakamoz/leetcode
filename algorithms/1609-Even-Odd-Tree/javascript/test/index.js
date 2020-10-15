@@ -27,11 +27,17 @@ describe('1609. Even Odd Tree', () => {
     });
 
     it('root = [5,4,2,3,3,7] should be false', () => {
-        assert.deepStrictEqual(func(arrayToBinaryTree([5, 4, 2, 3, 3, 7])), false);
+        assert.deepStrictEqual(
+            func(arrayToBinaryTree([5, 4, 2, 3, 3, 7])),
+            false
+        );
     });
 
     it('root = [5,9,1,3,5,7] should be false', () => {
-        assert.deepStrictEqual(func(arrayToBinaryTree([5, 9, 1, 3, 5, 7])), false);
+        assert.deepStrictEqual(
+            func(arrayToBinaryTree([5, 9, 1, 3, 5, 7])),
+            false
+        );
     });
 
     it('root = [1] should be true', () => {
