@@ -5,14 +5,20 @@ const enquirer = require('enquirer');
 const PROJECT_ROOT = join(resolve(__dirname, '..'));
 const ALG_DIR = join(PROJECT_ROOT, 'algorithms');
 
-const javascript = (problemDir) => {
+const javascript = (problemDir, problemName) => {
     mkdirSync(join(problemDir, 'javascript'));
     writeFileSync(join(problemDir, 'javascript', 'index.js'), '');
 
     mkdirSync(join(problemDir, 'javascript', 'test'));
     writeFileSync(
         join(problemDir, 'javascript', 'test', 'index.js'),
-        'const func = require(\'../index\');\nconst assert = require(\'power-assert\');\n'
+        [
+            'const func = require(\'../index\');',
+            'const assert = require(\'power-assert\');',
+            '',
+            `describe('${problemName}', () => {});`,
+            '',
+        ].join('\n')
     );
 };
 
@@ -36,15 +42,18 @@ const javascript = (problemDir) => {
         },
     ]);
 
-    const dirName = problemName.replace(/[.-\s]+/g, '-');
+    const dirName = problemName
+        .replace(/[.-\s]+/g, '-')
+        .replace(/^(\d+)/, (match) => match.padStart(4, '0'));
 
-    mkdirSync(join(ALG_DIR, dirName));
+    const dirPath = join(ALG_DIR, dirName);
+    mkdirSync(dirPath);
     writeFileSync(
-        join(ALG_DIR, dirName, 'README.md'),
+        join(dirPath, 'README.md'),
         `## [${problemName}](${problemLink})\n\n### Description\n\n`
     );
 
     const mapping = { javascript };
 
-    mapping[language](join(ALG_DIR, dirName));
+    mapping[language](dirPath, problemName);
 })();
