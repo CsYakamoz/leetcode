@@ -19,7 +19,7 @@ For `num = 5` you should return `[0,1,1,2,1,2]`.
 2. Divide the numbers in ranges like [2-3], [4-7], [8-15] and so on. And try to generate new range from previous.
 3. Or does the odd/even status of the number help you in calculating the number of 1s?
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Dynamic Programming` `Bit Manipulation`
 

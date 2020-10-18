@@ -29,7 +29,7 @@ Explanation: On the first query only f("bbb") < f("aaaa"). On the second query b
 - `1 <= queries[i].length, words[i].length <= 10`
 - `queries[i][j]`, `words[i][j]` are English lowercase letters.
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Array` `String`
 

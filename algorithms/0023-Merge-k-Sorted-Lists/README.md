@@ -2,7 +2,7 @@
 
 Merge _k_ sorted linked lists and return it as one sorted list. Analyze and describe its complexity.
 
-**Difficult:** `Hard`
+**Difficulty:** `Hard`
 
 **Tags:** `Divide and Conquer` `Linked List` `Heap`
 

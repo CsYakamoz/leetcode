@@ -28,7 +28,7 @@ we combine 1 and 1 to get 0 so the array converts to [1] then that's the value o
 1. `1 <= stones.length <= 30`
 2. `1 <= stones[i] <= 1000`
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Heap` `Greedy`
 

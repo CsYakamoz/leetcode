@@ -17,7 +17,7 @@ Given the following binary tree,
 
 You should return `[1, 3, 4]`.
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Tree` `Depth-first Search` `Breadth-first Search`
 

@@ -8,7 +8,7 @@ Calling `next()` will return the next smallest number in the BST.
 
 **Note: **`next()` and `hasNext()` should run in average O(1) time and uses O(_h_) memory, where _h_ is the height of the tree.
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Tree` `Stack` `Design`
 

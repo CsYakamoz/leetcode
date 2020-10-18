@@ -27,7 +27,7 @@ After running your query, the above salary table should have the following rows:
 | 4  | D    | m   | 500    |
 ```
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:**
 

@@ -20,7 +20,7 @@ Note:
 2. A valid square has four equal sides with positive length and four equal angles (90-degree angles).
 3. Input points have no order.
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Math`
 

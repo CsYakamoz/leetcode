@@ -16,7 +16,7 @@ For example, given _n_ = 3, a solution set is:
 ]
 ```
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `String` `Backtracking`
 

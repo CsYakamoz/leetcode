@@ -42,7 +42,7 @@ Follow-up beyond contest:
 4. What is the time complexity of your modified solution? What is the most time-consuming part and memory consuming part of it? How to optimize?
 5. How to make sure the duplicated files you find are not false positive?
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Hash Table` `String`
 

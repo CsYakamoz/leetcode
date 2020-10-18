@@ -18,7 +18,7 @@ return `true`.
 Given `[5, 4, 3, 2, 1]`,
 return `false`.
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:**
 

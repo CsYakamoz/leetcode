@@ -8,7 +8,7 @@ Each time you can either climb 1 or 2 steps. In how many distinct ways can you c
 
 **Note:** Given _n_ will be a positive integer.
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Dynamic Programming`
 

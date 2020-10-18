@@ -8,7 +8,7 @@ Ugly numbers are positive numbers whose prime factors only include `2, 3, 5`. Fo
 
 Note that `1` is typically treated as an ugly number.
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Math`
 

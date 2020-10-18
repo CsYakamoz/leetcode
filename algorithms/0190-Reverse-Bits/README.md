@@ -11,7 +11,7 @@ If this function is called many times, how would you optimize it?
 
 Related problem: [Reverse Integer](https://leetcode.com/problems/reverse-integer/)
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Bit Manipulation`
 

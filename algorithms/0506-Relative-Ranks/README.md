@@ -18,7 +18,7 @@ For the left two athletes, you just need to output their relative ranks accordin
 1. N is a positive integer and won't exceed 10,000.
 2. All the scores of athletes are guaranteed to be unique.
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:**
 

@@ -28,7 +28,7 @@ For example, your query should return the following for the above table:
 
 **Note**: All emails are in lowercase.
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:**
 

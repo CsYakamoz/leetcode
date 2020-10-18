@@ -25,7 +25,7 @@ Output: "the cat was rat by the bat"
 4. 1 <= root length <= 100
 5. 1 <= sentence words length <= 1000
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Hash Table` `Trie`
 

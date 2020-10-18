@@ -41,7 +41,7 @@ Using the above tables as example, return the following:
 +-----------+
 ```
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:**
 

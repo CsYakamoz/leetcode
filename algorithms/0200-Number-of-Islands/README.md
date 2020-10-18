@@ -26,7 +26,7 @@ Answer: 1
 
 Answer: 3
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Depth-first Search` `Breadth-first Search` `Union Find`
 

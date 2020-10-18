@@ -27,7 +27,7 @@ For the point (1,1): floor(8/9) = floor(0.88888889) = 0
 1. The value in the given matrix is in the range of [0, 255].
 2. The length and width of the given matrix are in the range of [1, 150].
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Array`
 

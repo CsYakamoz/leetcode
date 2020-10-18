@@ -16,7 +16,7 @@ Input: (7 -> 2 -> 4 -> 3) + (5 -> 6 -> 4)
 Output: 7 -> 8 -> 0 -> 7
 ```
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Linked List`
 

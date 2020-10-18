@@ -12,7 +12,7 @@ For example,
 1234567 -> "One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven"
 ```
 
-**Difficult:** `Hard`
+**Difficulty:** `Hard`
 
 **Tags:** `Math` `String`
 

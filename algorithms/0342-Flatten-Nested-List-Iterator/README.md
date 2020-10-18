@@ -16,7 +16,7 @@ Given the list `[1,[4,[6]]]`,
 
 By calling _next_ repeatedly until _hasNext_ returns false, the order of elements returned by _next_ should be: `[1,4,6]`.
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Stack` `Design`
 

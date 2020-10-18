@@ -11,7 +11,7 @@ Given two non-negative integers `num1` and `num2` represented as string, return 
 3. Both `num1` and `num2` does not contain any leading zero.
 4. You **must not user any built-in BigInteger library** or **convert the inputs to integer** directly.
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Math`
 

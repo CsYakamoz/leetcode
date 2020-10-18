@@ -40,7 +40,7 @@ So the maximum integer in M is 2, and there are four of it in M. So return 4.
 2. The range of a is [1,m], and the range of b is [1,n].
 3. The range of operations size won't exceed 10,000.
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Math`
 

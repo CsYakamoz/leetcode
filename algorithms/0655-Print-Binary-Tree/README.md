@@ -59,7 +59,7 @@ Output:
 
 **Note:** The height of binary tree is in the range of [1, 10].
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Tree`
 

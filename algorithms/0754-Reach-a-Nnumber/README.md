@@ -33,7 +33,7 @@ On the third move we step from -1 to 2.
 
 `target` will be a non-zero integer in the range `[-10^9, 10^9]`.
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Math`
 

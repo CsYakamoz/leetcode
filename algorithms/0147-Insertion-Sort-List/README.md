@@ -4,7 +4,7 @@
 
 Sort a linked list using insertion sort.
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Linked List` `Sort`
 

@@ -15,7 +15,7 @@ Given _n_ = 3, there are a total of 5 unique BST's.
    2     1         2                 3
 ```
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Dynamic Programming` `Tree`
 

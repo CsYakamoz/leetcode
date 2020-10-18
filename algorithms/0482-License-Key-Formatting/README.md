@@ -36,7 +36,7 @@ Explanation: The string S has been split into three parts, each part has 3 chara
 2. String S consists only of alphanumerical characters (a-z and/or A-Z and/or 0-9) and dashes(-).
 3. String S is non-empty.
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:**
 

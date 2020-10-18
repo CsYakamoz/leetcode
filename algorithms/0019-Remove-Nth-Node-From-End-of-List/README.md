@@ -16,7 +16,7 @@ After removing the second node from the end, the linked list becomes 1->2->3->5.
 Given *n* will always be valid.
 Try to do this in one pass.
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Linked List` `Two Pointers`
 

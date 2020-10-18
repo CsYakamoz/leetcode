@@ -11,7 +11,7 @@ For example, given:
 You should return the indices: `[0,9]`.
 (order does not matter).
 
-**Difficult:** `Hard`
+**Difficulty:** `Hard`
 
 **Tags:** `Hash Table` `Two Pointers` `String`
 

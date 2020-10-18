@@ -18,7 +18,7 @@ Input: [0,1]
 Output: 0
 ```
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Bit Manipulation`
 

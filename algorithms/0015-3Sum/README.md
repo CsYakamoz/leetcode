@@ -16,7 +16,7 @@ A solution set is:
 ]
 ```
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Array` `Two Pointers`
 

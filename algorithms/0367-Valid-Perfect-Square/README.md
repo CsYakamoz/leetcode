@@ -21,7 +21,7 @@ Input: 14
 Returns: False
 ```
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Binary Search` `Math`
 

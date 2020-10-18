@@ -22,7 +22,7 @@ Explanation:
 'e' is the letter that was added.
 ```
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Hash Table` `Bit Manipulation`
 

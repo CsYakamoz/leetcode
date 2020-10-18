@@ -37,7 +37,7 @@ Write a SQL query for a report that provides the following information for each 
 FirstName, LastName, City, State
 ```
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:**
 

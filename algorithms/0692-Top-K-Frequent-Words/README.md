@@ -36,7 +36,7 @@ Explanation: "the", "is", "sunny" and "day" are the four most frequent words,
 1. Try to solve it in _O_(_n_ log _k_) time and _O_(_n_) extra space.
 2. Can you solve it in _O_(_n_) time with only _O_(_k_) extra space?
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Hash Table` `Heap` `Trie`
 

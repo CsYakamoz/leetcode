@@ -36,7 +36,7 @@ Output: 0
 - `1 <= text.length <= 10^4`
 - `text` consists of lower case English letters only.
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Hash Table` `String`
 

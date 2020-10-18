@@ -16,7 +16,7 @@ Find the sum of all left leaves in a given binary tree.
 There are two left leaves in the binary tree, with values 9 and 15 respectively. Return 24.
 ```
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Tree`
 

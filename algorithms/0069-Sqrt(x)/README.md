@@ -6,7 +6,7 @@ Implement `int sqrt(int x)`.
 
 Compute and return the square root of _x_.
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Binary Search` `Math`
 

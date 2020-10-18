@@ -24,7 +24,7 @@ Input: search("leetcoded"), Output: False
 2. For contest purpose, the test data is rather small by now. You could think about highly efficient algorithm after the contest.
 3. Please remember to **RESET** your class variables declared in class MagicDictionary, as static/class variables are **persisted across multiple test cases**. Please see [here](https://leetcode.com/faq/#different-output) for more details.
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Hash Table` `Trie`
 

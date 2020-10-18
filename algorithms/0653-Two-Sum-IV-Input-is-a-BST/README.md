@@ -35,7 +35,7 @@ Target = 28
 Output: False
 ```
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Tree`
 

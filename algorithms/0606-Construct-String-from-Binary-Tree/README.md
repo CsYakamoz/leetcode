@@ -39,7 +39,7 @@ Explanation: Almost the same as the first example,
 except we can't omit the first parenthesis pair to break the one-to-one mapping relationship between the input and the output.
 ```
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Tree` `String`
 

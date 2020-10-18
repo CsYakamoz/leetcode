@@ -45,7 +45,7 @@ Output:
  1
 ```
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Tree`
 

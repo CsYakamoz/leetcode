@@ -26,7 +26,7 @@ Output: False
 2. The input array size is in the range of [1, 20000].
 3. **n** is a non-negative integer which won't exceed the input array size.
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Array`
 

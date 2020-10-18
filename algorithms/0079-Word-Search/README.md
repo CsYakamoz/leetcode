@@ -23,7 +23,7 @@ Given **board** =
 
 **word** = `"ABCB"`, -> returns `false`.
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Array` `Backtracking`
 

@@ -32,7 +32,7 @@ After calling your function, the tree should look like:
     4-> 5 -> 7 -> NULL
 ```
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Tree` `Depth-first Search`
 

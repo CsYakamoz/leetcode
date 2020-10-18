@@ -4,7 +4,7 @@
 
 Given an integer, write a function to determine if it is a power of two.
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Math` `Bit Manipulation`
 

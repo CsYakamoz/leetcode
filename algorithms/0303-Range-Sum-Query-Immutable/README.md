@@ -19,7 +19,7 @@ sumRange(0, 5) -> -3
 1. You may assume that the array does not change.
 2. There are many calls to _sumRange_ function.
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Dynamic Programming`
 

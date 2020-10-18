@@ -8,7 +8,7 @@ For example, given _n_ = 2, return 1 (2 = 1 + 1); given _n_ = 10, return 36 (10 
 
 **Note**: You may assume that _n_ is not less than 2 and not larger than 58.
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Dynamic Programming`
 

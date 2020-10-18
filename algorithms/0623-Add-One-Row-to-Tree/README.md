@@ -64,7 +64,7 @@ Output:
 1. The given d is in range [1, maximum depth of the given tree + 1].
 2. The given binary tree has at least one tree node.
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Tree`
 

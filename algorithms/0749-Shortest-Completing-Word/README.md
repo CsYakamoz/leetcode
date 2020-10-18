@@ -36,7 +36,7 @@ We return the one that occurred first.
 3. `words` will have a length in the range `[10, 1000]`.
 4. Every `words[i]` will consist of lowercase letters, and have length in range `[1, 15]`.
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Hash Table`
 

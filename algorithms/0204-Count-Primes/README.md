@@ -4,7 +4,7 @@
 
 Count the number of prime numbers less than a non-negative number, **n**.
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Hash Table` `Math`
 

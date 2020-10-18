@@ -9,7 +9,7 @@ a = `"11"`
 b = `"1"`
 Return `"100"`.
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Math` `String`
 

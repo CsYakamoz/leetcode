@@ -19,7 +19,7 @@ Output: ["Alaska", "Dad"]
 1. You may use one character in the keyboard more than once.
 2. You may assume the input string will only contain letters of alphabet.
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Hash Table`
 

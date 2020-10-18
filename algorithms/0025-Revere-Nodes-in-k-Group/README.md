@@ -17,7 +17,7 @@ For _k_ = 2, you should return: `2->1->4->3->5`
 
 For _k_ = 3, you should return: `3->2->1->4->5`
 
-**Difficult:** `Hard`
+**Difficulty:** `Hard`
 
 **Tags:** `Linked List`
 

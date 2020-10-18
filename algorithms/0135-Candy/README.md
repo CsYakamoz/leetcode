@@ -11,7 +11,7 @@ You are giving candies to these children subjected to the following requirements
 
 What is the minimum candies you must give?
 
-**Difficult:** `Hard`
+**Difficulty:** `Hard`
 
 **Tags:** `Greedy`
 

@@ -14,7 +14,7 @@ Above is a 3 x 7 grid. How many possible unique paths are there?
 
 **Note:** _m_ and _n_ will be at most 100.
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Array` `Dynamic Programming`
 

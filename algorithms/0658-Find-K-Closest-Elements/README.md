@@ -24,7 +24,7 @@ Output: [1,2,3,4]
 2. Length of the given array is positive and will not exceed 104
 3. Absolute value of elements in the array and x will not exceed 104
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Binary Search`
 

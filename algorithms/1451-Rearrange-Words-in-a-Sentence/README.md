@@ -45,7 +45,7 @@ Output: "To be or to be not"
 - `text` begins with a capital letter and then contains lowercase letters and single space between words.
 - `1 <= text.length <= 10^5`
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `String` `Sort`
 

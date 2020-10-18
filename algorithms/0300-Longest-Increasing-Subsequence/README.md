@@ -12,7 +12,7 @@ Your algorithm should run in O(_n2_) complexity.
 
 **Follow up:** Could you improve it to O(_n_ log _n_) time complexity?
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Dynamic Programming` `Binary Search`
 

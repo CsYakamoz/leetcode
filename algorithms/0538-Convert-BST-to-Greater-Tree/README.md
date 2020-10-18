@@ -18,7 +18,7 @@ Output: The root of a Greater Tree like this:
           20     13
 ```
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Tree`
 

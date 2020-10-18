@@ -20,7 +20,7 @@ return `[3,2,1]`.
 
 **Note:** Recursive solution is trivial, could you do it iteratively?
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Tree` `Stack`
 

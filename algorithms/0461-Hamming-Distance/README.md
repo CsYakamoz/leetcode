@@ -24,7 +24,7 @@ Explanation:
 The above arrows point to positions where the corresponding bits are different.
 ```
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Bit Manipulation`
 

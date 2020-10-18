@@ -33,7 +33,7 @@ The only way to decode it is two-bit character and two-bit character. So the las
 - `1 <= len(bits) <= 1000`.
 - `bits[i]` is always `0` or `1`.
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Array`
 

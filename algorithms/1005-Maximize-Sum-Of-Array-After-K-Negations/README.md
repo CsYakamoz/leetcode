@@ -6,7 +6,7 @@ Given an array `A` of integers, we **must** modify the array in the following wa
 
 Return the largest possible sum of the array after modifying it in this way.
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Greedy`
 

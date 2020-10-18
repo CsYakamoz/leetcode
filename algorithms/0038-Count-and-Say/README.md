@@ -13,7 +13,7 @@ Given an integer _n_, generate the $n^{th}$ sequence.
 
 Note: The sequence of integers will be represented as a string.
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `String`
 

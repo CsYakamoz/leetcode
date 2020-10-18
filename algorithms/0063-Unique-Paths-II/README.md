@@ -24,7 +24,7 @@ The total number of unique paths is `2`.
 
 **Note:** _m_ and _n_ will be at most 100.
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Array` `Dynamic Programming`
 

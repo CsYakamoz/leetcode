@@ -11,7 +11,7 @@ the contiguous subarray `[4,-1,2,1]` has the largest sum = `6`.
 
 If you have figured out the O(_n_) solution, try coding another solution using the divide and conquer approach, which is more subtle.
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Array` `Divide and Conquer` `Dynamic Programming`
 

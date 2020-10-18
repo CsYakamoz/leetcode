@@ -53,7 +53,7 @@ Output: 0
 - `1 <= nums[i] <= 10^9`
 - `1 <= p <= 10^9`
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Array` `Binary Search`
 

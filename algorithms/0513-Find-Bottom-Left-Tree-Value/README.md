@@ -38,7 +38,7 @@ Output:
 
 **Note:** You may assume the tree (i.e., the given root node) is not **NULL**.
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Tree` `Breadth-first Search` `Depth-first Search`
 

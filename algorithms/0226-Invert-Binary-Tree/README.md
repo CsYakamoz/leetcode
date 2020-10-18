@@ -22,7 +22,7 @@ to
 9   6 3   1
 ```
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Tree`
 

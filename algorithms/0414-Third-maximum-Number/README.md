@@ -37,7 +37,7 @@ Explanation: Note that the third maximum here means the third maximum distinct n
 Both numbers with value 2 are both considered as second maximum.
 ```
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Array`
 

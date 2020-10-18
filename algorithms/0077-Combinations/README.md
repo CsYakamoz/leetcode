@@ -18,7 +18,7 @@ If _n_ = 4 and _k_ = 2, a solution is:
 ]
 ```
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Backtracking`
 

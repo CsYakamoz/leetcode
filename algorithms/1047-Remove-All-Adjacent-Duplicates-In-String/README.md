@@ -22,7 +22,7 @@ For example, in "abbaca" we could remove "bb" since the letters are adjacent and
 1. `1 <= S.length <= 20000`
 2. `S` consists only of English lowercase letters.
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Stack`
 

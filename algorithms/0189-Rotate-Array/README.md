@@ -14,7 +14,7 @@ Could you do it in-place with O(1) extra space?
 
 Related problem: [Reverse Words in a String II](https://leetcode.com/problems/reverse-words-in-a-string-ii/)
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Array`
 

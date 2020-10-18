@@ -50,7 +50,7 @@ Output: 12
 - `3 <= s.length <= 10^5`
 - `s[i]` is `'0'` or `'1'`.
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `String`
 

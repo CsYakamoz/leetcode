@@ -15,7 +15,7 @@ canConstruct("aa", "ab") -> false
 canConstruct("aa", "aab") -> true
 ```
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `String`
 

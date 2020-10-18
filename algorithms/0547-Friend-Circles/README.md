@@ -36,7 +36,7 @@ so the 0th and 2nd students are indirect friends. All of them are in the same fr
 2. M\[i][i] = 1 for all students.
 3. If M\[i][j] = 1, then M\[j][i] = 1.
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Depth-First Search` `Union-Find`
 

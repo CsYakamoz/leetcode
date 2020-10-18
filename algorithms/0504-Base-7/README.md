@@ -21,7 +21,7 @@ Output: "-10"
 
 **Note:** The input will be in range of [-1e7, 1e7].
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:**
 

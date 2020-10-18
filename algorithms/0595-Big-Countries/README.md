@@ -32,7 +32,7 @@ For example, according to the above table, we should output:
 +--------------+-------------+--------------+
 ```
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:**
 

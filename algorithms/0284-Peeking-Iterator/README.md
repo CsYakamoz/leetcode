@@ -16,7 +16,7 @@ You call `next()` the final time and it returns 3, the last element. Calling `ha
 
 **Follow up**: How would you extend your design to be generic and work with all types, not just integer?
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Design`
 

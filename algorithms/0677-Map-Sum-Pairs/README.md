@@ -17,7 +17,7 @@ Input: insert("app", 2), Output: Null
 Input: sum("ap"), Output: 5
 ```
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Trie`
 

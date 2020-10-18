@@ -13,7 +13,7 @@ Some examples:
   ["4", "13", "5", "/", "+"] -> (4 + (13 / 5)) -> 6
 ```
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Stack`
 

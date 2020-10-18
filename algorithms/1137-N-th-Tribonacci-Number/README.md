@@ -30,7 +30,7 @@ Output: 1389537
 - `0 <= n <= 37`
 - The answer is guaranteed to fit within a 32-bit integer, ie. `answer <= 2^31 - 1`.
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Recursion`
 

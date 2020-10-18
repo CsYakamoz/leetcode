@@ -18,7 +18,7 @@ Input:
 Output: [1, 3, 9]
 ```
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Tree` `Depth-first Search` `Breadth-first Search`
 

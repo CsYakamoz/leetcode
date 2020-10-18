@@ -58,7 +58,7 @@ Asteroids moving the same direction never meet, so no asteroids will meet each o
 - The length of `asteroids` will be at most `10000`.
 - Each asteroid will be a non-zero integer in the range `[-1000, 1000].`.
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Stack`
 

@@ -13,7 +13,7 @@ A partially filled sudoku which is valid.
 **Note:**
 A valid Sudoku board (partially filled) is not necessarily solvable. Only the filled cells need to be validated.
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Hash Table`
 

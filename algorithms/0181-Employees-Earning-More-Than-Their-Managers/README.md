@@ -26,7 +26,7 @@ Given the `Employee` table, write a SQL query that finds out employees who earn 
 +----------+
 ```
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:**
 

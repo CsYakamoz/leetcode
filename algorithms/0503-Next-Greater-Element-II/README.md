@@ -17,7 +17,7 @@ The second 1's next greater number needs to search circularly, which is also 2.
 
 **Note:** The length of given array won't exceed 10000.
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Stack`
 

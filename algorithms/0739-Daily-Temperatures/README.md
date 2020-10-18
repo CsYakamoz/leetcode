@@ -8,7 +8,7 @@ For example, given the list `temperatures = [73, 74, 75, 71, 69, 72, 76, 73]`, y
 
 **Note:** The length of `temperatures` will be in the range `[1, 30000]`. Each temperature will be an integer in the range `[30, 100]`.
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Hash Table` `Stack`
 

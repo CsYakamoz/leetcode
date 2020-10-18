@@ -21,7 +21,7 @@ as `"[1,2,3,null,null,4,5]"`, just the same as [how LeetCode OJ serializes a bin
 
 **Note:** Do not use class member/global/static variables to store states. Your serialize and deserialize algorithms should be stateless.
 
-**Difficult:** `Hard`
+**Difficulty:** `Hard`
 
 **Tags:** `Tree` `Design`
 

@@ -23,7 +23,7 @@ Employee 1 has importance value 5, and he has two direct subordinates: employee 
 1. One employee has at most one **direct** leader and may have several subordinates.
 2. The maximum number of employees won't exceed 2000.
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Hash Table` `Depth-first Search` `Breadth-first Search`
 

@@ -16,7 +16,7 @@ The minimum number of jumps to reach the last index is `2`. (Jump `1` step fr
 **Note:**
 You can assume that you can always reach the last index.
 
-**Difficult:** `Hard`
+**Difficulty:** `Hard`
 
 **Tags:** `Array` `Greedy`
 

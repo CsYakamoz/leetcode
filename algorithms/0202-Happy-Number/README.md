@@ -13,7 +13,7 @@ A happy number is a number defined by the following process: Starting with any p
 - 6^2^ + 8^2^ = 100
 - 1^2^ + 0^2^ + 0^2^ = 1
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Hash Table` `Math`
 

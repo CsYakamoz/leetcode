@@ -21,7 +21,7 @@ Input: "LL"
 Output: false
 ```
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `String`
 

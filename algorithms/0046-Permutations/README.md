@@ -18,7 +18,7 @@ For example,
 ]
 ```
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Backtracking`
 

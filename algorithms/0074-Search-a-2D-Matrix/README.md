@@ -21,7 +21,7 @@ Consider the following matrix:
 
 Given **target** = `3`, return `true`.
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Array` `Binary Search`
 

@@ -13,7 +13,7 @@ Input: "Hello, my name is John"
 Output: 5
 ```
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `String`
 

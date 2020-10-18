@@ -26,7 +26,7 @@ return its bottom-up level order traversal as:
 ]
 ```
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Tree` `Breadth-first Search`
 

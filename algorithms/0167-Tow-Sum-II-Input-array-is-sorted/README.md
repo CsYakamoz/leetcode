@@ -11,7 +11,7 @@ You may assume that each input would have _exactly_ one solution and you may not
 **Input:** numbers={2, 7, 11, 15}, target=9
 **Output:** index1=1, index2=2
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Array` `Two Pointers` `Binary Search`
 

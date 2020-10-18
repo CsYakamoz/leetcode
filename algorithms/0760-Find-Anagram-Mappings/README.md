@@ -28,7 +28,7 @@ as `P[0] = 1` because the `0`th element of `A` appears at `B[1]`, and `P[1] = 4`
 1. `A, B` have equal lengths in range `[1, 100]`.
 2. `A[i], B[i]` are integers in range `[0, 10^5]`.
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Hash Table`
 

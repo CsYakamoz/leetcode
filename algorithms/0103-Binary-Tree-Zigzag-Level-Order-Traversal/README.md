@@ -26,7 +26,7 @@ return its zigzag level order traversal as:
 ]
 ```
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Tree` `Breadth-first Search` `Stack`
 

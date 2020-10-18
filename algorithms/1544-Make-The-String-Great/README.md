@@ -45,7 +45,7 @@ Output: "s"
 - `1 <= s.length <= 100`
 - `s` contains only lower and upper case English letters.
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `String` `Stack`
 

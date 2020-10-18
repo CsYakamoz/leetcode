@@ -18,7 +18,7 @@ Given _nums1_ = `[1, 2, 2, 1]`, _nums2_ = `[2, 2]`, return `[2, 2]`.
 - What if _nums1_'s size is small compared to _nums2_'s size? Which algorithm is better?
 - What if elements of _nums2_ are stored on disk, and the memory is limited such that you cannot load all elements into the memory at once?
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Binary Search` `Hash Table` `Two Pointers` `Sort`
 

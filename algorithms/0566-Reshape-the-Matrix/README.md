@@ -46,7 +46,7 @@ There is no way to reshape a 2 * 2 matrix to a 2 * 4 matrix. So output the origi
 1. The height and width of the given matrix is in range [1, 100].
 2. The given r and c are all positive.
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Array`
 

@@ -26,7 +26,7 @@ In step 3, we use Paste operation to get 'AAA'.
 
 1. The `n` will be in the range [1, 1000].
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Dynamic Programming`
 

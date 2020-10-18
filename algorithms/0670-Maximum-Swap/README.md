@@ -26,7 +26,7 @@ Explanation: No swap.
 
 1. The given number is in the range [0, 108]
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Array` `Math`
 

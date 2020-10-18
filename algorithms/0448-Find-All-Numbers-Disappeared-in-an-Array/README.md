@@ -18,7 +18,7 @@ Output:
 [5,6]
 ```
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Array`
 

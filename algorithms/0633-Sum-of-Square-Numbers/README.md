@@ -20,7 +20,7 @@ Input: 3
 Output: False
 ```
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Math`
 

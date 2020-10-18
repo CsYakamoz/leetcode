@@ -7,7 +7,7 @@ Given an array of integers, every element appears _twice_ except for one. Find t
 **Note:**
 Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Hash Table` `Bit Manipulation`
 

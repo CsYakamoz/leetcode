@@ -24,7 +24,7 @@ begin to intersect at node c1.
 - You may assume there are no cycles anywhere in the entire linked structure.
 - Your code should preferably run in O(n) time and use only O(1) memory.
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Linked List`
 

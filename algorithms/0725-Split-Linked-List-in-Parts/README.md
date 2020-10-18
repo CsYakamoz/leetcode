@@ -39,7 +39,7 @@ The input has been split into consecutive parts with size difference at most 1, 
 - Each value of a node in the input will be an integer in the range `[0, 999]`.
 - `k` will be an integer in the range `[1, 50]`.
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Linked List`
 

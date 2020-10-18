@@ -48,7 +48,7 @@ Explanation:
 Note that 'A' and 'a' are treated as two different characters.
 ```
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Hash Table` `Heap`
 

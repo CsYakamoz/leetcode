@@ -18,7 +18,7 @@ For example:
     AB -> 28
 ```
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Math`
 

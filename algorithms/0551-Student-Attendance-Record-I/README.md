@@ -27,7 +27,7 @@ Input: "PPALLL"
 Output: False
 ```
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `String`
 

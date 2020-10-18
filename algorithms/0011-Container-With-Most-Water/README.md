@@ -6,7 +6,7 @@ Given _n_ non-negative integers _a1_, _a2_, ..., _an_, where each represents a p
 
 Note: You may not slant the container and _n_ is at least 2.
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Array` `Two Pointers`
 

@@ -33,7 +33,7 @@ Output: True
 Explanation: It's the substring "abc" four times. (And the substring "abcabc" twice.)
 ```
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `String`
 

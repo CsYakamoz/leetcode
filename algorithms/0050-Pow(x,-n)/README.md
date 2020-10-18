@@ -4,7 +4,7 @@
 
 Implement pow(x, n)
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Binary Search` `Math`
 

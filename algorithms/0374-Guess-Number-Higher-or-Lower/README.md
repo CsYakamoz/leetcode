@@ -25,7 +25,7 @@ n = 10, I pick 6.
 Return 6.
 ```
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Binary Search`
 

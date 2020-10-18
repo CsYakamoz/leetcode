@@ -30,7 +30,7 @@ Output: return the tree root node representing the following tree:
 
 1. The size of the given array will be in the range [1,1000].
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Tree`
 

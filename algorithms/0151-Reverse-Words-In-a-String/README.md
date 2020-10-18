@@ -22,7 +22,7 @@ Clarification:
 - How about multiple spaces between two words?
   Reduce them to a single space in the reversed string.
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `String`
 

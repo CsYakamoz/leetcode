@@ -17,7 +17,7 @@ Return:
 
 **Note:** All inputs will be in lower-case.
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Hash Table` `String`
 

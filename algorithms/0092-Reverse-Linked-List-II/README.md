@@ -13,7 +13,7 @@ return `1->4->3->2->5->NULL`.
 Given _m_, _n_ satisfy the following condition:
 1 ? _m_ ? _n_ ? length of list.
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Linked List`
 

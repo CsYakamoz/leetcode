@@ -17,7 +17,7 @@ Return
 ]
 ```
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Array`
 

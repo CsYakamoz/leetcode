@@ -29,7 +29,7 @@ while the minimum difference in this tree is 1, it occurs between node 1 and nod
 2. The BST is always valid, each node's value is an integer, and each node's value is different.
 3. This question is the same as 530: https://leetcode.com/problems/minimum-absolute-difference-in-bst/
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Tree` `Recursion`
 

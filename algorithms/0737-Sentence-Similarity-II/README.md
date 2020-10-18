@@ -21,7 +21,7 @@ Finally, sentences can only be similar if they have the same number of words. So
 - The length of each `pairs[i]` will be `2`.
 - The length of each `words[i]` and `pairs[i][j]` will be in the range `[1, 20]`.
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Depth-first Search` `Union Find`
 

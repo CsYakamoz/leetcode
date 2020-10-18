@@ -20,7 +20,7 @@ The root-to-leaf path `1->3` represents the number `13`.
 
 Return the sum = 12 + 13 = `25`.
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Tree` `Depth-first Search`
 

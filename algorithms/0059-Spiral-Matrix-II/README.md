@@ -17,7 +17,7 @@ You should return the following matrix:
 ]
 ```
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Array`
 

@@ -22,7 +22,7 @@ Note that [10, 5, 2] is not included as the product of 100 is not strictly less 
 - `0 < nums[i] < 1000`.
 - `0 <= k < 10^6`.
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Array` `Two Pointers`
 

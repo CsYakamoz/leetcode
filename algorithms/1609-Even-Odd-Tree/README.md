@@ -68,7 +68,7 @@ Output: true
 - The number of nodes in the tree is in the range `[1, 105]`.
 - `1 <= Node.val <= 10^6`
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Tree`
 

@@ -30,7 +30,7 @@ Maximum amount of money the thief can rob = 3 + 3 + 1 = **7**.
 
 Maximum amount of money the thief can rob = 4 + 5 = **9**.
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Tree` `Depth-first Search`
 

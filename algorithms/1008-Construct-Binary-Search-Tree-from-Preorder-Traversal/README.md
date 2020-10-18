@@ -23,7 +23,7 @@ Output: [8,5,10,1,7,null,12]
 - `1 <= preorder[i] <= 10^8`
 - The values of `preorder` are distinct.
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Tree`
 

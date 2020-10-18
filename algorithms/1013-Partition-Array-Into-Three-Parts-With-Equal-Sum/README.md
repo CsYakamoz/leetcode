@@ -34,7 +34,7 @@ Explanation: 3 + 3 = 6 = 5 - 2 + 2 + 5 + 1 - 9 + 4
 - `3 <= A.length <= 50000`
 - `-10^4 <= A[i] <= 10^4`
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 **Tags:** `Array`
 
 ### Solution One

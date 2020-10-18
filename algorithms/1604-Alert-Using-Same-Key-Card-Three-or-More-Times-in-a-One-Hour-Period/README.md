@@ -51,7 +51,7 @@ Output: ["clare","leslie"]
 - `1 <= keyName[i].length <= 10`
 - `keyName[i] contains only lowercase English letters.`
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `String` `Ordered Map`
 

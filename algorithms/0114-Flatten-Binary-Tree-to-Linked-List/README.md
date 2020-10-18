@@ -35,7 +35,7 @@ The flattened tree should look like:
 
 If you notice carefully in the flattened tree, each node's right child points to the next node of a pre-order traversal.
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Tree` `Depth-first Search`
 

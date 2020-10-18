@@ -17,7 +17,7 @@ Explanation: The longest harmonious subsequence is [3,2,2,2,3].
 
 **Note:** The length of the input array will not exceed 20,000.
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Hash Table`
 

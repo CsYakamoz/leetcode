@@ -32,7 +32,7 @@ For the example above, the output should be:
 +---------+-----------+--------------+-----------+
 ```
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:**
 

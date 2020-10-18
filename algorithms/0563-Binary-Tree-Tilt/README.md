@@ -28,7 +28,7 @@ Tilt of binary tree : 0 + 0 + 1 = 1
 1. The sum of node values in any subtree won't exceed the range of 32-bit integer.
 2. All the tilt values won't exceed the range of 32-bit integer.
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Tree`
 

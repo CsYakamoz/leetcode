@@ -35,7 +35,7 @@ Output: True
 
 1. The string size will be in the range [1, 100].
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `String`
 

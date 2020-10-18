@@ -20,7 +20,7 @@ string convert(string text, int nRows);
 
 `convert("PAYPALISHIRING", 3)` should return `"PAHNAPLSIIGYIR"`.
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `String`
 

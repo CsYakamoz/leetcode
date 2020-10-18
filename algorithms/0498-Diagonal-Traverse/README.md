@@ -23,7 +23,7 @@ Explanation:
 
 1. The total number of elements of the given matrix will not exceed 10,000.
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:**
 

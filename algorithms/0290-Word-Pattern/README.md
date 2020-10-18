@@ -16,7 +16,7 @@ Here **follow** means a full match, such that there is a bijection between a let
 **Notes:**
 You may assume `pattern` contains only lowercase letters, and `str` contains lowercase letters separated by a single space.
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Hash Table`
 

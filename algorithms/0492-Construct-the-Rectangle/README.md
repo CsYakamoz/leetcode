@@ -29,7 +29,7 @@ But according to requirement 2, [1,4] is illegal; according to requirement 3,  [
 1. The given area won't exceed 10,000,000 and is a positive integer
 2. The web page's width and length you designed must be positive integers.
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:**
 

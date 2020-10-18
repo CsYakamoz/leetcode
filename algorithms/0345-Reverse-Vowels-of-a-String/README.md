@@ -14,7 +14,7 @@ Given s = "leetcode", return "leotcede".
 **Note:**
 The vowels does not include the letter "y".
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Two Pointers` `String`
 

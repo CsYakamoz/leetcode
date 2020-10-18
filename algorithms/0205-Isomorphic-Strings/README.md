@@ -18,7 +18,7 @@ Given `"paper"`, `"title"`, return true.
 **Note:**
 You may assume both **s** and **t** have the same length.
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Hash Table`
 

@@ -32,7 +32,7 @@ Binary tree [2,1,3], return true.
 
 Binary tree [1,2,3], return false.
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Tree` `Depth-first Search`
 

@@ -32,7 +32,7 @@ Output:
 "ffffffff"
 ```
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Bit Manipulation`
 

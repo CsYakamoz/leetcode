@@ -4,7 +4,7 @@
 
 Determine whether an integer is a palindrome. Do this without extra space.
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Math`
 

@@ -26,7 +26,7 @@ Given **target** = `5`, return `true`.
 
 Given **target** = `20`, return `false`.
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Binary Search` `Divide and Conquer`
 

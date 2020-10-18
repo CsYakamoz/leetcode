@@ -43,7 +43,7 @@ Explanation:  Since there are already no fresh oranges at minute 0, the answer i
 2. `1 <= grid[0].length <= 10`
 3. `grid[i][j]` is only `0`, `1`, or `2`.
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Breadth-first Search`
 

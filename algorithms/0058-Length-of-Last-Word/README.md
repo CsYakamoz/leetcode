@@ -12,7 +12,7 @@ For example,
 Given _s_ = `"Hello World"`,
 return `5`.
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `String`
 

@@ -30,7 +30,7 @@ Return 3. The paths that sum to 8 are:
 3. -3 -> 11
 ```
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Tree`
 

@@ -34,7 +34,7 @@ There is no index that satisfies the conditions in the problem statement.
 - The length of `nums` will be in the range `[0, 10000]`.
 - Each element `nums[i]` will be an integer in the range `[-1000, 1000]`.
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Array`
 

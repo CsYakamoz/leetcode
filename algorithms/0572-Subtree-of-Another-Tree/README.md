@@ -51,7 +51,7 @@ Given tree t:
 
 Return **false**.
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Tree`
 

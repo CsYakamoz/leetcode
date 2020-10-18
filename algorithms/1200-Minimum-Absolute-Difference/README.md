@@ -37,7 +37,7 @@ Output: [[-14,-10],[19,23],[23,27]]
 - `2 <= arr.length <= 10^5`
 - `-10^6 <= arr[i] <= 10^6`
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Array`
 

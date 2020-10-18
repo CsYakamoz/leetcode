@@ -6,7 +6,7 @@ Given a string containing just the characters `'('`, `')'`, `'{'`, `'}'`, `
 
 The brackets must close in the correct order, `"()"` and `"()[]{}"` are all valid but `"(]"` and `"([)]"` are not.
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Stack` `String`
 

@@ -26,7 +26,7 @@ return
 ]
 ```
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Depth-first Search`
 

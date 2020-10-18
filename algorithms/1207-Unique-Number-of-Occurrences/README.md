@@ -31,7 +31,7 @@ Output: true
 - `1 <= arr.length <= 1000`
 - `-1000 <= arr[i] <= 1000`
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Hash Table`
 

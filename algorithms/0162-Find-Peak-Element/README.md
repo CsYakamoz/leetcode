@@ -16,7 +16,7 @@ For example, in array `[1, 2, 3, 1]`, 3 is a peak element and your function shou
 
 Your solution should be in logarithmic complexity.
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `Binary Search` `Array`
 

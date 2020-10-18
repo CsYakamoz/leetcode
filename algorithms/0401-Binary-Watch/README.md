@@ -25,7 +25,7 @@ Return: ["1:00", "2:00", "4:00", "8:00", "0:01", "0:02", "0:04", "0:08", "0:16",
 - The hour must not contain a leading zero, for example "01:00" is not valid, it should be "1:00".
 - The minute must be consist of two digits and may contain a leading zero, for example "10:2" is not valid, it should be "10:02".
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Backtracking` `Bit Manipulation`
 

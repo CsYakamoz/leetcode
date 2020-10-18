@@ -19,7 +19,7 @@ Input: "cbbd"
 Output: "bb"
 ```
 
-**Difficult:** `Medium`
+**Difficulty:** `Medium`
 
 **Tags:** `String`
 

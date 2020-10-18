@@ -13,7 +13,7 @@ Given input array _nums_ = `[3,2,2,3]`, _val_ = `3`
 
 Your function should return length = 2, with the first two elements of _nums_ being 2.
 
-**Difficult:** `Easy`
+**Difficulty:** `Easy`
 
 **Tags:** `Array` `Two Pointers`
 
