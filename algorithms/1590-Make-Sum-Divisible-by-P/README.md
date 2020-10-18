@@ -69,43 +69,37 @@ Output: 0
 
 思路如下：
 
-1. 遍历 `nums`, 以 `remainder[i]` 为聚合标准，将对应索引存放在同一个数组中；
+设 **x** 为 `prefixSum[i] % p`, 则必然存在 **y** 满足 `(y + p - x ) % p === expRemainder`
 
-2. 遍历 `prefixRemainderDict`, 做如下事情：
+寻找**最小**的 j, 使其满足 `j > i`, 且 `prefixSum[j] % p === y`
 
-   对于 `currRemainder` 所映射数组的每一个索引 `x`, 寻找**最小**的索引 `y`, 使得
+> 为何 `y = (x + expRemainder) % p` ? 证明如下：
+>
+> `(prefixSum[j] - prefixSum[i]) % p = expRemainder` 等式一
+>
+> 等式一两边乘以 p, 并且将 `prefixSum[i]` 移到右侧，可得到：
+>
+> `prefixSum[j] = prefixSum[i] + (expRemainder + np), 其中 n >= 0` 等式二
+>
+> 由于 `prefixSum[j]` 可写成 `remainder[j] + kp, 其中 k >= 0`
+>
+> 故等式二可转换成
+>
+> `(remainder[j] + ap) = (remainder[i] + bp) + (expRemainder + np), 其中 n >= 0, a >= 0, b >= 0` 等式三
+>
+> 将等式三左侧的 `ap` 移到右侧可得：
+>
+> `remainder[j] = remainder[i] + expRemainder + ap + bp + np` 等式四
+>
+> 等式四两边再次求余数可得：
+>
+> `remainder[j] = (remainder[i] + expRemainder) % p`
+>
+> 即 `y = (x + expRemainder) % p`
 
-   `y > x`, 且 `(prefixSum[y] - prefixSum[x]) % p = expRemainder` 且 `y` 是在 `(currRemainder + expRemainder) % p` 所映射数组中寻找
+**注意:** 该代码可能有误, 因为忽略了此类情况:
 
-   为何是该数组中寻找呢？原因如下：
-
-   > `(prefixSum[y] - prefixSum[x]) % p = expRemainder` 等式一
-   >
-   > 等式一两边乘以 p, 可得到：
-   >
-   > `prefixSum[y] = prefixSum[x] + (expRemainder + np), 其中 n >= 0` 等式二
-   >
-   > 由于 `prefixSum[i]` 可写成 `remainder[i] + kp, 其中 k >= 0`
-   >
-   > 故等式二可转换成
-   >
-   > `(remainder[y] + ap) = (remainder[x] + bp) + (expRemainder + np), 其中 n >= 0, a >= 0, b >= 0` 等式三
-   >
-   > 将等式三左侧的 `ap` 移到右侧可得：
-   >
-   > `remainder[y] = remainder[x] + expRemainder + ap + bp + np` 等式四
-   >
-   > 等式四两边再次求余数可得：
-   >
-   > `remainder[y] = (remainder[x] + expRemainder) % p`
-   >
-   > 故 `anotherRemainder = (currRemainder + expRemainder) % p`
-
-   所以我们只需要在 `anotherRemainder` 所映射数组中寻找即可
-
-3. 如果步骤 2 中未找到满足条件的 `y`, 则判断 `prefixRemainderDict` 有无 key 为 `expRemainder`
-
-   若有，且数组第一个元素值不等于 `nums.length - 1`, 则返回该元素与 1 的和，否则返回 `-1`
+在遍历 prefixRemainderDict 后, minLength 不为 Number.MAX_SAFE_INTEGER, 但存在 prefixSum[i] % p === expRemainder 且 i + 1 < minLength
 
 ```javascript
 /**
@@ -185,4 +179,46 @@ const minSubarray = function (nums, p) {
 
 ### Solution Two - In Top Solutions
 
-TODO
+Link: [[Java/C++/Python] Prefix Sum](https://leetcode.com/problems/make-sum-divisible-by-p/discuss/854197/JavaC%2B%2BPython-Prefix-Sum)
+
+思路本质上与 Solution One 一样，但 y 的定义和所寻找的 j 不一样
+
+`y = (x - expRemainder + p ) % p`
+
+寻找**最大**的 j, 使其满足 `j < i`, 且 `prefixSum[j] % p === y`
+
+因此少了 Solution One 中所用到的 `findMinDiff` 函数
+
+```javascript
+/**
+ * @param {number[]} nums
+ * @param {number} p
+ * @return {number}
+ */
+var minSubarray = function (nums, p) {
+  let sum = 0;
+  for (let num of nums) {
+    sum += num;
+  }
+  const mod = sum % p;
+
+  if (mod == 0) return 0;
+  let map = new Map();
+  map.set(0, -1);
+  let curMod = 0;
+  let min = Number.POSITIVE_INFINITY;
+  for (let i = 0; i < nums.length; i++) {
+    curMod = (curMod + nums[i]) % p;
+    const req = (curMod - mod + p) % p;
+
+    if (map.has(req)) {
+      const n = map.get(req);
+
+      min = Math.min(min, i - n);
+    }
+    map.set(curMod, i);
+  }
+
+  return min >= nums.length ? -1 : min;
+};
+```
