@@ -81,7 +81,7 @@ Output: 0
 >
 > `prefixSum[j] = prefixSum[i] + (expRemainder + np), 其中 n >= 0` 等式二
 >
-> 由于 `prefixSum[j]` 可写成 `remainder[j] + kp, 其中 k >= 0`
+> 由于 `prefixSum` 可写成 `remainder + kp, 其中 k >= 0`
 >
 > 故等式二可转换成
 >
@@ -97,9 +97,9 @@ Output: 0
 >
 > 即 `y = (x + expRemainder) % p`
 
-**注意:** 该代码可能有误, 因为忽略了此类情况:
+**注意：** 该代码可能有误，因为忽略了此类情况：
 
-在遍历 prefixRemainderDict 后, minLength 不为 Number.MAX_SAFE_INTEGER, 但存在 prefixSum[i] % p === expRemainder 且 i + 1 < minLength
+在遍历 prefixRemainderDict 后，`minLength` 不为 `Number.MAX_SAFE_INTEGER`, 但存在 `prefixSum[i] % p === expRemainder` 且 `i + 1 < minLength`
 
 ```javascript
 /**
