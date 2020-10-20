@@ -71,8 +71,6 @@
 
 少了 `A[0] + ... + A[i]` 的情况，即 `remainder[i] === 0`, 此时 `prefixSum[i]` 也满足题目所说的 `subarrays`
 
----
-
 ```javascript
 /**
  * @param {number[]} A
@@ -107,6 +105,8 @@ const subarraysDivByK = function (A, K) {
 ### Solution Two - In Top Solutions
 
 Link: [DETAILED WHITEBOARD! BEATS 100% (Do you really want to understand It?)](<https://leetcode.com/problems/subarray-sums-divisible-by-k/discuss/413234/DETAILED-WHITEBOARD!-BEATS-100-(Do-you-really-want-to-understand-It)>)
+
+TODO: 补充该链接的思路；目前这份代码是 javascript 中最快的。
 
 ```javascript
 var subarraysDivByK = function (A, K) {
