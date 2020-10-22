@@ -1,9 +1,9 @@
 const func = require('../index');
-const assert = require('power-assert');
+const { deepStrictEqual } = require('power-assert');
 
 describe('994. Rotting Oranges', () => {
     it('[[2,1,1],[1,1,0],[0,1,1]] should be 4', () => {
-        assert.deepStrictEqual(
+        deepStrictEqual(
             func([
                 [2, 1, 1],
                 [1, 1, 0],
@@ -14,7 +14,7 @@ describe('994. Rotting Oranges', () => {
     });
 
     it('[[2,1,1],[0,1,1],[1,0,1]] should be -1', () => {
-        assert.deepStrictEqual(
+        deepStrictEqual(
             func([
                 [2, 1, 1],
                 [0, 1, 1],
@@ -25,10 +25,10 @@ describe('994. Rotting Oranges', () => {
     });
 
     it('[[0,2]] should be 0', () => {
-        assert.deepStrictEqual(func([[0, 2]]), 0);
+        deepStrictEqual(func([[0, 2]]), 0);
     });
 
     it('[[1,2]] should be 1', () => {
-        assert.deepStrictEqual(func([[1, 2]]), 1);
+        deepStrictEqual(func([[1, 2]]), 1);
     });
 });

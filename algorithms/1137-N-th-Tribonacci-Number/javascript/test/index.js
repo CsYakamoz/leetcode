@@ -1,16 +1,16 @@
 const func = require('../index');
-const assert = require('power-assert');
+const { deepStrictEqual } = require('power-assert');
 
 describe('1137. N-th Tribonacci Number', () => {
     it('n = 4 should be 4', function() {
-        assert.deepStrictEqual(func(4), 4);
+        deepStrictEqual(func(4), 4);
     });
 
     it('n = 25 should be 1389537', function() {
-        assert.deepStrictEqual(func(25), 1389537);
+        deepStrictEqual(func(25), 1389537);
     });
 
     it('n = 37 should be 2082876103', function() {
-        assert.deepStrictEqual(func(37), 2082876103);
+        deepStrictEqual(func(37), 2082876103);
     });
 });

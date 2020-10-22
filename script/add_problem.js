@@ -25,7 +25,7 @@ const LEETCODE_SUPPORTED_LANGUAGE = [
 ];
 
 // call the main function on the last line
-const main = async () => {
+const main = async() => {
     const { problemLink, language } = await prompt([
         {
             type: 'input',
@@ -104,7 +104,7 @@ const javascript = (problemDir, problemName, code) => {
         join(problemDir, 'javascript', 'test', 'index.js'),
         [
             'const func = require(\'../index\');',
-            'const assert = require(\'power-assert\');',
+            'const { deepStrictEqual } = require(\'power-assert\');',
             '',
             `describe('${problemName}', () => {});`,
             '',

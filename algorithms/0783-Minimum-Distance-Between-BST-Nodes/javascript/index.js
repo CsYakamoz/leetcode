@@ -1,4 +1,6 @@
-const { TreeNode } = require('@javascript/language-helper');
+const {
+    structure: { TreeNode },
+} = require('@lib/javascript');
 
 /**
  * @param {TreeNode} root

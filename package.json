@@ -5,7 +5,7 @@
   "repository": "git@github.com:CsYakamoz/leetcode.git",
   "author": "CsYakamoz <532609418@qq.com>",
   "devDependencies": {
-    "@javascript/language-helper": "link:./language-helper/javascript",
+    "@lib/javascript": "link:./lib/javascript",
     "enquirer": "^2.3.6",
     "eslint": "^7.10.0",
     "mocha": "^8.1.3",
@@ -16,6 +16,7 @@
   "scripts": {
     "build:readme": "node ./script/build_readme.js & prettier --write README.md",
     "add:problem": "node ./script/add_problem.js",
-    "test": "mocha --recursive algorithms"
+    "test": "mocha --recursive algorithms",
+    "test:lib": "mocha --recursive lib"
   }
 }

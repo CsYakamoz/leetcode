@@ -21,6 +21,7 @@
     "linebreak-style": ["error", "unix"],
     "quotes": ["error", "single"],
     "semi": ["error", "always"],
-    "no-unused-vars": ["error", { "varsIgnorePattern": "[Tree|List]Node" }]
+    "no-unused-vars": ["error", { "varsIgnorePattern": "[Tree|List]Node" }],
+    "space-before-function-paren": ["error", "never"]
   }
 }

@@ -5,7 +5,7 @@ const titleSlugRegex = /https:\/\/leetcode\.com\/problems\/(?<titleSlug>.*)\//;
 /**
  * @param {string} problemLink
  */
-module.exports = async (problemLink, language) => {
+module.exports = async(problemLink, language) => {
     const titleSlug = problemLink.match(titleSlugRegex).groups.titleSlug;
     const body = {
         operationName: 'questionData',
