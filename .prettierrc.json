@@ -11,7 +11,7 @@
   "bracketSpacing": true,
   "overrides": [
     {
-      "files": ["algorithms/*/{java,type}script/**/*"],
+      "files": ["algorithms/*/{java,type}script/**/*", "lib/javascript/**/*"],
       "options": {
         "tabWidth": 4
       }
