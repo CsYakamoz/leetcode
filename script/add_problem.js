@@ -1,5 +1,5 @@
-const { join, resolve } = require('path');
-const { writeFileSync, mkdirSync } = require('fs');
+const { join, resolve, relative } = require('path');
+const { writeFileSync, mkdirSync, existsSync, statSync } = require('fs');
 const { prompt } = require('enquirer');
 
 const crawlProblemInfo = require('./crawl_problem_info');
@@ -16,7 +16,7 @@ const LEETCODE_SUPPORTED_LANGUAGE = [
     { name: 'csharp', isFamiliar: false },
     { name: 'ruby', isFamiliar: false },
     { name: 'swift', isFamiliar: false },
-    { name: 'golang', isFamiliar: false },
+    { name: 'golang', isFamiliar: true },
     { name: 'scala', isFamiliar: false },
     { name: 'kotlin', isFamiliar: false },
     { name: 'rust', isFamiliar: false },
@@ -25,7 +25,7 @@ const LEETCODE_SUPPORTED_LANGUAGE = [
 ];
 
 // call the main function on the last line
-const main = async() => {
+const main = async () => {
     const { problemLink, language } = await prompt([
         {
             type: 'input',
@@ -33,7 +33,7 @@ const main = async() => {
             message: 'problem link',
         },
         {
-            type: 'select',
+            type: 'autocomplete',
             name: 'language',
             message: 'which language do you use',
             choices: LEETCODE_SUPPORTED_LANGUAGE.filter(
@@ -55,9 +55,9 @@ const main = async() => {
         .replace(/^(\d+)/, (match) => match.padStart(4, '0'));
 
     const problemDir = join(ALG_DIR, dirName);
-    mkdirSync(problemDir);
+    mkdir(problemDir);
 
-    generateREADME(
+    await generateREADME(
         problemDir,
         problemName,
         problemLink,
@@ -66,11 +66,62 @@ const main = async() => {
         tags
     );
 
-    const mapping = { javascript };
-    mapping[language](problemDir, problemName, code);
+    const mapping = {
+        javascript,
+        golang,
+    };
+    await mapping[language](problemDir, problemName, code);
 };
 
-const generateREADME = (
+/**
+ * @param {string} path
+ */
+const mkdir = (path) => {
+    if (existsSync(path)) {
+        if (!statSync(path).isDirectory()) {
+            throw new Error(`path(${path}) already exists, but not a directory`);
+        }
+        return;
+    }
+
+    mkdirSync(path);
+};
+
+/**
+ * @param {string} path
+ * @param {string} content
+ */
+const writeFile = async (path, content) => {
+    if (existsSync(path)) {
+        if (!statSync(path).isFile()) {
+            throw new Error(`path(${path}) already exists, but not a file`);
+        }
+
+        const relativePath = relative(PROJECT_ROOT, path);
+        const { confirm } = await prompt([
+            {
+                type: 'confirm',
+                name: 'confirm',
+                message: `file(${relativePath}) already exists, overwrite?`,
+            },
+        ]);
+        if (!confirm) {
+            return;
+        }
+    }
+
+    writeFileSync(path, content);
+};
+
+/**
+ * @param {string} problemDir
+ * @param {string} problemName
+ * @param {string} problemLink
+ * @param {string} description
+ * @param {string} difficulty
+ * @param {string[]} tags
+ */
+const generateREADME = async (
     problemDir,
     problemName,
     problemLink,
@@ -78,7 +129,7 @@ const generateREADME = (
     difficulty,
     tags
 ) => {
-    writeFileSync(
+    await writeFile(
         join(problemDir, 'README.md'),
         [
             `## [${problemName}](${problemLink})`,
@@ -95,12 +146,17 @@ const generateREADME = (
     );
 };
 
-const javascript = (problemDir, problemName, code) => {
-    mkdirSync(join(problemDir, 'javascript'));
-    writeFileSync(join(problemDir, 'javascript', 'index.js'), code);
+/**
+ * @param {string} problemDir
+ * @param {string} problemName
+ * @param {string} code
+ */
+const javascript = async (problemDir, problemName, code) => {
+    mkdir(join(problemDir, 'javascript'));
+    await writeFile(join(problemDir, 'javascript', 'index.js'), code);
 
-    mkdirSync(join(problemDir, 'javascript', 'test'));
-    writeFileSync(
+    mkdir(join(problemDir, 'javascript', 'test'));
+    await writeFile(
         join(problemDir, 'javascript', 'test', 'index.js'),
         [
             'const func = require(\'../index\');',
@@ -108,6 +164,37 @@ const javascript = (problemDir, problemName, code) => {
             '',
             `describe('${problemName}', () => {});`,
             '',
+        ].join('\n')
+    );
+};
+
+/**
+ * @param {string} problemDir
+ * @param {string} _problemName
+ * @param {string} code
+ */
+const golang = async (problemDir, _problemName, code) => {
+    mkdir(join(problemDir, 'golang'));
+    await writeFile(
+        join(problemDir, 'golang', 'solution.go'),
+        ['package golang', '', code].join('\n')
+    );
+
+    const funName = code.match(/func (?<funName>\w+)\(.*/).groups.funName;
+    const parseFunName = funName.charAt(0).toUpperCase() + funName.slice(1);
+
+    await writeFile(
+        join(problemDir, 'golang', 'solution_test.go'),
+        [
+            'package golang',
+            '',
+            'import (',
+            '\t"reflect"',
+            '\t"testing"',
+            ')',
+            '',
+            `func Test${parseFunName}(t *testing.T) {`,
+            '}',
         ].join('\n')
     );
 };
