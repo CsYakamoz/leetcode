@@ -14,7 +14,7 @@
     "prettier": "2.1.2"
   },
   "scripts": {
-    "build:readme": "node ./script/build_readme.js & prettier --write README.md",
+    "build:profile": "node ./script/build_profile.js & prettier --write profile.md",
     "add:problem": "node ./script/add_problem.js",
     "test": "mocha --recursive algorithms && go test ./algorithms/...",
     "test:lib": "mocha --recursive lib && go test ./lib/golang/utils"
