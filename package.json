@@ -16,7 +16,7 @@
   "scripts": {
     "build:readme": "node ./script/build_readme.js & prettier --write README.md",
     "add:problem": "node ./script/add_problem.js",
-    "test": "mocha --recursive algorithms",
+    "test": "mocha --recursive algorithms && go test ./algorithms/...",
     "test:lib": "mocha --recursive lib && go test ./lib/golang/utils"
   }
 }
