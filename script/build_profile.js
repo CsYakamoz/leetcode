@@ -8,10 +8,10 @@ const ALG_DIR = join(PROJECT_ROOT, 'algorithms');
 const main = () => {
     const algList = getAlgList();
     const algTable = algList
-        .map(({ id, algName, filename, difficulty, tags }) =>
+        .map(({ id, title, filename, difficulty, tags }) =>
             [
                 id,
-                `[${algName}](algorithms/${filename})`,
+                `[${title}](algorithms/${filename})`,
                 difficulty,
                 tags.join(' '),
             ].join('|')
@@ -46,8 +46,8 @@ const main = () => {
         '',
         '### List',
         '',
-        '| Id  | Name | Difficulty | Tags |',
-        '| :-: | :-:  | :-:        | :-:  |',
+        '| Id  | Title | Difficulty | Tags |',
+        '| :-: |  :-:  |    :-:     | :-:  |',
         algTable,
         '',
     ];
@@ -55,7 +55,6 @@ const main = () => {
     writeFileSync(join(PROJECT_ROOT, 'profile.md'), result.join('\n'));
 };
 
-const algNamePattern = /##\s\[(?<algName>.*)\]/;
 const getAlgList = () =>
     readdirSync(ALG_DIR)
         .filter((filename) => statSync(join(ALG_DIR, filename)).isDirectory())
@@ -64,10 +63,7 @@ const getAlgList = () =>
                 .toString()
                 .split('\n');
 
-            const algName = content[0].match(algNamePattern).groups.algName;
-            if (algName === undefined) {
-                throw new Error('can not get algName for ' + filename);
-            }
+            const algName = content[0].match(/##\s\[(?<algName>.*)\]/).groups.algName;
 
             const difficultyList = content
                 .find((str) => str.startsWith('**Difficulty:**'))
@@ -85,12 +81,12 @@ const getAlgList = () =>
             }
 
             return {
-                algName,
                 filename,
                 difficulty,
                 tags,
 
                 id: parseInt(algName.match(/^(?<id>\d+)/).groups.id),
+                title: algName.match(/\d+\.\s(?<title>.*)/).groups.title,
             };
         });
 
