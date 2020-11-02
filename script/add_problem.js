@@ -162,8 +162,15 @@ const javascript = async (problemDir, problemName, code) => {
             'const func = require(\'../index\');',
             'const { deepStrictEqual } = require(\'power-assert\');',
             '',
-            `describe('${problemName}', () => {});`,
+            'const testList = [];',
             '',
+            `describe('${problemName}', () => {`,
+            '    for (const [idx, test] of Object.entries(testList)) {',
+            '        it(`TestCase[${idx}]`, () => {',
+            '            deepStrictEqual(func(test));',
+            '        });',
+            '    }',
+            '});',
         ].join('\n')
     );
 };
@@ -193,7 +200,15 @@ const golang = async (problemDir, _problemName, code) => {
             '\t"testing"',
             ')',
             '',
+            'var tests = []struct {}{}',
+            '',
             `func Test${parseFunName}(t *testing.T) {`,
+            '\tfor idx, test := range tests {',
+            `\t\tactual := ${funName}()`,
+            '\t\tif !reflect.DeepEqual(actual, test.output) {',
+            '\t\t\tt.Errorf("TestCase[%d]: ", idx)',
+            '\t\t}',
+            '\t}',
             '}',
         ].join('\n')
     );
