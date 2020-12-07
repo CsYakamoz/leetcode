@@ -6,20 +6,20 @@ import (
 )
 
 var linkedListTests = []struct {
-	input  []int
-	output *ListNode
+	arr  []int
+	head *ListNode
 }{
 	{
-		input:  []int{},
-		output: nil,
+		arr:  []int{},
+		head: nil,
 	},
 	{
-		input:  []int{1},
-		output: &ListNode{Val: 1},
+		arr:  []int{1},
+		head: &ListNode{Val: 1},
 	},
 	{
-		input: []int{1, 2, 3, 4, 5},
-		output: &ListNode{
+		arr: []int{1, 2, 3, 4, 5},
+		head: &ListNode{
 			Val: 1,
 			Next: &ListNode{
 				Val: 2,
@@ -37,7 +37,15 @@ var linkedListTests = []struct {
 
 func TestArrayToLinkedList(t *testing.T) {
 	for idx, test := range linkedListTests {
-		if !reflect.DeepEqual(ArrayToLinkedList(test.input), test.output) {
+		if !reflect.DeepEqual(ArrayToLinkedList(test.arr), test.head) {
+			t.Fatalf("TestCase[%d]: linked lists are not same", idx)
+		}
+	}
+}
+
+func TestLinkedListToArray(t *testing.T) {
+	for idx, test := range linkedListTests {
+		if !reflect.DeepEqual(LinkedListToArray(test.head), test.arr) {
 			t.Fatalf("TestCase[%d]: linked lists are not same", idx)
 		}
 	}

@@ -22,3 +22,13 @@ func ArrayToLinkedList(arr []int) *ListNode {
 
 	return head.Next
 }
+
+func LinkedListToArray(head *ListNode) []int {
+	result := make([]int, 0)
+	for head != nil {
+		result = append(result, head.Val)
+		head = head.Next
+	}
+
+	return result
+}
