@@ -18,7 +18,7 @@ For example, if there are 4 stones in the heap, then you will never win the game
 
 ### Solution One
 
-[292. Nim Game - Solution](https://leetcode.com/problems/nim-game/#/solution)
+[292. Nim Game - Solution](https://leetcode.com/problems/nim-game/solution/)
 
 ```c++
 class Solution {

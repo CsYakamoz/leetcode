@@ -86,6 +86,6 @@ public:
 
 ### Other Solutions
 
-[599. Minimum Index Sum of Two Lists](https://leetcode.com/problems/minimum-index-sum-of-two-lists/#/solution)
+[599. Minimum Index Sum of Two Lists - Solution](https://leetcode.com/problems/minimum-index-sum-of-two-lists/solution/)
 
 个人觉得 Approach #2 Without Using HashMap 这思路很新奇

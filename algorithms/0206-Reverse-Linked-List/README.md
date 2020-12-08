@@ -136,4 +136,4 @@ public:
 
 ### Other Solutions
 
-[206. Reverse Linked List - Solution](https://leetcode.com/problems/reverse-linked-list/#/solution)
+[206. Reverse Linked List - Solution](https://leetcode.com/problems/reverse-linked-list/solution/)

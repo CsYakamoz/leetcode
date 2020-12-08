@@ -60,6 +60,6 @@ public:
 };
 ```
 
-### Others Solutions
+### Other Solutions
 
-[70. Climbing Stairs - Solutions](https://leetcode.com/problems/climbing-stairs/solution/)
+[70. Climbing Stairs - Solution](https://leetcode.com/problems/climbing-stairs/solution/)

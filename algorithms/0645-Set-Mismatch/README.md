@@ -53,4 +53,4 @@ public:
 
 ### Other Solutions
 
-[645. Set Mismatch - Solutions](https://leetcode.com/problems/set-mismatch/solution/)
+[645. Set Mismatch - Solution](https://leetcode.com/problems/set-mismatch/solution/)

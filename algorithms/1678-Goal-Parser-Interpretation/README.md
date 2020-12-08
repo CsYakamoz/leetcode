@@ -45,7 +45,7 @@ The final concatenated result is &quot;Goal&quot;.
 
 **Tags:** `String`
 
-## Solution One
+### Solution One
 
 ```javascript
 /**

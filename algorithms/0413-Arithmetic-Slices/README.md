@@ -104,4 +104,4 @@ private:
 
 ### Other Solutions
 
-[413. Arithmetic Slices - Solutions](https://leetcode.com/problems/arithmetic-slices/solution/)
+[413. Arithmetic Slices - Solution](https://leetcode.com/problems/arithmetic-slices/solution/)

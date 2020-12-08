@@ -90,7 +90,7 @@ public:
 
 ### Other Solutions
 
-[162. Find Peak Element](https://leetcode.com/problems/find-peak-element/solution/)
+[162. Find Peak Element - Solution](https://leetcode.com/problems/find-peak-element/solution/)
 
 ```java
 public class Solution {

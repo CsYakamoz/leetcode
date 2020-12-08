@@ -103,7 +103,7 @@ private:
 
 ### Solution Three - In Top Solutions
 
-[303. Range Sum Query - Solutions](https://leetcode.com/problems/range-sum-query-immutable/solution/)
+[303. Range Sum Query - Solution](https://leetcode.com/problems/range-sum-query-immutable/solution/)
 
 基本思路为：$a_i + \dots + a_j$ = $(a_1 + \dots + a_j) - (a_1 + \dots + a_{i-1})$
 

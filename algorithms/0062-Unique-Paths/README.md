@@ -41,7 +41,7 @@ public:
 };
 ```
 
-## Solution Two - In Top Solutions
+### Solution Two - In Top Solutions
 
 [My AC solution using formula](https://discuss.leetcode.com/topic/2734/my-ac-solution-using-formula)
 

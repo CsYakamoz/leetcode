@@ -57,4 +57,4 @@ public:
 
 ### Other Solutions
 
-[633. Sum of Square Numbers - S](https://leetcode.com/problems/sum-of-square-numbers/#/solution)
+[633. Sum of Square Numbers - Solution](https://leetcode.com/problems/sum-of-square-numbers/solution/)

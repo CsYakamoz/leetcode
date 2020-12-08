@@ -108,7 +108,7 @@ public:
 
 动态规划-自底向上+二叉搜索
 
-[300. Longest Increasing Subsequence - Solution](https://leetcode.com/problems/longest-increasing-subsequence/#/solution)
+[300. Longest Increasing Subsequence - Solution](https://leetcode.com/problems/longest-increasing-subsequence/solution/)
 
 ```c++
 class Solution {

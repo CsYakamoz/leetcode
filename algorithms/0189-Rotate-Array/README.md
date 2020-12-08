@@ -52,6 +52,6 @@ public:
 };
 ```
 
-### Other Solution
+### Other Solutions
 
-[189. Rotate Array - Solution](https://leetcode.com/problems/rotate-array/#/solution)
+[189. Rotate Array - Solution](https://leetcode.com/problems/rotate-array/solution/)

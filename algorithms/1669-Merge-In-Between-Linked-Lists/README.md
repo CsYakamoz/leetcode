@@ -40,7 +40,7 @@
 
 **Tags:** `Linked List`
 
-## Solution One
+### Solution One
 
 ```golang
 /**

@@ -121,6 +121,6 @@ private:
 };
 ```
 
-### Other Solution - In Top Solutions
+### Other Solutions - In Top Solutions
 
-[494. Target Sum - Solution](https://leetcode.com/problems/target-sum/#/solution)
+[494. Target Sum - Solution](https://leetcode.com/problems/target-sum/solution/)

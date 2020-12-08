@@ -58,7 +58,7 @@
 
 **Tags:** `Hash Table` `Linked List`
 
-## Solution One
+### Solution One
 
 在参考 `Hint` 后才做出来 😥
 
