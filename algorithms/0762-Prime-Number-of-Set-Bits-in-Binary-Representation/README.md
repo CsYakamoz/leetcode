@@ -96,7 +96,9 @@ func isPrime(num int) int {
 
 ### Solution Two - In Top Solutions
 
-TODO: explain this
+`665772` 的二进制为: `10100010100010101100`
+
+从右开始数的话, 每个 `1` 的下标恰好是 **Hint** 中说的 `2, 3, 5, 7, 11, 13, 17 or 19`
 
 ```golang
 func countPrimeSetBits(L int, R int) int {
