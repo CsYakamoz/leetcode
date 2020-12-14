@@ -187,7 +187,7 @@ const golang = async (problemDir, _problemName, code) => {
         ['package golang', '', code].join('\n')
     );
 
-    const funName = code.match(/func (?<funName>\w+)\(.*/).groups.funName;
+    const funName = code.match(/func (?<funName>\w+)\s*\(.*/).groups.funName;
     const parseFunName = funName.charAt(0).toUpperCase() + funName.slice(1);
 
     await writeFile(
