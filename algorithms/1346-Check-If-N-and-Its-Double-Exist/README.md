@@ -51,7 +51,7 @@
 
 ### Solution One
 
-```golang
+```go
 func checkIfExist(arr []int) bool {
 	dict := make(map[int]bool)
 

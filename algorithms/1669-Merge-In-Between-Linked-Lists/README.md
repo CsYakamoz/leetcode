@@ -42,7 +42,7 @@
 
 ### Solution One
 
-```golang
+```go
 /**
  * Definition for singly-linked list.
  * type ListNode struct {

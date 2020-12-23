@@ -41,7 +41,7 @@ result[2] = |5-2| + |5-3| + |5-5| = 3 + 2 + 0 = 5.
 
 ### Solution One
 
-```golang
+```go
 func getSumAbsoluteDifferences(nums []int) []int {
 	length := len(nums)
 	prefixSum := make([]int, length)

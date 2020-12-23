@@ -62,7 +62,7 @@
 
 在参考 `Hint` 后才做出来 😥
 
-```golang
+```go
 func copyRandomList(head *Node) *Node {
 	if head == nil {
 		return nil

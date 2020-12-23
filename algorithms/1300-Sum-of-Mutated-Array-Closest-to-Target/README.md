@@ -73,7 +73,7 @@
 
       再分别计算 `end-1` 和 `end` 的 `changedSum`, 从而得到谁更接近 `target`;
 
-```golang
+```go
 import (
 	"sort"
 )

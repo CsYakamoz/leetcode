@@ -43,7 +43,7 @@
 
 ### Solution One
 
-```golang
+```go
 import (
 	"sort"
 )

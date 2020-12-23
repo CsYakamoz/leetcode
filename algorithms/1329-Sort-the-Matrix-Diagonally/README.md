@@ -30,7 +30,7 @@
 
 每个对角线进行插入排序
 
-```golang
+```go
 func diagonalSort(mat [][]int) [][]int {
 	rowLen, colLen := len(mat), len(mat[0])
 

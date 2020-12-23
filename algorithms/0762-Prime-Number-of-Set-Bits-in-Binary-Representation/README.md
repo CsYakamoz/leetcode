@@ -41,7 +41,7 @@ Given two integers <code>L</code> and <code>R</code>, find the count of numbers 
 
 ### Solution One
 
-```golang
+```go
 import (
 	"math"
 )
@@ -100,7 +100,7 @@ func isPrime(num int) int {
 
 从右开始数的话, 每个 `1` 的下标恰好是 **Hint** 中说的 `2, 3, 5, 7, 11, 13, 17 or 19`
 
-```golang
+```go
 func countPrimeSetBits(L int, R int) int {
 	rev := 0
 	for L <= R {

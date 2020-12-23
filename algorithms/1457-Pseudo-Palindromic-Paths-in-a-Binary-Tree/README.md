@@ -48,7 +48,7 @@
 
 ### Solution One
 
-```golang
+```go
 func isPseudoPalindromic(iter *[]int) int {
 	singleCount, dict := 0, [10]int{}
 

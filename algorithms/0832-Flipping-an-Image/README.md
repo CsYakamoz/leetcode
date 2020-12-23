@@ -39,7 +39,7 @@ Then invert the image: [[1,1,0,0],[0,1,1,0],[0,0,0,1],[1,0,1,0]]
 
 ### Solution One
 
-```golang
+```go
 func flipAndInvertImage(A [][]int) [][]int {
 	length := len(A)
 	result := make([][]int, 0, length)

@@ -47,7 +47,7 @@ The XOR values for queries are:
 
 ### Solution One
 
-```golang
+```go
 func xorQueries(arr []int, queries [][]int) []int {
 	prefix := make([]int, 0, len(arr))
 

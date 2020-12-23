@@ -58,7 +58,7 @@
 
 ### Solution One
 
-```golang
+```go
 func getDecimalValue(head *ListNode) int {
 	result, _ := helper(head)
 
