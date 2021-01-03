@@ -55,7 +55,7 @@
 
 ### Solution One
 
-```golang
+```go
 func findLeftBottom(arr []int, length, begin int) int {
 	for i := begin + 1; i < length; i++ {
 		if arr[i] > arr[i-1] {
