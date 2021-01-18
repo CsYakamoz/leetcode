@@ -31,8 +31,8 @@ func TestDecode(t *testing.T) {
 				idx,
 				test.encoded,
 				test.first,
-				actual,
 				test.output,
+				actual,
 			)
 		}
 	}
