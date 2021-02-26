@@ -63,7 +63,8 @@ const getAlgList = () =>
                 .toString()
                 .split('\n');
 
-            const algName = content[0].match(/##\s\[(?<algName>.*)\]/).groups.algName;
+            const algName = content[0].match(/##\s\[(?<algName>.*)\]/).groups
+                .algName;
 
             const difficultyList = content
                 .find((str) => str.startsWith('**Difficulty:**'))

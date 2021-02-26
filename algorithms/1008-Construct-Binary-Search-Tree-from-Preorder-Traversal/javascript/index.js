@@ -14,7 +14,7 @@ const {
  * @param {number[]} preorder
  * @return {TreeNode}
  */
-var bstFromPreorder = function(preorder) {
+var bstFromPreorder = function (preorder) {
     if (preorder.length === 0) {
         return null;
     }

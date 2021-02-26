@@ -2,7 +2,7 @@
  * @param {string} text
  * @return {string}
  */
-const arrangeWords = function(text) {
+const arrangeWords = function (text) {
     const wordList = text.toLowerCase().split(' ');
 
     wordList.sort((a, b) => {

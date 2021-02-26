@@ -2,7 +2,7 @@
  * @param {number} n
  * @return {number}
  */
-const tribonacci = function(n) {
+const tribonacci = function (n) {
     const constant = [0, 1, 1];
     if (n < 3) {
         return constant[n];

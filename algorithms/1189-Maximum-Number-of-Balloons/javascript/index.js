@@ -2,7 +2,7 @@
  * @param {string} text
  * @returns {object}
  */
-const createCountDict = function(text) {
+const createCountDict = function (text) {
     return text.split('').reduce((prev, curr) => {
         if (prev[curr] === undefined) {
             prev[curr] = 1;
@@ -18,7 +18,7 @@ const createCountDict = function(text) {
  * @param {string} text
  * @return {number}
  */
-const maxNumberOfBalloons = function(text) {
+const maxNumberOfBalloons = function (text) {
     const keyword = 'balloon';
     const keywordDict = createCountDict(keyword);
     const textDict = createCountDict(text);

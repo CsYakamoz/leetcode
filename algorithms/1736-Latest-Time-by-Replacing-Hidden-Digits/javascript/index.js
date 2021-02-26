@@ -4,7 +4,7 @@ const isQuestionMark = (c) => c === '?';
  * @param {string} time
  * @return {string}
  */
-const maximumTime = function(time) {
+const maximumTime = function (time) {
     const list = time.split('');
 
     if (isQuestionMark(list[0]) && isQuestionMark(list[1])) {

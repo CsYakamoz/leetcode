@@ -2,7 +2,7 @@
  * @param {number[]} arr
  * @return {number[][]}
  */
-const minimumAbsDifference = function(arr) {
+const minimumAbsDifference = function (arr) {
     arr.sort((a, b) => a - b);
 
     const dict = new Map();

@@ -2,7 +2,7 @@
  * @param {string} s
  * @return {number}
  */
-const numWays = function(s) {
+const numWays = function (s) {
     const oneIdxRecord = [];
     const modulo = 10 ** 9 + 7;
     for (let i = 0, len = s.length; i < len; i++) {

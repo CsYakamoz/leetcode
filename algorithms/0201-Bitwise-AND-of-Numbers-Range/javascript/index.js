@@ -17,7 +17,7 @@ const findTarget = (diff) => {
  * @param {number} n
  * @return {number}
  */
-const rangeBitwiseAnd = function(m, n) {
+const rangeBitwiseAnd = function (m, n) {
     if (m === n) {
         return m;
     }

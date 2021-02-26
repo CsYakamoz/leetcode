@@ -38,7 +38,7 @@ const check = (timeList) => {
  * @param {string[]} keyTime
  * @return {string[]}
  */
-const alertNames = function(keyName, keyTime) {
+const alertNames = function (keyName, keyTime) {
     /** @type {Map<string, string[]} */
     const dict = new Map();
     for (let i = 0, len = keyName.length; i < len; i++) {

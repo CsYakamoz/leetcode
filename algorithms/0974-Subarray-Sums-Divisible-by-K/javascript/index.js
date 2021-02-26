@@ -3,7 +3,7 @@
  * @param {number} K
  * @return {number}
  */
-const subarraysDivByK = function(A, K) {
+const subarraysDivByK = function (A, K) {
     const prefixRemainderDict = new Map();
 
     let result = 0;

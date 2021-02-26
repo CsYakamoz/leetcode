@@ -10,7 +10,7 @@ const dec = (num, n) => (num !== 0 ? num - 1 : n - 1);
  * @param {number} destination
  * @return {number}
  */
-const distanceBetweenBusStops = function(distance, start, destination) {
+const distanceBetweenBusStops = function (distance, start, destination) {
     let clockwise = 0;
     let clockwiseStart = start;
     while (clockwiseStart !== destination) {

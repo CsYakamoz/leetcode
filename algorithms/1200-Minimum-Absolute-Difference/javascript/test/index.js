@@ -2,7 +2,7 @@ const func = require('../index');
 const { deepStrictEqual } = require('power-assert');
 
 describe('1200. Minimum Absolute Difference', () => {
-    it('[4,2,1,3] should be [[1,2],[2,3],[3,4]]', function() {
+    it('[4,2,1,3] should be [[1,2],[2,3],[3,4]]', function () {
         deepStrictEqual(func([4, 2, 1, 3]), [
             [1, 2],
             [2, 3],

@@ -2,7 +2,7 @@
  * @param {number[]} A
  * @return {boolean}
  */
-const canThreePartsEqualSum = function(A) {
+const canThreePartsEqualSum = function (A) {
     let totalSum = 0;
     const sumList = [];
 

@@ -2,7 +2,7 @@
  * @param {number[][]} grid
  * @return {number}
  */
-const orangesRotting = function(grid) {
+const orangesRotting = function (grid) {
     /** @type {Set<number>} */
     const rottingIdx = new Set();
     /** @type {Set<number>} */

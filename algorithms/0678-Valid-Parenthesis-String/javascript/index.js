@@ -8,7 +8,7 @@ const lastElemOrNeg1 = (arr) => (arr.length !== 0 ? arr[arr.length - 1] : -1);
  * @param {string} s
  * @return {boolean}
  */
-const checkValidString = function(s) {
+const checkValidString = function (s) {
     const starStack = [];
     const leftBrackets = [];
 

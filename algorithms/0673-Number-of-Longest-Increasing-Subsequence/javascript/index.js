@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-const findNumberOfLIS = function(nums) {
+const findNumberOfLIS = function (nums) {
     if (nums.length === 0) {
         return 0;
     }

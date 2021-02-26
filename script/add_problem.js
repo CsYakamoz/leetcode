@@ -79,7 +79,9 @@ const main = async () => {
 const mkdir = (path) => {
     if (existsSync(path)) {
         if (!statSync(path).isDirectory()) {
-            throw new Error(`path(${path}) already exists, but not a directory`);
+            throw new Error(
+                `path(${path}) already exists, but not a directory`
+            );
         }
         return;
     }

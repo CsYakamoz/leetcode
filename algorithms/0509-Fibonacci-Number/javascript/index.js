@@ -2,7 +2,7 @@
  * @param {number} N
  * @return {number}
  */
-const fib = function(N) {
+const fib = function (N) {
     if (N < 2) {
         return N;
     }

@@ -30,7 +30,7 @@ const findMinDiff = (arr1, arr2) => {
  * @param {number} p
  * @return {number}
  */
-const minSubarray = function(nums, p) {
+const minSubarray = function (nums, p) {
     /** @type {Map<number, number[]>} */
     const prefixRemainderDict = new Map();
 

@@ -3,7 +3,7 @@
  * @param {number} K
  * @return {number}
  */
-const largestSumAfterKNegations = function(A, K) {
+const largestSumAfterKNegations = function (A, K) {
     let positiveSum = 0;
     let negativeSum = 0;
     let maxNegative = Number.MIN_SAFE_INTEGER;

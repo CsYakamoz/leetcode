@@ -23,4 +23,3 @@ describe('1678. Goal Parser Interpretation', () => {
         });
     }
 });
-

@@ -6,7 +6,7 @@ const {
  * @param {TreeNode} root
  * @return {number}
  */
-const minDiffInBST = function(root) {
+const minDiffInBST = function (root) {
     const stack = [];
 
     let prevVal = null;

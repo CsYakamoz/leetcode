@@ -16,7 +16,7 @@ const needToRemove = (c1, c2) =>
  * @param {string} s
  * @return {string}
  */
-const makeGood = function(s) {
+const makeGood = function (s) {
     if (s.length < 2) {
         return s;
     }

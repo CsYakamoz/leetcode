@@ -58,7 +58,7 @@ const helper = (root, _) => {
  * @param {number} sum
  * @return {number}
  */
-const pathSum = function(root, sum) {
+const pathSum = function (root, sum) {
     const _ = {
         valList: new IdxToLastSum(sum),
         res: 0,

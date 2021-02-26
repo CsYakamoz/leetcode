@@ -42,7 +42,7 @@ const getIterator = (root) => {
  * @param {TreeNode} root2
  * @return {number[]}
  */
-const getAllElements = function(root1, root2) {
+const getAllElements = function (root1, root2) {
     const result = [];
 
     const iter1 = getIterator(root1);

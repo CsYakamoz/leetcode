@@ -2,7 +2,7 @@
  * @param {string} command
  * @return {string}
  */
-const interpret = function(command) {
+const interpret = function (command) {
     const stack = [];
     const resultArr = [];
 
@@ -29,4 +29,3 @@ const interpret = function(command) {
 };
 
 module.exports = interpret;
-

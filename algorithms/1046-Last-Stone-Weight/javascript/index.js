@@ -83,7 +83,7 @@ class PriorityQueue {
  * @param {number[]} stones
  * @return {number}
  */
-var lastStoneWeight = function(stones) {
+var lastStoneWeight = function (stones) {
     if (stones.length < 2) {
         return stones.pop() || 0;
     }

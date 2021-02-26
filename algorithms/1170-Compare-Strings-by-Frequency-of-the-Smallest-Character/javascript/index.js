@@ -44,7 +44,7 @@ const findSuitableElem = (query, sortedWords) => {
  * @param {string[]} words
  * @return {number[]}
  */
-const numSmallerByFrequency = function(queries, words) {
+const numSmallerByFrequency = function (queries, words) {
     const sortedWords = words.map(calc).sort((a, b) => a - b);
 
     return queries.map((query) => findSuitableElem(query, sortedWords));

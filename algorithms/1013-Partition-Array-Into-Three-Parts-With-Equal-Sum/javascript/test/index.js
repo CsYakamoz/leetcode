@@ -1,7 +1,7 @@
 const func = require('../index');
 const { deepStrictEqual } = require('power-assert');
 
-describe('1013. Partition Array Into Three Parts With Equal Sum', function() {
+describe('1013. Partition Array Into Three Parts With Equal Sum', function () {
     it('[0,2,1,-6,6,-7,9,1,2,0,1] should be true', () => {
         deepStrictEqual(func([0, 2, 1, -6, 6, -7, 9, 1, 2, 0, 1]), true);
     });

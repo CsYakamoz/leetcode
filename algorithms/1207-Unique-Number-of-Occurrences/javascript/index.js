@@ -2,7 +2,7 @@
  * @param {number[]} arr
  * @return {boolean}
  */
-const uniqueOccurrences = function(arr) {
+const uniqueOccurrences = function (arr) {
     const dict = new Map();
 
     arr.forEach((val) => {

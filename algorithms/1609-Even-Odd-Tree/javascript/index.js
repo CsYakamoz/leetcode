@@ -37,7 +37,7 @@ const check = (arr, isEvenLevel) => {
  * @param {TreeNode} root
  * @return {boolean}
  */
-const isEvenOddTree = function(root) {
+const isEvenOddTree = function (root) {
     let level = 0;
     const queue = [root];
 
