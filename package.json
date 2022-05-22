@@ -4,6 +4,7 @@
   "description": "Record what I have done on LeetCode.",
   "repository": "git@github.com:CsYakamoz/leetcode.git",
   "author": "CsYakamoz <532609418@qq.com>",
+  "type": "module",
   "devDependencies": {
     "@lib/javascript": "link:./lib/javascript",
     "enquirer": "^2.3.6",

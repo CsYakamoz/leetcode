@@ -1,8 +1,13 @@
-const { join, resolve, relative } = require('path');
-const { writeFileSync, mkdirSync, existsSync, statSync } = require('fs');
-const { prompt } = require('enquirer');
+import { join, resolve, relative, dirname } from 'path';
+import { writeFileSync, mkdirSync, existsSync, statSync } from 'fs';
+import { fileURLToPath } from 'url';
+import enquirer from 'enquirer';
+const { prompt } = enquirer;
 
-const crawlProblemInfo = require('./crawl_problem_info');
+import crawlProblemInfo from './crawl_problem_info.js';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 const PROJECT_ROOT = join(resolve(__dirname, '..'));
 const ALG_DIR = join(PROJECT_ROOT, 'algorithms');
@@ -161,8 +166,8 @@ const javascript = async (problemDir, problemName, code) => {
     await writeFile(
         join(problemDir, 'javascript', 'test', 'index.js'),
         [
-            'const func = require(\'../index\');',
-            'const { deepStrictEqual } = require(\'power-assert\');',
+            "const func = require('../index');",
+            "const { deepStrictEqual } = require('power-assert');",
             '',
             'const testList = [];',
             '',

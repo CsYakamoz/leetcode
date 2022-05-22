@@ -1,5 +1,5 @@
-const { join, resolve } = require('path');
-const { readdirSync, statSync, readFileSync, writeFileSync } = require('fs');
+import { join, resolve } from 'path';
+import { readdirSync, statSync, readFileSync, writeFileSync } from 'fs';
 
 const PROJECT_ROOT = join(resolve(__dirname, '..'));
 const ALG_DIR = join(PROJECT_ROOT, 'algorithms');

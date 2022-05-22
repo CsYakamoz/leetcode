@@ -1,11 +1,11 @@
-const fetch = require('node-fetch');
+import fetch from 'node-fetch';
 
 const titleSlugRegex = /https:\/\/leetcode\.com\/problems\/(?<titleSlug>.*)\//;
 
 /**
  * @param {string} problemLink
  */
-module.exports = async (problemLink, language) => {
+export default async (problemLink, language) => {
     const titleSlug = problemLink.match(titleSlugRegex).groups.titleSlug;
     const body = {
         operationName: 'questionData',
