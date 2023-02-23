@@ -32,3 +32,18 @@ func LinkedListToArray(head *ListNode) []int {
 
 	return result
 }
+
+func CopyLinkList(head *ListNode) *ListNode {
+	if head == nil {
+		return nil
+	}
+
+	newHead := &ListNode{}
+	ptr := newHead
+	for ; head != nil; head = head.Next {
+		ptr.Next = &ListNode{Val: head.Val}
+		ptr = ptr.Next
+	}
+
+	return newHead.Next
+}
